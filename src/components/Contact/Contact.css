@@ -1,0 +1,112 @@
+/* Contact.css */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .contact h2 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  .contactFormSection,
+  .contactInfoSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .contactImage {
+    flex: 1;
+  }
+  
+  .contactImage img {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .contactForm {
+    flex: 2;
+  }
+  
+  .contactForm h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .phoneInput {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .phoneInput img {
+    height: 20px;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .contactInfoSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .contactDetails {
+    flex: 1;
+  }
+  
+  .contactDetail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .contactDetail img {
+    height: 24px;
+  }
+  
+  .map {
+    flex: 1;
+  }
+  
+  .map img {
+    width: 100%;
+    max-width: 400px;
+  }
+  

@@ -1,0 +1,57 @@
+/* Home.css */
+
+.home {
+    display: flex;
+    flex-direction: column; /* Arrange in a single column */
+    align-items: center; /* Center content horizontally */
+    height: 100vh;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .mainContent {
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .logoRow {
+    display: flex;
+    justify-content: left; /* Center the logo horizontally */
+    margin-bottom: 40px; /* Adds space below the logo */
+  }
+  
+  .logo {
+    height: 60px; /* Adjust size as needed */
+  }
+  
+  .contentRow {
+    display: flex;
+    justify-content: space-between; /* Align text and illustration side by side */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .textContent {
+    flex: 1; /* Takes up available space */
+    font-size: 40px;
+    line-height: 1.2;
+    width: 50%;
+    color: black;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  
+  .textContent span {
+    color: orange; /* Highlight color */
+  }
+  
+  .illustration {
+    flex: 1; /* Takes up available space */
+    display: flex;
+    justify-content: center; /* Center illustration */
+    align-items: center;
+  }
+  
+  .illustration img {
+    height: 150px; /* Adjust the size as needed */
+    margin-left: 20px; /* Adds space between text and illustration */
+  }
+  

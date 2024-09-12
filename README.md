@@ -38,8 +38,6 @@ In the project directory, you can run:
 - `npm test`: Launches the test runner.
 - `npm run build`: Builds the app for production.
 
-// ... (keep the existing script descriptions) ...
-
 ## Learn More
 
 To learn more about Novatide Labs and our services, visit [our website](https://novatidelabs.com).
