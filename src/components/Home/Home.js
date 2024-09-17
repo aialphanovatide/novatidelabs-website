@@ -18,7 +18,7 @@ const Home = () => {
           <div className="textContent">
             <h1>
               Moving <br />
-              Global Finance <br />
+              <div className="text-with-shadow">Global Finance </div>
               <span>Forward</span>
             </h1>
           </div>

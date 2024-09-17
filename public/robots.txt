@@ -1,3 +1,14 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+Sitemap: https://novatidelabs.com/sitemap.xml
+
+# Disallow specific directories or pages
+Disallow: /private/
+Disallow: /admin/
+Disallow: /temp/
+
+# Allow specific directories or files
+Allow: /public/
+
+# Crawl-delay (optional, use cautiously)
+Crawl-delay: 10

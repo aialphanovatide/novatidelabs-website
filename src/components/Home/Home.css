@@ -18,6 +18,7 @@
     display: flex;
     justify-content: left; /* Center the logo horizontally */
     margin-bottom: 40px; /* Adds space below the logo */
+    margin-left: 100px;
   }
   
   .logo {
@@ -32,15 +33,20 @@
   
   .textContent {
     flex: 1; /* Takes up available space */
-    font-size: 40px;
+    font-size: 33px;
     line-height: 1.2;
     width: 50%;
     color: black;
     font-family: "Plus Jakarta Sans", sans-serif;
+    margin-left: 100px;
   }
   
   .textContent span {
-    color: orange; /* Highlight color */
+    color: #FCD34D; /* Highlight color */
+  }
+
+  .text-with-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
   
   .illustration {
@@ -48,10 +54,10 @@
     display: flex;
     justify-content: center; /* Center illustration */
     align-items: center;
+    margin-top: -90px;
   }
   
   .illustration img {
-    height: 150px; /* Adjust the size as needed */
-    margin-left: 20px; /* Adds space between text and illustration */
+    height: 70vh; /* Adjust the size as needed */
   }
   
