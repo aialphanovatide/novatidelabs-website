@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import OurJourney from "./OurJourney/OurJourney.js";
 
 const Home = () => {
   return (
@@ -26,6 +27,8 @@ const Home = () => {
             <img src="static/images/Home/content-one.png" alt="Illustration" />
           </div>
         </div>
+        {/* Third component: Yellow timeline */}
+        <OurJourney />
       </main>
     </div>
   );

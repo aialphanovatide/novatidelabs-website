@@ -1,0 +1,148 @@
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.subtitle {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 50px;
+  color: black;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+}
+
+.rows-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-tape {
+  width: 205px;
+  object-fit: cover;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  width: "60%";
+  margin-top: 100px;
+}
+
+.tape-number {
+  margin-left: -185px;
+  margin-right: 60px;
+  font-size: 70px;
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  align-self: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-title {
+  margin: 10px 0;
+  font-size: 40px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  color: #fcd34d;
+}
+
+.big-image {
+  width: 300px;
+  height: 375px;
+}
+
+.text-container {
+  max-width: 450px;
+  margin: 0 30px;
+}
+
+.text-container p {
+  color: #0a0a0a;
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.medium-image {
+  width: 100px;
+  height: 100px;
+  margin-left: -30px;
+  align-self: center;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.relative {
+  position: relative;
+  height: 350px;
+}
+
+.yellow-borders-figure {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  width: 100px;
+  height: 350px;
+  border-style: solid;
+  border-width: 5px 5px 5px 0px;
+  border-color: #fde68a;
+  z-index: -1;
+}
+
+.center {
+  align-self: center;
+}
+
+.secondary-text {
+  color: #737373 !important;
+  font-size: 16px;
+  font-style: italic;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  text-align: left;
+}
+.figure-text {
+  max-width: 350px;
+  margin-left: 50px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.member-image {
+  width: 115px;
+  height: 150px;
+  margin: 5px 10px;
+}
+
+.expansion-image {
+  width: 225px;
+  height: 300px;
+  margin-right: 5px;
+}
+
+.my-2 {
+  margin: 40px 0;
+}
