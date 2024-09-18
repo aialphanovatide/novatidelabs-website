@@ -4,7 +4,7 @@ import ReactFlagsSelect from "react-flags-select";
 import countriesData from "./countriesCodes.json";
 
 const Contact = () => {
-  const formspreeURL = process.env.REACT_APP_FORMSPREE_URL;
+  const formspreeURL = "https://formspree.io/f/xqazovol";
   const [selected, setSelected] = useState("GB");
   const [customLabels, setCustomLabels] = useState({});
   const [dialCode, setDialCode] = useState("");
