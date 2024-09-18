@@ -1,0 +1,23 @@
+.card {
+  font-family: "Plus Jakarta Sans", sans-serif;
+    height: 450px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+    padding-top: 100px;
+    color: white;
+  }
+  .card h2{
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .card p{
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  

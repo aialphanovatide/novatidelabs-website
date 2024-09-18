@@ -1,112 +1,181 @@
 /* Contact.css */
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .contact h2 {
-    font-size: 40px;
-    font-weight: 600;
-    font-family: "Plus Jakarta Sans", sans-serif;
-  }
-  .contactFormSection,
-  .contactInfoSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  
-  .contactImage {
-    flex: 1;
-  }
-  
-  .contactImage img {
-    width: 100%;
-    max-width: 300px;
-  }
-  
-  .contactForm {
-    flex: 2;
-  }
-  
-  .contactForm h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .formGroup {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .formGroup label {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .formGroup input,
-  .formGroup textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  .phoneInput {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .phoneInput img {
-    height: 20px;
-  }
-  
-  .submitButton {
-    padding: 10px 20px;
-    background-color: orange;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .contactInfoSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  
-  .contactDetails {
-    flex: 1;
-  }
-  
-  .contactDetail {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    gap: 10px;
-  }
-  
-  .contactDetail img {
-    height: 24px;
-  }
-  
-  .map {
-    flex: 1;
-  }
-  
-  .map img {
-    width: 100%;
-    max-width: 400px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.contact h2 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.contactFormSection,
+.contactInfoSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.fullWidth {
+  width: 100%;
+  grid-column: span 2;
+}
+
+
+
+.noFullWidth {
+  min-width: 150px;
+  display: inline-block;
+  grid-column: span 1;
+}
+
+.contactImage {
+  flex: 1;
+}
+
+.contactImage img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.contactForm {
+  flex: 2;
+}
+
+.formGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.contactForm h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formGroup > input, .phoneInputData {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid #FBBF24;
+  font-size: 16px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+}
+
+.formGroup > input:focus, .phoneInputData:focus, .formGroup > textarea:focus {
+  outline: none;
+}
+.formGroup > textarea {
+  padding: 10px;
+  border: 2px solid #FBBF24;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.phoneInput {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phoneInput img {
+  height: 20px;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  grid-column: span 2;
+}
+
+.contactInfoSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contactDetails {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactDetail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.contactDetail h3 {
+  font-size: 20px;
+  font-weight:600;
+  color: #FBBF24;
+}
+
+.contactDetail p {
+  font-size: 14px;
+}
+
+.contactDetail img {
+  height: 50px;
+  width: 50px;
+}
+
+.map {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.map img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.flagSelect > button {
+  border: none;
+}
+.ReactFlagsSelect-module_filterBox__3m8EU > input {
+  border: none;
+  border-bottom: 1px solid #FBBF24;
+  font-size: 10px;
+}
+
+.ReactFlagsSelect-module_label__27pw9 {
+  font-size: 14px !important; 
+  padding-left: 5px !important;
+}
+
+
+@media (width <= 768px) {
+.formGrid{
+  display: flex;
+  flex-direction: column;
+}
+}

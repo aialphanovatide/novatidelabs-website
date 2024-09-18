@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import "./Projects.css";
 
 const Projects = () => {
-  const [selectedImage, setSelectedImage] = useState(null); // State to manage the selected image
-  const [zoomLevel, setZoomLevel] = useState(1); // State to manage zoom level
-  const [expandedItem, setExpandedItem] = useState(null); // State to manage which list item is expanded
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [zoomLevel, setZoomLevel] = useState(1);
+  const [expandedItem, setExpandedItem] = useState(null);
 
   const openPopup = (imageSrc) => {
-    setSelectedImage(imageSrc); // Set the clicked image as the selected image
-    setZoomLevel(1); // Reset zoom level when opening a new image
+    setSelectedImage(imageSrc);
+    setZoomLevel(1);
   };
 
   const closePopup = () => {
-    setSelectedImage(null); // Clear the selected image to close the popup
+    setSelectedImage(null);
   };
 
   const zoomIn = () => {

@@ -1,0 +1,76 @@
+div.card4 {
+  display: flex;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  height: 490px;
+  margin: auto;
+  margin-bottom: 0;
+  width: 100%;
+  padding-bottom: 200px;
+  
+}
+
+.card4-column-left {
+  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 50px 0 0 0;
+
+}
+
+.card4-column-left img {
+  width: 100px;
+  height: 110px;
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.card4-column-right {
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0 50px 0 0;
+  padding-top: 60px;
+}
+
+.card4-column-right img {
+  width: 73px;
+  height: 58px;
+  max-width: 30%;
+  max-height: 300px;
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+
+.card4 h2 {
+  font-size: 31px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.card4 p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 80%;
+}
+
+.card4-column-left,
+.card4-column-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
