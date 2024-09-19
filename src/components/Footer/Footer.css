@@ -92,13 +92,13 @@
   footer {
     width: 100%;
     margin-top: 20%;
+    padding: 2rem 0 !important;
   }
 
   .footer-content {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
   }
 
   .linkedin-container {
@@ -117,6 +117,10 @@
   }
 
   .logo-section {
-    margin-left: -10%;
+    margin-left: -40%;
+  }
+
+  .copyright {
+    max-width: 100%;
   }
 }

@@ -127,7 +127,11 @@ const Projects = () => {
       <div className="projects-main-container">
         <div className="projects-left-section-upper">
           <h4>AI Alpha X</h4>
-          <p>Lorem ipsum</p>
+          <p>
+            AI Alpha is aspiring to be the equivalent of Bloomberg for Crypto,
+            offering users a powerful, all-in-one platform for navigating the
+            digital finance world with ease.
+          </p>
           <ul className="projects-list">
             <li onClick={() => toggleExpand(1)} className="clickable-title">
               <div className="title-container">
@@ -324,7 +328,9 @@ const Projects = () => {
           </div>
         </div>
       )}
-      <Footer />
+      <div class="footer-container">
+        <Footer />
+      </div>
     </div>
   );
 };

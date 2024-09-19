@@ -25,8 +25,6 @@
   grid-column: span 2;
 }
 
-
-
 .noFullWidth {
   min-width: 150px;
   display: inline-block;
@@ -46,7 +44,12 @@
   flex: 2;
 }
 
-.formGrid{
+.contactDetail h3,
+.contactDetail p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.formGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
@@ -68,10 +71,11 @@
   margin-bottom: 5px;
 }
 
-.formGroup > input, .phoneInputData {
+.formGroup > input,
+.phoneInputData {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 2px solid #FBBF24;
+  border: 2px solid #fbbf24;
   font-size: 16px;
   border-top: none;
   border-left: none;
@@ -79,14 +83,21 @@
   width: 100%;
 }
 
-.formGroup > input:focus, .phoneInputData:focus, .formGroup > textarea:focus {
+.formGroup > input:focus,
+.phoneInputData:focus,
+.formGroup > textarea:focus {
   outline: none;
 }
 .formGroup > textarea {
   padding: 10px;
-  border: 2px solid #FBBF24;
+  border: 2px solid #fbbf24;
   border-radius: 4px;
   font-size: 16px;
+}
+
+.formGroup label,
+.submitButton {
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .phoneInput {
@@ -102,13 +113,14 @@
 .submitButton {
   padding: 10px 20px;
   background-color: orange;
-  color: white;
+  color: #171717;
   border: none;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
   margin-top: 10px;
   grid-column: span 2;
+  font-weight: 600;
 }
 
 .contactInfoSection {
@@ -134,8 +146,8 @@
 
 .contactDetail h3 {
   font-size: 20px;
-  font-weight:600;
-  color: #FBBF24;
+  font-weight: 600;
+  color: #fbbf24;
 }
 
 .contactDetail p {
@@ -163,19 +175,70 @@
 }
 .ReactFlagsSelect-module_filterBox__3m8EU > input {
   border: none;
-  border-bottom: 1px solid #FBBF24;
+  border-bottom: 1px solid #fbbf24;
   font-size: 10px;
 }
 
 .ReactFlagsSelect-module_label__27pw9 {
-  font-size: 14px !important; 
+  font-size: 14px !important;
   padding-left: 5px !important;
 }
 
+@media (max-width: 768px) {
+  .formGrid {
+    display: flex;
+    flex-direction: column;
+  }
 
-@media (width <= 768px) {
-.formGrid{
-  display: flex;
-  flex-direction: column;
-}
+  .contact {
+    max-width: auto;
+    padding: 0 40px;
+  }
+
+  .contactForm {
+    width: 100%;
+  }
+
+  .contactImage img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact h2 {
+    margin: 0;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  .contactFormSection,
+  .contactDetail {
+    flex-direction: column;
+  }
+
+  .contactInfoSection {
+    flex-direction: column;
+  }
+
+  .contactDetail {
+    align-items: flex-start;
+  }
+
+  .contactDetail h3 {
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  .contactDetail p {
+    width: 75%;
+    margin: 5% 0 0 0;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .map, .map img {
+    width: 100%;
+  }
+
+  
 }
