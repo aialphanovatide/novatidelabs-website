@@ -5,7 +5,6 @@ import Home from "./components/Home/Home"; // Your Home component
 import Projects from "./components/Projects/Projects"; // Your Projects component
 import Careers from "./components/Careers/Careers"; // Your Careers component
 import Contact from "./components/Contact/Contact"; // Your Contact component
-import Footer from "./components/Footer/Footer"; // Your Footer component
 
 const App = () => {
   return (
@@ -17,7 +16,6 @@ const App = () => {
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
     </Router>
   );
 };

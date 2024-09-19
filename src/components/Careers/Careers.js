@@ -9,6 +9,7 @@ import Card6 from "./Cards/Card6";
 import Card7 from "./Cards/Card7";
 
 import VisibilitySensor from "react-visibility-sensor";
+import Footer from "../Footer/Footer";
 
 const Careers = () => {
   const [slide, setSlide] = useState("left");
@@ -515,6 +516,7 @@ Being dependable and following through on commitments helps build trust within t
           alt="Skateboarder with laptop"
         />
       </div>
+      <Footer />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Contact.css";
 import ReactFlagsSelect from "react-flags-select";
 import countriesData from "./countriesCodes.json";
+import Footer from "../Footer/Footer";
 
 const Contact = () => {
   const formspreeURL = "https://formspree.io/f/xqazovol";
@@ -191,6 +192,7 @@ const Contact = () => {
           <img src="static/images/Contact/map.svg" alt="Map" />
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

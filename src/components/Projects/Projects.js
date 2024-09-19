@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Projects.css";
+import Footer from "../Footer/Footer";
 
 const Projects = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -323,6 +324,7 @@ const Projects = () => {
           </div>
         </div>
       )}
+      <Footer />
     </div>
   );
 };

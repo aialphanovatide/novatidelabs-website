@@ -61,7 +61,7 @@ const OurJourney = () => {
           {/* 2021: Team creation */}
           <div className="item flex">
             <h1 class="tape-number">2021</h1>
-            <div class="column">
+            <div class={window.screen.width < 768 ? "row" : "column"}>
               <img
                 src="static/images/Home/member1.png"
                 alt="Team member 1"
@@ -80,7 +80,7 @@ const OurJourney = () => {
             </div>
             <div class="text-container">
               <h3 class="row-title">Team Creation</h3>
-              <p class="my-2">
+              <p class={`my-2 ${window.screen.width < 768 ? "my-0" : ""}`}>
                 <span class="bold">The team began to form </span> when we tested
                 our thesis that certain cryptocurrency projects could provide
                 the necessary rails to support the development of our ideas.
@@ -117,7 +117,7 @@ const OurJourney = () => {
             </div>
           </div>
           {/* 2023: Expansion */}
-          <div className="item">
+          <div className="item w-auto">
             <h1 class="tape-number">2023</h1>
             <div class="row">
               <img
@@ -131,7 +131,11 @@ const OurJourney = () => {
                 class="expansion-image"
               />
             </div>
-            <div class="text-container">
+            <div
+              class={`text-container ${
+                window.screen.width < 768 ? "" : "w-50 ml-3"
+              }`}
+            >
               <h3 class="row-title">Expansion</h3>
               <p class="bold">Novatide Labs was officially incorporated.</p>
               <p>

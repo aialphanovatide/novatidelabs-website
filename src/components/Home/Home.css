@@ -1,63 +1,142 @@
 /* Home.css */
 
 .home {
-    display: flex;
-    flex-direction: column; /* Arrange in a single column */
-    align-items: center; /* Center content horizontally */
-    height: 100vh;
-    background-color: white;
-    padding: 20px;
-  }
-  
+  display: flex;
+  flex-direction: column; /* Arrange in a single column */
+  align-items: center; /* Center content horizontally */
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+}
+
+img, 
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.logoRow {
+  display: flex;
+  justify-content: left; /* Center the logo horizontally */
+  margin-bottom: 40px; /* Adds space below the logo */
+  margin-left: 100px;
+}
+
+.logo {
+  height: 60px; /* Adjust size as needed */
+}
+
+.contentRow {
+  display: flex;
+  justify-content: space-between; /* Align text and illustration side by side */
+  align-items: center; /* Align items vertically */
+}
+
+.textContent {
+  flex: 1; /* Takes up available space */
+  font-size: 33px;
+  line-height: 1.2;
+  width: 50%;
+  color: black;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-left: 100px;
+}
+
+.textContent span {
+  color: #fcd34d; /* Highlight color */
+}
+
+.text-with-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.illustration {
+  flex: 1; /* Takes up available space */
+  display: flex;
+  justify-content: center; /* Center illustration */
+  align-items: center;
+  margin-top: -90px;
+}
+
+.illustration img {
+  height: 70vh;
+}
+
+@media (max-width: 768px) {
   .mainContent {
-    width: 100%;
-    max-width: 1200px;
-  }
-  
-  .logoRow {
     display: flex;
-    justify-content: left; /* Center the logo horizontally */
-    margin-bottom: 40px; /* Adds space below the logo */
-    margin-left: 100px;
-  }
-  
-  .logo {
-    height: 60px; /* Adjust size as needed */
-  }
-  
-  .contentRow {
-    display: flex;
-    justify-content: space-between; /* Align text and illustration side by side */
-    align-items: center; /* Align items vertically */
-  }
-  
-  .textContent {
-    flex: 1; /* Takes up available space */
-    font-size: 33px;
-    line-height: 1.2;
-    width: 50%;
-    color: black;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    margin-left: 100px;
-  }
-  
-  .textContent span {
-    color: #FCD34D; /* Highlight color */
+    flex-direction: column;
+    padding: 0 10px;
+    max-width: 100%;
   }
 
-  .text-with-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  .logoRow {
+    margin-left: 0;
   }
-  
-  .illustration {
-    flex: 1; /* Takes up available space */
-    display: flex;
-    justify-content: center; /* Center illustration */
-    align-items: center;
-    margin-top: -90px;
+
+  .textContent {
+    flex: 0;
+    width: 'auto';
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-wrap: nowrap;
+    text-align: left;
   }
-  
+
+  .mt-4 {
+    margin: 0;
+    margin-top: 36px;
+  }
+
+  .mt-2 {
+    margin: 0;
+    margin-top: 18px;
+  }
+
   .illustration img {
-    height: 70vh; /* Adjust the size as needed */
+    height: 50vh;
   }
-  
+
+  .illustration {
+    flex: 0;
+    width: 25vw;
+  }
+
+  .mobile-grid {
+    display: grid;
+    flex-direction: row;
+  }
+
+  .mobile-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-mobile {
+    width: 30vw;
+  }
+
+  .justify-end {
+    justify-content: flex-end;
+  }
+
+  .highlighted-text {
+    padding: 0;
+    margin: 0;
+    font-size: 48px;
+    color: #fcd34d;
+  }
+
+}
