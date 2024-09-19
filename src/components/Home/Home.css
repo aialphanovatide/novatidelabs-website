@@ -69,6 +69,9 @@ iframe {
 }
 
 @media (max-width: 768px) {
+  .home {
+    overflow-x: hidden;
+  }
   .mainContent {
     display: flex;
     flex-direction: column;

@@ -133,6 +133,7 @@ Being dependable and following through on commitments helps build trust within t
               </div>
             </VisibilitySensor>
           </section>
+          {/*This is to make a clean space at the bottom of the section*/}
           <section
             style={{ height: 250, width: "100%", backgroundColor: "white" }}
           >

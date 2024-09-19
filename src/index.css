@@ -1,6 +1,6 @@
 *,
 *::after {
-  box-sizing: border-box;
+  /*box-sizing: border-box; Esto rompe el css de la pagina*/
   padding: 0;
   margin: 0;
 }
