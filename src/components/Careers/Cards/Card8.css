@@ -1,0 +1,48 @@
+div.card8 {
+    display: flex;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background: linear-gradient(to right,#171717, white);
+    height: 450px;
+    margin: auto;
+    margin-bottom: 0;
+    text-align: left;
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+    padding-bottom: 200px;
+  }
+  
+  .card8-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    flex: 1;
+    width: 50%;
+    background-color: #171717;
+    color: white;
+    border-radius: 50px 0 0 0;
+  }
+  
+  .card8-left {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex: 1;
+    width: 50%;
+    background-color: white;
+    border-radius: 0 50px 0 0;
+    padding-top: 100px;
+  }
+  
+  .card8 h2 {
+    font-size: 51px;
+    font-weight: 400;
+  }
+  
+  .card8 p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+  }

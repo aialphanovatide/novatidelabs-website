@@ -5,7 +5,7 @@ import "./Navbar.css";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  console.log(isOpen)
+  console.log(isOpen);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -14,7 +14,13 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="static/images/baseLogo.png" alt="Logo" />
+        <a
+          href="https://novatidelabs.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="static/images/baseLogo.png" alt="Logo" />
+        </a>
       </div>
       <div
         className={`hamburger ${isOpen ? "open" : ""}`}
