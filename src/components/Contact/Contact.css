@@ -13,6 +13,16 @@
   font-weight: 600;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+
+h2.contact-big-title{
+  font-size: 3.5em;
+  margin-bottom: 0;
+  font-weight: 600;
+  width: 375px;
+  margin-top:50px;
+  margin-bottom: 50px;
+  padding: 0 10% 0 10%;
+}
 .contactFormSection,
 .contactInfoSection {
   display: flex;
@@ -126,16 +136,20 @@
 .contactInfoSection {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center; /* This ensures vertical centering */
   gap: 20px;
+  min-height: 100%; /* Ensure it takes up the full height */
+  margin-bottom: 100px;
 }
 
 .contactDetails {
   flex: 0.5;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* This will center the details vertically */
+  height: 100%; /* Makes sure the contactDetails section takes up full height */
 }
+
 
 .contactDetail {
   display: flex;
@@ -163,11 +177,13 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  margin-right: -20%;
+  margin-top: 100px;
 }
 
 .map img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .flagSelect > button {

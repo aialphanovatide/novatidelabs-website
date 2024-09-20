@@ -12,14 +12,19 @@ const Card11 = () => {
         />
         {/* Time tape content */}
         <div className="card11-rows-container">
-          <div className="card11-item">
+          <div className="card11-item-special">
+            <h1 className="card11-tape-number-special-first">
+              Mission & Vision
+            </h1>
+          </div>
+          <div className="card11-item-special">
             <h1 className="card11-tape-number-special">Our Vision</h1>
             <img
               src="static/images/Home/global-map.svg"
               alt="AI Alpha"
               className="card11-big-image-global-map"
             />
-            <div className="card11-text-container">
+            <div className="card11-text-container-special">
               <h3 className="card11-row-title">Our Mission</h3>
               <p>
                 To rebuild the global financial infrastructure to truly reflect

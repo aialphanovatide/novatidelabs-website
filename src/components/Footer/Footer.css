@@ -16,6 +16,7 @@
 .logo-section {
   width: 40%;
   margin-left: -3vw;
+  margin-right:10vw;
   margin-top: -40px;
 }
 
@@ -31,7 +32,7 @@
   display: flex;
   flex-direction: column;
   gap: 11px;
-  margin-right: 20px;
+  margin-right: 6vw;
   margin-left: 50px;
   margin-top: -20px;
 }
@@ -48,6 +49,7 @@
 .contact-info {
   text-align: left;
   line-height: 1.5;
+  width: 250px;
 }
 
 .linkedin-container {
@@ -71,7 +73,8 @@
   font-family: "Plus Jakarta Sans", sans-serif;
   text-align: center;
   color: #a3a3a3;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .column {

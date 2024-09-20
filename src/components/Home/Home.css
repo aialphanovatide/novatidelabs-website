@@ -1,4 +1,10 @@
 /* Home.css */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Keep horizontal scrollbar hidden */
+}
 
 .home {
   display: flex;
@@ -23,26 +29,29 @@ iframe {
 
 .logoRow {
   display: flex;
-  justify-content: left; /* Center the logo horizontally */
-  margin-bottom: 40px; /* Adds space below the logo */
+  justify-content: left;
+  margin-bottom: 40px;
   margin-left: 100px;
+  margin-top: 100px;
 }
 
 .logo {
-  height: 60px; /* Adjust size as needed */
+  height: 70px;
 }
 
 .contentRow {
+  margin-top: -100px;
   display: flex;
   justify-content: space-between; /* Align text and illustration side by side */
-  align-items: center; /* Align items vertically */
+  align-items: center;
+  height: 80vh;
 }
 
 .textContent {
   flex: 1; /* Takes up available space */
-  font-size: 33px;
+  font-size: 39px;
   line-height: 1.2;
-  width: 50%;
+  width: 60%;
   color: black;
   font-family: "Plus Jakarta Sans", sans-serif;
   margin-left: 100px;
@@ -57,7 +66,7 @@ iframe {
 }
 
 .illustration {
-  flex: 1; /* Takes up available space */
+  width: 40%;
   display: flex;
   justify-content: center; /* Center illustration */
   align-items: center;
@@ -65,11 +74,11 @@ iframe {
 }
 
 .illustration img {
-  height: 70vh;
+  height: 85vh;
 }
 
 .home-container2{
-  width: 105%;
+  width: 99vw;
   min-height: 4100px;
   background-color: #FBBF24;
   align-items: center;
@@ -79,6 +88,7 @@ iframe {
   padding: 0;
   padding-top: 900px;
   border-radius: 0 0 50px 50px;
+  margin-top: -105px;
 }
 
 
@@ -89,6 +99,7 @@ iframe {
     width: 90%;
     border-radius: 50px;
     margin-top: -3500px;
+  
   }
   
   
@@ -111,7 +122,7 @@ iframe {
     color: #FCD34D;
     font-size: 50px;
     font-weight: 500;
-    margin-top: -1100px;
+    margin-top: -900px;
   }
   
 
@@ -119,10 +130,10 @@ iframe {
 
   .teammembers-container {
     background-color: #fbbf24;
-    padding: 50px;
+    padding: 50px 0 50px 0;
     text-align: center;
     font-family: "Plus Jakarta Sans", sans-serif;
-    width: 100%;
+    width: 100vw;
     padding-top: 400px;
   }
   
@@ -146,7 +157,13 @@ iframe {
     text-align: center;
     color: #333;
   }
-  
+    
+  .team-member-big {
+    width: 195px;
+    text-align: center;
+    color: #333;
+  }
+
   .team-photo img {
     width: 100%;
     height: auto;

@@ -29,7 +29,7 @@ div.card2 {
       background-color: #F5F5F5;
       color: black;
       border-radius: 0 50px 0 0;
-
+  
     }
     .card2 h2{
       font-size: 31px;
@@ -42,6 +42,9 @@ div.card2 {
       text-align: left;
       margin-left: 10%;
       margin-right: 10%;
+      margin-top: 30px;
+      line-height: 1.5;
+
     }
   
     

@@ -9,6 +9,7 @@ import Card6 from "./Cards/Card6";
 import Card7 from "./Cards/Card7";
 
 import VisibilitySensor from "react-visibility-sensor";
+
 import Footer from "../Footer/Footer";
 
 const Careers = () => {
@@ -36,8 +37,8 @@ const Careers = () => {
 
   return (
     <div className="careers-main-container">
-      <h2 style={{ marginLeft: "100px" }}>Join Our Team</h2>
-      <h3 style={{ marginLeft: "100px", width: "650px" }}>
+      <h2 className="careers-big-title">Join Our Team</h2>
+      <h3 className="careers-big-subtitle">
         At Novatide Labs, we’re building the future of global finance. Our
         diverse, talented team plays a key role in driving this vision forward,
         and we are always on the lookout for passionate individuals who want to

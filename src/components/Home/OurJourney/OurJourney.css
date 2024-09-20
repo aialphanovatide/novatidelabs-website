@@ -12,9 +12,8 @@ video {
 .main-container {
   width: 100%;
   max-width: 1200px;
-  padding-left: 100px;
-  padding-right: 100px;
   margin-bottom: 100px;
+  padding-left: 60px;
 }
 
 .subtitle {
@@ -32,7 +31,7 @@ video {
 }
 
 .time-tape {
-  width: 205px;
+  width: 250px;
   object-fit: cover;
 }
 
@@ -49,7 +48,7 @@ video {
 }
 
 .tape-number {
-  margin-left: -185px;
+  margin-left: -200px;
   margin-right: 60px;
   font-size: 70px;
   color: #ffffff;

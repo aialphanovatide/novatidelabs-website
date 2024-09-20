@@ -142,7 +142,7 @@ Our Guiding Principles"
       <div className="teammembers-container">
         <h2 className="team-title">Our Team</h2>
         <div className="team-row">
-          <div className="team-member">
+          <div className="team-member-big">
             <div className="team-photo">
               <img src="static/images/Home/noprofile.jpg" alt="Aman Anand" />
             </div>
@@ -155,7 +155,7 @@ Our Guiding Principles"
               in
             </a>
           </div>
-          <div className="team-member">
+          <div className="team-member-big">
             <div className="team-photo">
               <img src="static/images/Home/noprofile.jpg" alt="Rajan Anand" />
             </div>
@@ -168,10 +168,10 @@ Our Guiding Principles"
               in
             </a>
           </div>
-          <div className="team-member">
+          <div className="team-member-big">
             <div className="team-photo">
               <img
-                src="static/images/Home/noprofile.jpg"
+                src="static/images/Home/macarena.svg"
                 alt="Macarena Olivera"
               />
             </div>
@@ -222,10 +222,7 @@ Our Guiding Principles"
           </div>
           <div className="team-member">
             <div className="team-photo">
-              <img
-                src="static/images/Home/noprofile.jpg"
-                alt="Fátima Aguirre"
-              />
+              <img src="static/images/Home/fatima.svg" alt="Fátima Aguirre" />
             </div>
             <h3 className="team-member-name">
               Fátima

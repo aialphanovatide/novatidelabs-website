@@ -8,7 +8,7 @@ video {
 .card11-main-container {
 background-color: white;
   width: 85%;
-  height: 2700px;
+  height: 2900px;
   padding-left: 15%;
   border-radius: 0 0 50px 50px;
 }
@@ -28,10 +28,12 @@ background-color: white;
 }
 
 .card11-time-tape {
-  width: 205px;
-  height: 2200px;
+  width: 235px;
+  height: 2600px;
+  margin-left: -30px;
   position: relative;
-  z-index: 3;
+  mix-blend-mode: normal;
+  z-index: 0;
 }
 
 .card11-row {
@@ -47,8 +49,17 @@ background-color: white;
 
 }
 
+.card11-item-special {
+  display: flex;
+  flex-direction: row;
+  width: "60%";
+  margin-top: 100px;
+  margin-bottom: 0px;
+
+}
+
 .card11-tape-number {
-  margin-left: -185px;
+  margin-left: -180px;
   margin-right: 60px;
   font-size: 70px;
   color: #ffffff;
@@ -58,15 +69,28 @@ background-color: white;
 }
 
 .card11-tape-number-special {
-    margin-left: -185px;
-    margin-right: 60px;
+    margin-left: -155px;
     margin-top: 200px;
     font-size: 31px;
     color: #ffffff;
     font-family: "Plus Jakarta Sans", sans-serif;
     align-self: center;
     z-index: 4;
+    font-weight: 500;
+    width: 400px;
+  }
 
+  .card11-tape-number-special-first {
+    margin-left: -185px;
+    margin-right: 60px;
+    margin-top: 0px;
+    margin-bottom: -350px;
+    font-size: 40px;
+    color: black;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    align-self: center;
+    z-index: 4;
+    font-weight: 600;
   }
 
 .card11-content {
@@ -90,13 +114,17 @@ background-color: white;
 .card11-big-image-global-map{
   position: absolute;
   top: 0;
-  left: -240;
-  width: 65%;
-  height: 60%;
+  left: 240;
+  width: 811px;
+  height: 415px;
+  z-index: 3;
   object-fit: cover;
-  z-index: 1;
   margin-bottom: 200px;
-      
+  padding-bottom: 200px;
+  margin-top: 250px;
+  mix-blend-mode: multiply;
+  margin-left: -100px;
+
 }
 
 .card11-text-container {
@@ -107,6 +135,22 @@ background-color: white;
 }
 
 .card11-text-container p {
+  color: #0a0a0a;
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.card11-text-container-special {
+  max-width: 450px;
+  position: relative;
+  margin-left: 350px;
+  margin-top: 270px;
+  z-index: 3;
+}
+
+.card11-text-container-special p {
   color: #0a0a0a;
   font-size: 16px;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -218,6 +262,13 @@ background-color: white;
     
   }
 
+  .card11-item-special {
+    margin-top: 20%;
+    flex-direction: column;
+    padding: 0 7.5%;
+    
+  }
+
   .card11-subtitle {
     margin: 0;
     margin-top: 25%;
@@ -253,6 +304,16 @@ background-color: white;
   }
 
   .card11-text-container p {
+    line-height: 1.35;
+  }
+
+  .card11-text-container-special {
+    max-width: "100%";
+    margin: 0;
+    
+  }
+
+  .card11-text-container-special p {
     line-height: 1.35;
   }
 

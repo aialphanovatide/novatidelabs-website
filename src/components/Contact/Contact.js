@@ -85,7 +85,7 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <h2>Contact Us</h2>
+      <h2 className="contact-big-title">Contact Us</h2>
       <section className="contactFormSection">
         <div className="contactImage">
           <img
