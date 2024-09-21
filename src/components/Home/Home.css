@@ -78,7 +78,7 @@ iframe {
 }
 
 .home-container2{
-  width: 99vw;
+  width: 100vw;
   min-height: 4100px;
   background-color: #FBBF24;
   align-items: center;
@@ -122,7 +122,7 @@ iframe {
     color: #FCD34D;
     font-size: 50px;
     font-weight: 500;
-    margin-top: -900px;
+    margin-top: -800px;
   }
   
 
