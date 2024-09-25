@@ -20,4 +20,21 @@
     margin-right: 20%;
   }
 
-  
+@media screen and (max-width: 768px) {
+  .card {
+    padding-bottom: 60px;
+  }
+
+  div.card h2{
+    font-size: 25px;
+    padding-top: 50px;
+  }
+
+  .card p{
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

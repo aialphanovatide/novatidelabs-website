@@ -1,4 +1,4 @@
-div.card4 {
+.card4 {
   display: flex;
   font-family: "Plus Jakarta Sans", sans-serif;
   height: 490px;
@@ -6,7 +6,6 @@ div.card4 {
   margin-bottom: 0;
   width: 100%;
   padding-bottom: 200px;
-  
 }
 
 .card4-column-left {
@@ -20,7 +19,6 @@ div.card4 {
   text-align: center;
   padding: 20px;
   border-radius: 50px 0 0 0;
-
 }
 
 .card4-column-left img {
@@ -68,7 +66,6 @@ div.card4 {
   max-width: 80%;
   margin-top: 30px;
   line-height: 1.5;
-
 }
 
 .card4-column-left,
@@ -76,4 +73,59 @@ div.card4 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+/* Mobile-specific changes */
+@media (max-width: 768px) {
+  .card4 {
+    flex-direction: column; /* Stack .card4-column-left above .card4-column-right */
+    height: auto; /* Adjust height based on content */
+  }
+
+  .card4-column-left, .card4-column-right {
+    width: 100%; /* Full width for both columns on mobile */
+    text-align: center;
+    padding: 20px;
+  }
+
+  .card4-column-left {
+    border-radius: 50px 50px 0 0; /* Rounded corners for the top section */
+    padding: 0;
+    padding-bottom: 60px;
+  }
+
+  div.card4-column-left h2{
+    font-size: 25px;
+  }
+
+  .card4-column-right {
+    padding: 0;
+    border-radius: 0 0 0 0; /* Rounded corners for the bottom section */
+    padding-bottom: 80px; /* Adjust padding for mobile */
+
+  }
+
+  div.card4-column-right h2{
+    font-size: 25px;
+  }
+
+  .card4-column-left img,
+  .card4-column-right img {
+    max-width: 50px; /* Adjust image size for mobile */
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 25px;
+  }
+
+  .card4 h2 {
+    font-size: 24px; /* Adjust heading size for mobile */
+  }
+
+  .card4 p {
+    font-size: 14px; /* Adjust paragraph size for mobile */
+    margin-top: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+    max-width: 100%;
+    }
 }

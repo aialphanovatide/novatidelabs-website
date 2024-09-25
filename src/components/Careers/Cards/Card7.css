@@ -37,3 +37,34 @@
   margin-top: 30px;
   line-height: 1.5;
 }
+
+@media (max-width: 768px) {
+  div.card7 {
+    padding-bottom: 280px;
+    border-radius: 50px 50px 0 0;
+  }
+  .card7-content img {
+    max-width: 90%; /* Make the image responsive */
+    height: auto;
+    padding-top: 130px;
+    padding-bottom: 20px;
+  }
+
+  .card7-content {
+    max-width: 90%;
+  }
+
+  div.card7-content h2 {
+    font-size: 29px; /* Decrease the font size on mobile */
+    margin-bottom: 10px;
+  }
+
+  .card7 p {
+    text-align: center; /* Center the paragraph on mobile */
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}

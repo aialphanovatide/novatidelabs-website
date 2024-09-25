@@ -351,39 +351,6 @@ h3.careers-big-subtitle{
   margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   /* Contact Section Styling */
 .careers-final-section {
   text-align: center;
@@ -403,4 +370,125 @@ h3.careers-big-subtitle{
   width: 100%;
   height: auto;
   margin: 100px auto 150px auto;
+}
+
+@media (max-width: 768px) {
+  .careers-container{
+    margin-top: 60px;
+  }
+
+  .stacking-slide {
+    height: 650px;
+  }
+
+  .application-process {
+    flex-direction: column; /* Stacks .process-left above .process-right */
+    align-items: center; /* Aligns both sections to the center */
+    gap: 20px; /* Adds some spacing between the sections */
+  }
+
+  .careers-container2 {
+    border-radius: 25px 25px 25px 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .careers-container2 h2 {
+    margin-left: -0px; /* Adjusts padding for smaller screens */
+    font-size: 2em; /* Adjusts font size for smaller screens */
+  }
+
+  .process-left, .process-right {
+    width: 100%; /* Makes both sections take full width on mobile */
+    margin: 0; /* Reset margins for mobile */
+  }
+
+  .process-right {
+    margin-top: 20px; /* Adds space between the two sections */
+  }
+
+  .process-left h3 {
+    font-size: 1em; /* Adjusts font size for smaller screens */
+  }
+
+  h2.careers-big-title{
+    font-size: 39px;
+    margin-bottom: 0;
+    font-weight: 700;
+    width: 400px;
+    margin-top: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  
+  h3.careers-big-subtitle{
+    font-size: 17px;
+    margin-top: 10px;
+    width: 80%;
+    font-weight: 400;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding: 0 10% 0 10%;
+  }
+
+  .job-content{
+    padding: 10px 10px;
+  }
+
+  .job-header {
+    display: flex;
+    align-items: center; /* Ensures both image and text are vertically aligned */
+    justify-content: space-between; /* Ensures proper space between title and + icon */
+    padding: 10px; /* Adds some padding to ensure it doesn't look squeezed */
+    width: 100%;
+  }
+
+  .job-header-different {
+    display: flex;
+    align-items: center; /* Ensures both image and text are vertically aligned */
+    justify-content: space-between; /* Ensures proper space between title and + icon */
+    padding: 10px; /* Adds some padding to ensure it doesn't look squeezed */
+    width: 100%;
+  }
+
+  .job-header img {
+    width: 40px; /* Reduces the size of the image for mobile */
+    height: 40px;
+    margin-right: 10px; /* Adds space between image and job title */
+  }
+
+  .job-header-different img {
+    width: 40px;
+    height: 40px;
+    margin-left: 3px;
+    margin-right: 9px;
+  }
+
+  .careers-job-title {
+    font-size: 16px; /* Ensures text is smaller for mobile */
+    font-weight: 800;
+    flex: 1;
+    text-align: left; /* Aligns the title to the left */
+    margin-left: 10px; /* Ensures some spacing between image and title */
+    margin-right: 30px;
+  }
+
+  span.careers-job-title{
+    width: 650px;
+  }
+
+  .careers-plus-icon {
+    font-size: 30px; /* Adjust size of the + icon */
+    font-weight: 600;
+    color: white;
+  }
+
+
+  .job-opening-yellow:hover {
+    background-color: #fbbf24; /* Keeps the hover color */
+  }
+
+  .job-opening:hover {
+    background-color: #e5e7eb; /* Keeps the hover color */
+  }
+
+
 }

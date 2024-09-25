@@ -1,4 +1,4 @@
-div.card3 {
+.card3 {
   display: flex;
   font-family: "Plus Jakarta Sans", sans-serif;
   background: linear-gradient(to right, #171717, white);
@@ -48,5 +48,64 @@ div.card3 {
   margin-right: 10%;
   margin-top: 30px;
   line-height: 1.5;
+}
 
+.card3-left img {
+  max-width: 433px;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+/* Mobile-specific changes */
+@media (max-width: 768px) {
+  .card3 {
+    flex-direction: column; /* Stack the elements vertically on mobile with .card3-right above .card3-left */
+    height: auto; /* Allow content to adjust the height */
+    padding-bottom: 50px; /* Adjust padding for mobile */
+    background: linear-gradient(to right, white, white);
+
+
+  }
+
+  .card3-right, .card3-left {
+    width: 100%; /* Make both sections take full width on mobile */
+    text-align: center; /* Center the text for mobile readability */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card3-right {
+    border-radius: 50px 50px 0 0;
+  }
+
+  .card3-left {
+    padding-top: 10px;
+  }
+
+  div.card3-right h2 {
+    border-radius: 0;
+    padding-top: 70px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .card3 h2 {
+    text-align: center; /* Center the title on mobile */
+    margin-left: 0;
+  }
+
+  .card3 p {
+    text-align: center; /* Center the paragraph on mobile */
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 50px;
+  }
+
+  .card3-left img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+
+  }
 }

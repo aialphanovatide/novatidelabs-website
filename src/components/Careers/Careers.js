@@ -21,6 +21,7 @@ const Careers = () => {
   const toggleJob = (jobId) => {
     setOpenJob(openJob === jobId ? null : jobId);
   };
+  console.log("Open Job:", openJob); // Ensure the state changes when clicked
 
   //know when our component comes into view so we can scroll down.
   function onChange5(isVisible) {
@@ -66,7 +67,7 @@ const Careers = () => {
                   title="Communication & Respect"
                   image="static/images/Careers/card2.svg"
                   color="#F5F5F5"
-                  longText="At Novatide Labs, we believe that effective communication is crucial to our success. Clear, timely, and respectful exchanges help us avoid bottlenecks and keep operations running smoothly. Respect is central to our culture, and we value professionalism in all communications, while recognizing the importance of our team’s diversity. We encourage open, respectful dialogue to promote mutual understanding and collaboration across different countries and cultures"
+                  longText="At Novatide Labs, we believe that effective communication is crucial to our success. Clear, timely, and respectful exchanges help us avoid bottlenecks and keep operations running smoothly. Respect is central to our culture, and we value professionalism in all communications, while recognizing the importance of our team’s diversity. We encourage open, respectful dialogue to promote mutual understanding and collaboration across different countries and cultures."
                 />
               </div>
             </VisibilitySensor>

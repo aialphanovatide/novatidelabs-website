@@ -34,6 +34,12 @@ div.card6 {
   padding-top: 100px;
 }
 
+.card6-left img {
+  max-width: 433px;
+  max-height: 300px;
+  object-fit: contain;
+}
+
 .card6 h2 {
   font-size: 31px;
   font-weight: 400;
@@ -48,5 +54,51 @@ div.card6 {
   margin-right: 10%;
   margin-top: 30px;
   line-height: 1.5;
+}
 
+/* Mobile-specific changes */
+@media (max-width: 768px) {
+  .card6 {
+    flex-direction: column; /* Stack .card6-right above .card6-left */
+    height: auto; /* Allow height to adjust based on content */
+    padding-bottom: 50px; /* Adjust padding for mobile */
+  }
+
+  .card6-right,
+  .card6-left {
+    width: 100%; /* Full width for both sections on mobile */
+    text-align: center; /* Center the text for mobile readability */
+  }
+
+  .card6-right {
+    border-radius: 50px 50px 0 0; /* Rounded corners for the top section */
+    padding-top: 20px; /* Adjust padding for spacing */
+    padding-bottom: 50px;
+  }
+
+  .card6-left {
+    border-radius: 0 0 50px 50px; /* Rounded corners for the bottom section */
+    margin-top: 20px; /* Add spacing between the sections */
+    padding-top: 0; /* Remove top padding for better alignment on mobile */
+  }
+
+  .card6-left img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+  }
+
+  div.card6 h2 {
+    text-align: center; /* Center the title on mobile */
+    margin-left: 0;
+    font-size: 25px;
+    padding-top: 40px;
+  }
+
+  .card6 p {
+    text-align: center; /* Center the paragraph on mobile */
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 14px;
+    font-weight: 400;
+  }
 }

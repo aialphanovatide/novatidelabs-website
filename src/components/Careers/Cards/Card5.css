@@ -1,50 +1,101 @@
 div.card5 {
   display: flex;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    background: linear-gradient(to right, white, #171717);
-    height: 450px;
-      margin: auto;
-      margin-bottom: 0;
-      text-align: left;
-      width: 100%;
-      border-radius: 50px 50px 0 0;
-      padding-bottom: 200px;
-    }
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: linear-gradient(to right, white, #171717);
+  height: 450px;
+  margin: auto;
+  margin-bottom: 0;
+  text-align: left;
+  width: 100%;
+  border-radius: 50px 50px 0 0;
+  padding-bottom: 200px;
+}
 
-    .card5-left {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex: 1;
-      background-color: white;
-      border-radius: 50px 0 0 0;
-    }
+.card5-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: white;
+  border-radius: 50px 0 0 0;
+}
 
-    .card5-right {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: left;
-      flex: 1;
-      background-color: #171717;
-      color: white;
-      border-radius: 0 50px 0 0;
+.card5-left img {
+  max-width: 433px;
+  max-height: 300px;
+  object-fit: contain;
+}
 
-    }
-    .card5 h2{
-      font-size: 31px;
-      font-weight: 400;
-      margin-left: 10%;
-    }
-    .card5 p{
-      font-size: 16px;
-      font-weight: 400;
-      text-align: left;
-      margin-left: 10%;
-      margin-right: 10%;
-      margin-top: 30px;
-      line-height: 1.5;
+.card5-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  flex: 1;
+  background-color: #171717;
+  color: white;
+  border-radius: 0 50px 0 0;
+}
 
-    }
-  
-    
+.card5 h2 {
+  font-size: 31px;
+  font-weight: 400;
+  margin-left: 10%;
+}
+
+.card5 p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
+/* Mobile-specific changes */
+@media (max-width: 768px) {
+  div.card5 {
+    flex-direction: column; /* Stack .card5-left above .card5-right */
+    height: auto; /* Allow the height to adjust based on content */
+    padding-bottom: 30px; /* Adjust padding for mobile */
+    background: linear-gradient(to right, #171717, #171717);
+  }
+
+  .card5-left,
+  .card5-right {
+    width: 100%; /* Make both sections take full width on mobile */
+    text-align: center; /* Center the text for mobile readability */
+  }
+
+  .card5-left {
+    border-radius: 50px 50px 0 0; /* Rounded corners for the top section */
+  }
+
+  .card5-right {
+    border-radius: 0 0 0 0; /* Rounded corners for the bottom section */
+    padding-bottom: 50px;
+  }
+
+  .card5-left img {
+    max-width: 90%; /* Make the image responsive */
+    padding: 40px;
+    padding-top: 60px;
+    height: auto;
+  }
+
+  div.card5 h2 {
+    text-align: center; /* Center the title on mobile */
+    margin-left: 0;
+    font-size: 25px;
+    padding-top: 50px;
+  }
+
+  .card5 p {
+    text-align: center; /* Center the paragraph on mobile */
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
