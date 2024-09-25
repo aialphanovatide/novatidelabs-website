@@ -36,6 +36,7 @@ const Navbar = () => {
             to="/"
             className={({ isActive }) => (isActive ? "active" : "")}
             end
+            onClick={() => toggleMenu()}
           >
             Home
           </NavLink>
@@ -44,6 +45,7 @@ const Navbar = () => {
           <NavLink
             to="/projects"
             className={({ isActive }) => (isActive ? "active" : "")}
+            onClick={() => toggleMenu()}
           >
             Projects
           </NavLink>
@@ -52,6 +54,7 @@ const Navbar = () => {
           <NavLink
             to="/careers"
             className={({ isActive }) => (isActive ? "active" : "")}
+            onClick={() => toggleMenu()}
           >
             Careers
           </NavLink>
@@ -60,6 +63,7 @@ const Navbar = () => {
           <NavLink
             to="/contact"
             className={({ isActive }) => (isActive ? "active" : "")}
+            onClick={() => toggleMenu()}
           >
             Contact
           </NavLink>
