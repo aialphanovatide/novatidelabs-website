@@ -92,30 +92,30 @@ div.card9 {
     .card9-column-left {
       border-radius: 50px 50px 0 0; /* Rounded corners for the top section */
       padding: 0;
-      padding-bottom: 40px;
+      padding-bottom: 25px;
     }
   
     div.card9-column-left h2{
       font-size: 23px;
       font-weight: 600;
-      margin-bottom: 0px;
+      margin-bottom: -10px;
     }
   
     .card9-column-right {
       padding: 0;
       border-radius: 0 0 0 0; /* Rounded corners for the bottom section */
-      padding-bottom: 80px;
+      padding-bottom: 140px;
     }
   
     div.card9-column-right h2{
       font-size: 23px;
       font-weight: 600;
-      margin-bottom: 0px;
+      margin-bottom: -10px;
     }
   
     .card9-column-left img,
     .card9-column-right img {
-      max-width: 45px; /* Adjust image size for mobile */
+      max-width: 40px; /* Adjust image size for mobile */
       height: auto;
       margin-bottom: 10px;
       margin-top: 20px;
