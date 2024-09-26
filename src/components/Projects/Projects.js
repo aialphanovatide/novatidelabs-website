@@ -45,7 +45,10 @@ const Projects = () => {
           <ul className="projects-list">
             <li onClick={() => toggleExpand(1)} className="clickable-title">
               <div className="title-container">
-                Comprehensive One-Stop Shop <div className="plus-icon">+</div>
+                Comprehensive One-Stop Shop{" "}
+                <div className="plus-icon">
+                  {expandedItem === 1 ? "-" : "+"}
+                </div>
               </div>
               {expandedItem === 1 && (
                 <p className="expanded-text">
@@ -58,7 +61,10 @@ const Projects = () => {
             </li>
             <li onClick={() => toggleExpand(2)} className="clickable-title">
               <div className="title-container">
-                AI-Powered Expertise <div className="plus-icon">+</div>
+                AI-Powered Expertise{" "}
+                <div className="plus-icon">
+                  {expandedItem === 2 ? "-" : "+"}
+                </div>
               </div>
               {expandedItem === 2 && (
                 <p className="expanded-text">
@@ -72,7 +78,10 @@ const Projects = () => {
             </li>
             <li onClick={() => toggleExpand(3)} className="clickable-title">
               <div className="title-container">
-                Designed for All Users <div className="plus-icon">+</div>
+                Designed for All Users{" "}
+                <div className="plus-icon">
+                  {expandedItem === 3 ? "-" : "+"}
+                </div>
               </div>
               {expandedItem === 3 && (
                 <p className="expanded-text">
@@ -133,11 +142,14 @@ const Projects = () => {
             digital finance world with ease.
           </p>
           <ul className="projects-list">
-            <li onClick={() => toggleExpand(1)} className="clickable-title">
+            <li onClick={() => toggleExpand(4)} className="clickable-title">
               <div className="title-container">
-                Comprehensive One-Stop Shop <div className="plus-icon">+</div>
+                Comprehensive One-Stop Shop{" "}
+                <div className="plus-icon">
+                  {expandedItem === 4 ? "-" : "+"}
+                </div>
               </div>
-              {expandedItem === 1 && (
+              {expandedItem === 4 && (
                 <p className="expanded-text">
                   AI Alpha consolidates all the information you need about
                   cryptocurrencies into one place. From real-time market data to
@@ -146,11 +158,14 @@ const Projects = () => {
                 </p>
               )}
             </li>
-            <li onClick={() => toggleExpand(2)} className="clickable-title">
+            <li onClick={() => toggleExpand(5)} className="clickable-title">
               <div className="title-container">
-                AI-Powered Expertise <div className="plus-icon">+</div>
+                AI-Powered Expertise{" "}
+                <div className="plus-icon">
+                  {expandedItem === 5 ? "-" : "+"}
+                </div>
               </div>
-              {expandedItem === 2 && (
+              {expandedItem === 5 && (
                 <p className="expanded-text">
                   From built custom news bots that focus on only the most
                   important news stories and filter out all the noise to bespoke
@@ -160,11 +175,14 @@ const Projects = () => {
                 </p>
               )}
             </li>
-            <li onClick={() => toggleExpand(3)} className="clickable-title">
+            <li onClick={() => toggleExpand(6)} className="clickable-title">
               <div className="title-container">
-                Designed for All Users <div className="plus-icon">+</div>
+                Designed for All Users{" "}
+                <div className="plus-icon">
+                  {expandedItem === 6 ? "-" : "+"}
+                </div>
               </div>
-              {expandedItem === 3 && (
+              {expandedItem === 6 && (
                 <p className="expanded-text">
                   Whether you're a novice looking to learn or a seasoned
                   investor seeking deeper analysis, AI Alpha simplifies the
@@ -223,11 +241,14 @@ const Projects = () => {
             that protects users from potential hacks.
           </p>
           <ul className="projects-list">
-            <li onClick={() => toggleExpand(1)} className="clickable-title">
+            <li onClick={() => toggleExpand(7)} className="clickable-title">
               <div className="title-container">
-                Unhackable Tech Card Device <div className="plus-icon">+</div>
+                Unhackable Tech Card Device{" "}
+                <div className="plus-icon">
+                  {expandedItem === 7 ? "-" : "+"}
+                </div>
               </div>
-              {expandedItem === 1 && (
+              {expandedItem === 7 && (
                 <p className="expanded-text">
                   Key Wallet comes with a unique tech card that must be scanned
                   with your phone before making any withdrawal. This physical
@@ -237,12 +258,14 @@ const Projects = () => {
                 </p>
               )}
             </li>
-            <li onClick={() => toggleExpand(2)} className="clickable-title">
+            <li onClick={() => toggleExpand(8)} className="clickable-title">
               <div className="title-container">
                 First-of-its-Kind Maker and Checker System{" "}
-                <div className="plus-icon">+</div>
+                <div className="plus-icon">
+                  {expandedItem === 8 ? "-" : "+"}
+                </div>
               </div>
-              {expandedItem === 2 && (
+              {expandedItem === 8 && (
                 <p className="expanded-text">
                   Taking inspiration from secure banking systems in Asia, Key
                   Wallet allows one person to initiate a transaction while
@@ -252,11 +275,14 @@ const Projects = () => {
                 </p>
               )}
             </li>
-            <li onClick={() => toggleExpand(3)} className="clickable-title">
+            <li onClick={() => toggleExpand(9)} className="clickable-title">
               <div className="title-container">
-                Access to Major Wallets <div className="plus-icon">+</div>
+                Access to Major Wallets{" "}
+                <div className="plus-icon">
+                  {expandedItem === 9 ? "-" : "+"}
+                </div>
               </div>
-              {expandedItem === 3 && (
+              {expandedItem === 9 && (
                 <p className="expanded-text">
                   At launch, Key Wallet will support Ethereum, Solana, Bitcoin,
                   BNB, and Tron, with plans to integrate all major wallets in

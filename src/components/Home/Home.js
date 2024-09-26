@@ -109,7 +109,7 @@ Our Guiding Principles"
                   secondImage="static/images/Home/icon3.svg"
                   color="#F5F5F5"
                   longText="At  Novatide Labs, we believe that strong values and ethics are the  foundation of everything we do. Our core principles focus on building a  team with both high Emotional Intelligence (EQ) and Intellectual  Intelligence (IQ). For us, kindness is a prerequisite, along with a deep  intellectual curiosity. Every team member must have the ability to  think laterally while still working effectively within structured  processes.  "
-                  secondLongText="We ensure that our operations and product development are driven by  these values. Innovation and transparency are critical to our  decision-making process, and we foster an environment where hierarchy  does not determine the value of an idea. Everyone has the opportunity to  contribute and be heard. By promoting collaboration and open  communication, we ensure that each voice is valued, and the best ideas  can thrive—whether they come from a new hire or a senior leader."
+                  secondLongText="We ensure that our operations and product development are driven by  these values. Innovation and transparency are critical to our  decision-making process, and we foster an environment where hierarchy  does not determine the value of an idea. Everyone has the opportunity to  contribute and be heard. By promoting collaboration and open  communication, we ensure each voice is valued so the best ideas  can thrive—whether they come from a new hire or a senior leader."
                 />
               </div>
             </VisibilitySensor>

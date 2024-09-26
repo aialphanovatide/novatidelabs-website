@@ -223,14 +223,16 @@ h3.careers-big-subtitle{
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+
 .job-opening:hover {
   background-color: #e5e7eb;
+  transition: background-color 0.3s ease;
 }
 
 .job-opening-yellow:hover {
   background-color: #fbbf24;
+  transition: background-color 0.3s ease;
 }
-
 
 
 
@@ -244,13 +246,21 @@ h3.careers-big-subtitle{
 
 
 
+
 .job-content {
   margin-top: 10px;
   font-size: 16px;
   color: black;
-  padding: 10px 60px;
+  padding: 0px 60px;
   font-weight: 500;
+  overflow: hidden; /* Ensure hidden content stays hidden */
+  max-height: 0; /* Start collapsed */
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out; /* Smooth transition for height and padding */
+}
 
+.job-content-expanded {
+  max-height: 1000px; /* Arbitrary large value to allow expansion */
+  padding: 10px 60px; /* Restore padding */
 }
 
 .job-content h3{
@@ -311,6 +321,7 @@ h3.careers-big-subtitle{
   width: 24px;
   text-align: center;
   color: white;
+  margin-top: -10px;
 }
 
 .careers-job-title {
@@ -320,6 +331,7 @@ h3.careers-big-subtitle{
   width: 400px;
   text-align: left;
   margin-right: 41%;
+  padding-top: 10px;
 }
 
 .apply-button {
@@ -430,7 +442,7 @@ h3.careers-big-subtitle{
   }
 
   .job-content{
-    padding: 10px 10px;
+    padding: 0px 10px;
   }
 
   .job-header {
@@ -479,6 +491,8 @@ h3.careers-big-subtitle{
     font-size: 30px; /* Adjust size of the + icon */
     font-weight: 600;
     color: white;
+    margin-top: 0px;
+    padding-right: 20px;
   }
 
 

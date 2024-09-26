@@ -21,7 +21,6 @@ const Careers = () => {
   const toggleJob = (jobId) => {
     setOpenJob(openJob === jobId ? null : jobId);
   };
-  console.log("Open Job:", openJob); // Ensure the state changes when clicked
 
   //know when our component comes into view so we can scroll down.
   function onChange5(isVisible) {
@@ -226,42 +225,44 @@ Being dependable and following through on commitments helps build trust within t
                 {openJob === 1 ? "-" : "+"}
               </span>
             </div>
-            {openJob === 1 && (
-              <div className="job-content">
-                <p>
-                  We are looking for a strategic MBA Graduate to join our team.
-                  In this role, you will engage in various projects across
-                  different business areas, contributing to strategic
-                  initiatives, market analysis, business development, and
-                  operational improvements.
-                </p>
-                <h3>Responsibilities:</h3>
 
-                <ul className="job-details-list">
-                  <li>Create business plans.</li>
-                  <li>Conduct research to optimise business models.</li>
-                  <li>
-                    Coordinate with external teams and manage multiple projects.
-                  </li>
-                  <li>
-                    Apply agile and strategic thinking to enhance business
-                    processes.
-                  </li>
-                  <li>
-                    Present findings and recommendations to senior management.
-                  </li>
-                </ul>
-                <h3>Requirements:</h3>
-                <ul className="job-details-list">
-                  <li>MBA degree.</li>
-                  <li>Strategic, results-driven mindset.</li>
-                  <li>Strong analytical and communication skills.</li>
-                  <li>Ability to work independently and collaboratively.</li>
-                  <li>Proficiency in English.</li>
-                </ul>
-                <button className="apply-button">Apply</button>
-              </div>
-            )}
+            <div
+              className={`job-content ${
+                openJob === 1 ? "job-content-expanded" : ""
+              }`}
+            >
+              <p>
+                We are looking for a strategic MBA Graduate to join our team. In
+                this role, you will engage in various projects across different
+                business areas, contributing to strategic initiatives, market
+                analysis, business development, and operational improvements.
+              </p>
+              <h3>Responsibilities:</h3>
+
+              <ul className="job-details-list">
+                <li>Create business plans.</li>
+                <li>Conduct research to optimise business models.</li>
+                <li>
+                  Coordinate with external teams and manage multiple projects.
+                </li>
+                <li>
+                  Apply agile and strategic thinking to enhance business
+                  processes.
+                </li>
+                <li>
+                  Present findings and recommendations to senior management.
+                </li>
+              </ul>
+              <h3>Requirements:</h3>
+              <ul className="job-details-list">
+                <li>MBA degree.</li>
+                <li>Strategic, results-driven mindset.</li>
+                <li>Strong analytical and communication skills.</li>
+                <li>Ability to work independently and collaboratively.</li>
+                <li>Proficiency in English.</li>
+              </ul>
+              <button className="apply-button">Apply</button>
+            </div>
           </div>
 
           <div className="job-opening-yellow" onClick={() => toggleJob(2)}>
@@ -272,61 +273,63 @@ Being dependable and following through on commitments helps build trust within t
                 {openJob === 2 ? "-" : "+"}
               </span>
             </div>
-            {openJob === 2 && (
-              <div className="job-content">
-                <p>
-                  We are hiring a skilled Content Creator for our marketing
-                  team. The role focuses on creating engaging short videos for
-                  social media using fast editing techniques and AI tools, while
-                  ensuring content aligns with our brand.
-                </p>
-                <h3>Responsibilities:</h3>
+            <div
+              className={`job-content ${
+                openJob === 2 ? "job-content-expanded" : ""
+              }`}
+            >
+              <p>
+                We are hiring a skilled Content Creator for our marketing team.
+                The role focuses on creating engaging short videos for social
+                media using fast editing techniques and AI tools, while ensuring
+                content aligns with our brand.
+              </p>
+              <h3>Responsibilities:</h3>
 
-                <ul className="job-details-list">
-                  <li>
-                    Use AI tools and fast video editing to turn text into
-                    compelling video content.
-                  </li>
-                  <li>Develop creative concepts with the marketing team.</li>
-                  <li>
-                    Produce short videos for platforms like TikTok, Instagram,
-                    and LinkedIn.
-                  </li>
-                  <li>
-                    Ensure videos reflect the Novatide Labs brand and enhance
-                    visual storytelling.
-                  </li>
-                  <li>
-                    Stay updated on video content trends and best practices.
-                  </li>
-                  <li>
-                    Manage multiple projects, meeting deadlines and quality
-                    standards.
-                  </li>
-                </ul>
-                <h3>Requirements:</h3>
-                <ul className="job-details-list">
-                  <li>
-                    Experience in content creation, preferably in tech or
-                    innovation.
-                  </li>
-                  <li>
-                    Proficiency in video editing software (e.g., Adobe Premiere
-                    Pro, Final Cut Pro).
-                  </li>
-                  <li>
-                    Knowledge of AI video creation tools and social media video
-                    specs.
-                  </li>
-                  <li>Excellent communication and collaboration skills.</li>
-                  <li>
-                    Fluent in English, with a portfolio of relevant social media
-                    video work.
-                  </li>
-                </ul>
-                <button className="apply-button">Apply</button>
-              </div>
-            )}
+              <ul className="job-details-list">
+                <li>
+                  Use AI tools and fast video editing to turn text into
+                  compelling video content.
+                </li>
+                <li>Develop creative concepts with the marketing team.</li>
+                <li>
+                  Produce short videos for platforms like TikTok, Instagram, and
+                  LinkedIn.
+                </li>
+                <li>
+                  Ensure videos reflect the Novatide Labs brand and enhance
+                  visual storytelling.
+                </li>
+                <li>
+                  Stay updated on video content trends and best practices.
+                </li>
+                <li>
+                  Manage multiple projects, meeting deadlines and quality
+                  standards.
+                </li>
+              </ul>
+              <h3>Requirements:</h3>
+              <ul className="job-details-list">
+                <li>
+                  Experience in content creation, preferably in tech or
+                  innovation.
+                </li>
+                <li>
+                  Proficiency in video editing software (e.g., Adobe Premiere
+                  Pro, Final Cut Pro).
+                </li>
+                <li>
+                  Knowledge of AI video creation tools and social media video
+                  specs.
+                </li>
+                <li>Excellent communication and collaboration skills.</li>
+                <li>
+                  Fluent in English, with a portfolio of relevant social media
+                  video work.
+                </li>
+              </ul>
+              <button className="apply-button">Apply</button>
+            </div>
           </div>
 
           <div className="job-opening" onClick={() => toggleJob(3)}>
@@ -343,59 +346,61 @@ Being dependable and following through on commitments helps build trust within t
                 {openJob === 3 ? "-" : "+"}
               </span>
             </div>
-            {openJob === 3 && (
-              <div className="job-content">
-                <p>
-                  We are looking for a skilled QA Engineer to join our team and
-                  ensure the quality of our diverse software products, including
-                  Python backend services, React Native mobile apps, static
-                  websites, React web apps, and dashboards.
-                </p>
-                <h3>Responsibilities:</h3>
+            <div
+              className={`job-content ${
+                openJob === 3 ? "job-content-expanded" : ""
+              }`}
+            >
+              <p>
+                We are looking for a skilled QA Engineer to join our team and
+                ensure the quality of our diverse software products, including
+                Python backend services, React Native mobile apps, static
+                websites, React web apps, and dashboards.
+              </p>
+              <h3>Responsibilities:</h3>
 
-                <ul className="job-details-list">
-                  <li>
-                    Backend Testing: Design and execute test cases for Python
-                    server endpoints, perform API testing, and conduct unit and
-                    integration tests.
-                  </li>
-                  <li>
-                    Mobile Application Testing: Test React Native apps on iOS
-                    and Android, perform functional and performance tests, and
-                    use mobile testing frameworks.
-                  </li>
-                  <li>
-                    Web Application Testing: Test static websites and
-                    React-based web applications for functionality,
-                    responsiveness, and cross-browser compatibility.
-                  </li>
-                  <li>
-                    General QA Tasks: Create and maintain test plans, execute
-                    manual and automated tests, report and track bugs,
-                    collaborate with developers, and improve testing processes.
-                  </li>
-                </ul>
-                <h3>Required Skills:</h3>
-                <ul className="job-details-list">
-                  <li>
-                    Technical Skills: Proficiency in Python, testing frameworks
-                    (e.g., pytest), API testing tools, and experience with web
-                    technologies (HTML, CSS, JavaScript).
-                  </li>
-                  <li>
-                    Testing Skills: Strong understanding of QA methodologies,
-                    experience with both manual and automated testing, test
-                    management tools, and performance testing concepts.
-                  </li>
-                  <li>
-                    Soft Skills: Excellent analytical and problem-solving
-                    abilities, attention to detail, effective communication, and
-                    time management.
-                  </li>
-                </ul>
-                <button className="apply-button">Apply</button>
-              </div>
-            )}
+              <ul className="job-details-list">
+                <li>
+                  Backend Testing: Design and execute test cases for Python
+                  server endpoints, perform API testing, and conduct unit and
+                  integration tests.
+                </li>
+                <li>
+                  Mobile Application Testing: Test React Native apps on iOS and
+                  Android, perform functional and performance tests, and use
+                  mobile testing frameworks.
+                </li>
+                <li>
+                  Web Application Testing: Test static websites and React-based
+                  web applications for functionality, responsiveness, and
+                  cross-browser compatibility.
+                </li>
+                <li>
+                  General QA Tasks: Create and maintain test plans, execute
+                  manual and automated tests, report and track bugs, collaborate
+                  with developers, and improve testing processes.
+                </li>
+              </ul>
+              <h3>Required Skills:</h3>
+              <ul className="job-details-list">
+                <li>
+                  Technical Skills: Proficiency in Python, testing frameworks
+                  (e.g., pytest), API testing tools, and experience with web
+                  technologies (HTML, CSS, JavaScript).
+                </li>
+                <li>
+                  Testing Skills: Strong understanding of QA methodologies,
+                  experience with both manual and automated testing, test
+                  management tools, and performance testing concepts.
+                </li>
+                <li>
+                  Soft Skills: Excellent analytical and problem-solving
+                  abilities, attention to detail, effective communication, and
+                  time management.
+                </li>
+              </ul>
+              <button className="apply-button">Apply</button>
+            </div>
           </div>
 
           <div className="job-opening-yellow" onClick={() => toggleJob(4)}>
@@ -409,49 +414,51 @@ Being dependable and following through on commitments helps build trust within t
                 {openJob === 4 ? "-" : "+"}
               </span>
             </div>
-            {openJob === 4 && (
-              <div className="job-content">
-                <p>
-                  We are  hiring a Software Development Intern to join their
-                  innovative development team. This role offers hands-on
-                  experience with real-world software projects, focusing on
-                  process automation, feature development, and website creation.
-                </p>
-                <h3>Key Responsibilities:</h3>
+            <div
+              className={`job-content ${
+                openJob === 4 ? "job-content-expanded" : ""
+              }`}
+            >
+              <p>
+                We are  hiring a Software Development Intern to join their
+                innovative development team. This role offers hands-on
+                experience with real-world software projects, focusing on
+                process automation, feature development, and website creation.
+              </p>
+              <h3>Key Responsibilities:</h3>
 
-                <ul className="job-details-list">
-                  <li>
-                    Assist in automating processes, building new software
-                    features, and creating websites.
-                  </li>
-                  <li>
-                    Collaborate with the Project Manager, Team Leader, and
-                    Developers via Slack and Monday.com.
-                  </li>
-                  <li>
-                    Develop skills in tools like Git and GitHub, and enhance
-                    problem-solving abilities.
-                  </li>
-                  <li>
-                    Take ownership of tasks, contribute innovative ideas, and
-                    support team efforts.
-                  </li>
-                </ul>
-                <h3>Required Skills:</h3>
-                <ul className="job-details-list">
-                  <li>Proficiency in JavaScript and Python.</li>
-                  <li>
-                    Familiarity with HTML, CSS, Node.js, Flask, PostgreSQL,
-                    Redis, Git, GitHub, and preferred development IDEs.
-                  </li>
-                  <li>
-                    A background in Computer Science, Machine Learning, or
-                    related fields is beneficial but not required.
-                  </li>
-                </ul>
-                <button className="apply-button">Apply</button>
-              </div>
-            )}
+              <ul className="job-details-list">
+                <li>
+                  Assist in automating processes, building new software
+                  features, and creating websites.
+                </li>
+                <li>
+                  Collaborate with the Project Manager, Team Leader, and
+                  Developers via Slack and Monday.com.
+                </li>
+                <li>
+                  Develop skills in tools like Git and GitHub, and enhance
+                  problem-solving abilities.
+                </li>
+                <li>
+                  Take ownership of tasks, contribute innovative ideas, and
+                  support team efforts.
+                </li>
+              </ul>
+              <h3>Required Skills:</h3>
+              <ul className="job-details-list">
+                <li>Proficiency in JavaScript and Python.</li>
+                <li>
+                  Familiarity with HTML, CSS, Node.js, Flask, PostgreSQL, Redis,
+                  Git, GitHub, and preferred development IDEs.
+                </li>
+                <li>
+                  A background in Computer Science, Machine Learning, or related
+                  fields is beneficial but not required.
+                </li>
+              </ul>
+              <button className="apply-button">Apply</button>
+            </div>
           </div>
 
           <div className="job-opening" onClick={() => toggleJob(5)}>
@@ -465,46 +472,48 @@ Being dependable and following through on commitments helps build trust within t
                 {openJob === 5 ? "-" : "+"}
               </span>
             </div>
-            {openJob === 5 && (
-              <div className="job-content">
-                <p>
-                  We are seeking a motivated Designer Intern to join our team.
-                  This role offers hands-on experience with real-world design
-                  projects, focusing on identity and web page design while
-                  developing skills in various design processes.
-                </p>
-                <h3>Key Responsibilities:</h3>
+            <div
+              className={`job-content ${
+                openJob === 5 ? "job-content-expanded" : ""
+              }`}
+            >
+              <p>
+                We are seeking a motivated Designer Intern to join our team.
+                This role offers hands-on experience with real-world design
+                projects, focusing on identity and web page design while
+                developing skills in various design processes.
+              </p>
+              <h3>Key Responsibilities:</h3>
 
-                <ul className="job-details-list">
-                  <li>
-                    Work on identity and simple web page design projects,
-                    incorporating information design.
-                  </li>
-                  <li>
-                    Collaborate closely with the Design Team, including the Head
-                    of Design and Junior Designer, using Slack and Monday.com.
-                  </li>
-                  <li>
-                    Develop skills in design tools and techniques, enhance
-                    creativity, and learn to work effectively in a team.
-                  </li>
-                  <li>
-                    Take ownership of tasks, contribute innovative ideas, and
-                    support team project completion.
-                  </li>
-                </ul>
-                <h3>Required Skills:</h3>
-                <ul className="job-details-list">
-                  <li>Proficiency in Adobe Illustrator and Photoshop.</li>
-                  <li>Basic knowledge of Figma.</li>
-                  <li>
-                    Background in graphic design, visual arts, or related fields
-                    is beneficial but not required.
-                  </li>
-                </ul>
-                <button className="apply-button">Apply</button>
-              </div>
-            )}
+              <ul className="job-details-list">
+                <li>
+                  Work on identity and simple web page design projects,
+                  incorporating information design.
+                </li>
+                <li>
+                  Collaborate closely with the Design Team, including the Head
+                  of Design and Junior Designer, using Slack and Monday.com.
+                </li>
+                <li>
+                  Develop skills in design tools and techniques, enhance
+                  creativity, and learn to work effectively in a team.
+                </li>
+                <li>
+                  Take ownership of tasks, contribute innovative ideas, and
+                  support team project completion.
+                </li>
+              </ul>
+              <h3>Required Skills:</h3>
+              <ul className="job-details-list">
+                <li>Proficiency in Adobe Illustrator and Photoshop.</li>
+                <li>Basic knowledge of Figma.</li>
+                <li>
+                  Background in graphic design, visual arts, or related fields
+                  is beneficial but not required.
+                </li>
+              </ul>
+              <button className="apply-button">Apply</button>
+            </div>
           </div>
         </div>
       </div>
