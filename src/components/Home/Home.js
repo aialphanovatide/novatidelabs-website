@@ -104,7 +104,7 @@ Our Guiding Principles"
               <div>
                 <Card9
                   title="Kindness"
-                  secondTitle="Innovation & Transparency"
+                  secondTitle="Innovation and Transparency"
                   image="static/images/Home/icon2.svg"
                   secondImage="static/images/Home/icon3.svg"
                   color="#F5F5F5"
@@ -146,8 +146,8 @@ Our Guiding Principles"
             <div className="team-photo">
               <img src="static/images/Home/noprofile.jpg" alt="Aman Anand" />
             </div>
-            <h3 className="team-member-name">Aman Anand</h3>
-            <p className="team-member-role">CEO</p>
+            <h3 className="team-member-name-big">Aman Anand</h3>
+            <p className="team-member-role-big">CEO</p>
             <a
               href="https://linkedin.com/in/aman-anand"
               className="linkedin-link"
@@ -159,8 +159,8 @@ Our Guiding Principles"
             <div className="team-photo">
               <img src="static/images/Home/noprofile.jpg" alt="Rajan Anand" />
             </div>
-            <h3 className="team-member-name">Rajan Anand</h3>
-            <p className="team-member-role">COO</p>
+            <h3 className="team-member-name-big">Rajan Anand</h3>
+            <p className="team-member-role-big">COO</p>
             <a
               href="https://linkedin.com/in/rajan-anand"
               className="linkedin-link"
@@ -175,8 +175,8 @@ Our Guiding Principles"
                 alt="Macarena Olivera"
               />
             </div>
-            <h3 className="team-member-name">Macarena Olivera</h3>
-            <p className="team-member-role">Project Manager</p>
+            <h3 className="team-member-name-big">Macarena Olivera</h3>
+            <p className="team-member-role-big">Head of Management</p>
             <a
               href="https://linkedin.com/in/macarena-olivera"
               className="linkedin-link"
@@ -190,7 +190,7 @@ Our Guiding Principles"
         <div className="team-row">
           <div className="team-member">
             <div className="team-photo">
-              <img src="static/images/Home/noprofile.jpg" alt="Ángela Eguren" />
+              <img src="static/images/Home/angela.svg" alt="Ángela Eguren" />
             </div>
             <h3 className="team-member-name">
               Ángela
@@ -206,15 +206,18 @@ Our Guiding Principles"
           </div>
           <div className="team-member">
             <div className="team-photo">
-              <img src="static/images/Home/noprofile.jpg" alt="David Pajaro" />
+              <img
+                src="static/images/Home/noprofile.jpg"
+                alt="David Rodriguez"
+              />
             </div>
             <h3 className="team-member-name">
               David
-              <br /> Pajaro
+              <br /> Rodriguez
             </h3>
             <p className="team-member-role">Development</p>
             <a
-              href="https://linkedin.com/in/david-pajaro"
+              href="https://linkedin.com/in/david-rodriguez"
               className="linkedin-link"
             >
               in

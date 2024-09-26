@@ -33,10 +33,17 @@ div.card8 {
     border-radius: 0 50px 0 0;
     padding-top: 100px;
   }
+
+  .card8-left img {
+    max-width: 433px;
+    max-height: 300px;
+    object-fit: contain;
+  }
   
   .card8 h2 {
     font-size: 51px;
     font-weight: 400;
+    margin: 0;
   }
   
   .card8 p {
@@ -46,3 +53,55 @@ div.card8 {
     margin-left: 10%;
     margin-right: 10%;
   }
+
+
+
+
+  @media (max-width: 768px) {
+    .card8 {
+      display: flex;
+      flex-direction: column; /* Stack the elements vertically */
+      height: auto; /* Let the height adjust based on content */
+      padding-bottom: 30px; /* Adjust padding for mobile */
+    }
+
+    div.card8{
+      background: linear-gradient(to right,white, white);
+    }
+  
+    .card8-right, .card8-left {
+      width: 100%; /* Ensure both sections take full width */
+
+    }
+  
+    .card8-right {
+      order: -1; /* Place card8-right above card8-left */
+      text-align: center; /* Center the content for better readability */
+      border-radius: 50px 50px 0 0; /* Adjust border radius */
+      padding-top: 100px;
+      padding-bottom: 80px;
+    }
+  
+    .card8-left {
+      padding-top: 40px; /* Add some padding to the top */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card8-left img {
+      max-width: 70%; /* Make the image responsive */
+      height: auto; /* Maintain the aspect ratio */
+  
+    }
+  
+    .card8-right h2 {
+      font-size: 31px; /* Adjust title size for mobile */
+      margin-left: 35px;
+      margin-right: 35px;
+      font-weight: 500;
+    }
+
+  }
+  
+  

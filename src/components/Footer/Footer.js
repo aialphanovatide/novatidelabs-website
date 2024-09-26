@@ -54,13 +54,13 @@ const Footer = () => {
             <p>a.anand@novatidelabs.com</p>
           </div>
           <div className="linkedin-container">
-            <a
+            {/*<a
               href="https://www.linkedin.com"
               className="linkedin-link"
               aria-label="LinkedIn"
             >
               in
-            </a>
+            </a>*/}
           </div>
         </div>
       </div>

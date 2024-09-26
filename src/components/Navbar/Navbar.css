@@ -78,6 +78,7 @@
     transition: right 0.3s ease;
     z-index: 800;
     animation: slideOut 0.3s forwards;
+    padding-top: 190px;
   }
 
   .navbar-links.open {
@@ -86,11 +87,12 @@
 
   .navbar-links li {
     color: #000;
+    padding-top: 20px;
   }
 
   .navbar-links a {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: 400;
   }
 
   .hamburger {

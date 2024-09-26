@@ -5,17 +5,7 @@ function Card10({ title, image, secondImage, color, longText, textColor }) {
   return (
     <div className="card10">
       <div className="card10-left">
-        {image != null && image !== undefined && (
-          <img
-            src={image}
-            alt="Icon"
-            style={{
-              maxWidth: "433px",
-              maxHeight: "300px",
-              objectFit: "contain",
-            }}
-          />
-        )}
+        {image != null && image !== undefined && <img src={image} alt="Icon" />}
       </div>
       <div className="card10-column-right">
         {secondImage != null && secondImage !== undefined && (

@@ -9,17 +9,7 @@ function Card8({ title, image, color, longText, textColor }) {
         <p>{longText}</p>
       </div>
       <div className="card8-left">
-        {image != null && image !== undefined && (
-          <img
-            src={image}
-            alt="Icon"
-            style={{
-              maxWidth: "433px",
-              maxHeight: "300px",
-              objectFit: "contain",
-            }}
-          />
-        )}
+        {image != null && image !== undefined && <img src={image} alt="Icon" />}
       </div>
     </div>
   );

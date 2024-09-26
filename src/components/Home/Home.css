@@ -183,6 +183,19 @@ iframe {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+  .team-member-name-big {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  
+  .team-member-role-big {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   
   .linkedin-link {
     font-size: 14px;
@@ -258,11 +271,20 @@ iframe {
   .home {
     overflow-x: hidden;
   }
+
+  .home-stacking-slide {
+    height: 600px;
+  }
+
+  .home-right{
+    margin-top: -3150px;
+  }
   .mainContent {
     display: flex;
     flex-direction: column;
     padding: 0 10px;
     max-width: 100%;
+    padding-top: 100px;
   }
 
   .logoRow {
@@ -290,12 +312,13 @@ iframe {
   }
 
   .illustration img {
-    height: 50vh;
+    height: 60vh;
   }
 
   .illustration {
     flex: 0;
     width: 25vw;
+    padding-left: 50px;
   }
 
   .mobile-grid {
