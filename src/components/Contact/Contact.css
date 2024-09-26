@@ -5,6 +5,8 @@
   flex-direction: column;
   gap: 40px;
   padding: 40px;
+  padding-left: 110px;
+  padding-right: 80px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -21,7 +23,7 @@ h2.contact-big-title{
   width: 375px;
   margin-top:50px;
   margin-bottom: 50px;
-  padding: 0 10% 0 10%;
+  padding: 0 10% 0 0%;
 }
 .contactFormSection,
 .contactInfoSection {
@@ -204,6 +206,12 @@ h2.contact-big-title{
   .formGrid {
     display: flex;
     flex-direction: column;
+  }
+
+  h2.contact-big-title{
+    font-size: 39px;
+    font-weight: 800;
+    padding-top: 20px;
   }
 
   .contact {

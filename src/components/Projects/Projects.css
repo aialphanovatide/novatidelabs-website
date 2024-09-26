@@ -14,16 +14,18 @@
 .projects-left-section,
 .projects-left-section-upper {
   flex: 1;
-  padding: 0 10% 0 7%;
+  padding: 0 10% 0 6%;
   max-width: 400px;
   min-width: 320px;
 }
+
 .projects-left-section h2 {
   font-size: 3.5em;
   margin-top: -220px;
   margin-bottom: 0;
   font-weight: 600;
   width: 375px;
+
 }
 .projects-left-section h3 {
   font-size: 1.3em;
@@ -226,10 +228,11 @@
   }
 
   .projects-left-section h2 {
-    margin-top: -300px;
+    margin-top: -260px;
     margin-bottom: 0;
     font-weight: 700;
     width: 100%;
+    font-size: 39px;
   }
 
   .projects-left-section h4 {
