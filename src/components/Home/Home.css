@@ -173,7 +173,7 @@ iframe {
   
   .team-member-name {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     margin-top: 10px;
   }
   
@@ -278,6 +278,7 @@ iframe {
 
   .home-right{
     margin-top: -3150px;
+    width: 95%;
   }
   .mainContent {
     display: flex;
@@ -349,6 +350,18 @@ iframe {
     margin: 0;
     font-size: 48px;
     color: #fcd34d;
+  }
+
+  h2.home-final-title{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .teammembers-container {
+    padding-top: 250px;
   }
 
 }

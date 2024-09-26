@@ -128,8 +128,8 @@ div.card9 {
     .card9 p {
       font-size: 13px; /* Adjust paragraph size for mobile */
       margin-top: 15px;
-      margin-left: 8px;
-      margin-right: 8px;
+      margin-left: 15px;
+      margin-right: 15px;
       max-width: 100%;
       }
   }

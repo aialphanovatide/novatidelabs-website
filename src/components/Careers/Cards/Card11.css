@@ -254,9 +254,39 @@ background-color: white;
     max-width: 100%;
     padding: 0;
   }
+  .card11-tape-number-special {
+    margin-left: -375px;
+    margin-top: 200px;
+    margin-bottom: -150px;
+    font-size: 28px;
+    width: 100px;
+  }
+  .card11-tape-number-special-first {
+    margin-left: -115px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 37px;
+    padding-bottom: 120px;
+  }
 
+  .card11-big-image-global-map{
+    position: absolute;
+    top: 0;
+    left: 240;
+    width: 320px;
+    height: 165px;
+    z-index: 3;
+    object-fit: cover;
+    margin-bottom: 200px;
+    padding-bottom: 200px;
+    margin-top: 110px;
+    mix-blend-mode: multiply;
+    margin-left: -100px;
+  
+  }
   .card11-item {
-    margin-top: 20%;
+    margin-top: 200px;
     flex-direction: column;
     padding: 0 7.5%;
     
@@ -274,18 +304,17 @@ background-color: white;
     margin-top: 25%;
   }
 
-  .card11-tape-number {
-    display: none;
-  }
-
-  .card11-tape-number-special {
-    display: none;
+  .card11-tape-number{
+    font-size: 33px;
+    margin-left: -330px;
+    margin-bottom: -150px;
   }
 
   .card11-time-tape {
-    width: 102.5px;
+    width: 100px;
     height: 103.5%;
     margin-top: 0%;
+    margin-left: 0;
   }
 
   .card11-content {
@@ -310,6 +339,7 @@ background-color: white;
   .card11-text-container-special {
     max-width: "100%";
     margin: 0;
+    margin-top: -175px;
     
   }
 
