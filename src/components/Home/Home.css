@@ -355,10 +355,11 @@ iframe {
   h2.home-final-title{
     font-size: 45px;
     font-weight: 500;
-    margin-top: -310px;
+    margin-top: -315px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    line-height: 0.9;
   }
   .teammembers-container {
     padding-top: 200px;
