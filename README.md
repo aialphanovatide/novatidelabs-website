@@ -4,7 +4,7 @@ Welcome to the official repository for Novatide Labs' website. This project is b
 
 ## About Novatide Labs
 
-Novatide Labs is at the forefront of providing cutting-edge technology solutions to help businesses innovate and grow. Our expertise spans across various domains including [list your main areas of focus, e.g., AI, cloud computing, IoT, etc.].
+Novatide Labs is at the forefront of providing cutting-edge technology solutions to help businesses innovate and grow. Our expertise spans across various domains including Cryptocurrency education mobile apps, crypto management assets, curated trading insights and more.
 
 ## Getting Started
 
