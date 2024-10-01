@@ -32,10 +32,12 @@ const Projects = () => {
   return (
     <div className="projects-wrapper">
       <div className="spacer"></div>
+      <div className="projects-title-container">
+        <h2>Our Projects</h2>
+        <h3>Helping you make the right decisions</h3>
+      </div>
       <div className="projects-main-container">
         <div className="projects-left-section">
-          <h2>Our Projects</h2>
-          <h3>Helping you make the right decisions</h3>
           <h4>AI Alpha App</h4>
           <p>
             AI Alpha is aspiring to be the equivalent of Bloomberg for Crypto,
@@ -298,7 +300,7 @@ const Projects = () => {
             <img
               src="static/images/Projects/one3.svg"
               alt="Project One"
-              onClick={() => openPopup("static/images/Projects/one3.svg")}
+              onClick={() => openPopup("static/images/Projects/keywallet.jpg")}
             />
             <img
               src="static/images/Projects/two3.svg"

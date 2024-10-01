@@ -76,6 +76,7 @@ h2.contact-big-title{
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .formGroup label {
@@ -93,6 +94,7 @@ h2.contact-big-title{
   border-left: none;
   border-right: none;
   width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .formGroup > input:focus,
@@ -105,6 +107,10 @@ h2.contact-big-title{
   border: 2px solid #fbbf24;
   border-radius: 4px;
   font-size: 16px;
+}
+
+.inputStyleMessage{
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .formGroup label,
@@ -200,6 +206,14 @@ h2.contact-big-title{
 .ReactFlagsSelect-module_label__27pw9 {
   font-size: 14px !important;
   padding-left: 5px !important;
+}
+
+ul.ReactFlagsSelect-module_selectOptions__3LNBJ.ReactFlagsSelect-module_selectOptionsWithSearch__1W03.ReactFlagsSelect-module_fullWidthOptions__1XR6{
+  padding: 10px 30px;
+}
+
+.ReactFlagsSelect-module_fullWidthOptions__1XeR6{
+  width: 90px;
 }
 
 @media (max-width: 768px) {
