@@ -14,11 +14,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a
-          href="https://novatidelabs.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://novatidelabs.com" rel="noopener noreferrer">
           <img src="static/images/baseLogo.png" alt="Logo" />
         </a>
       </div>

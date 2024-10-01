@@ -59,9 +59,19 @@ background-color: white;
 }
 
 .card11-tape-number {
-  margin-left: -180px;
+  margin-left: -200px;
   margin-right: 60px;
   font-size: 70px;
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  align-self: center;
+  z-index: 4;
+}
+
+.card11-tape-number-2030 {
+  margin-left: -200px;
+  margin-right: 60px;
+  font-size: 68px;
   color: #ffffff;
   font-family: "Plus Jakarta Sans", sans-serif;
   align-self: center;
@@ -145,7 +155,8 @@ background-color: white;
 .card11-text-container-special {
   max-width: 450px;
   position: relative;
-  margin-left: 350px;
+  margin-left: 150px;
+  padding-right: 50px;
   margin-top: 270px;
   z-index: 3;
 }
@@ -310,6 +321,12 @@ background-color: white;
     margin-bottom: -150px;
   }
 
+  .card11-tape-number-2030{
+    font-size: 33px;
+    margin-left: -315px;
+    margin-bottom: -150px;
+  }
+
   .card11-time-tape {
     width: 100px;
     height: 103.5%;
@@ -340,7 +357,7 @@ background-color: white;
     max-width: "100%";
     margin: 0;
     margin-top: -215px;
-    
+    padding-right: 0;
   }
 
   .card11-text-container-special p {

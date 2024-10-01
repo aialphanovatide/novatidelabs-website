@@ -35,7 +35,6 @@ const Card11 = () => {
               </p>
             </div>
           </div>
-          {/* 2021: Team creation */}
           <div className="card11-item">
             <h1 className="card11-tape-number">2025</h1>
             <img
@@ -54,9 +53,9 @@ const Card11 = () => {
               </p>
             </div>
           </div>
-          {/* 2022: AI Alpha */}
           <div className="card11-item">
-            <h1 className="card11-tape-number">2030</h1>
+            <h1 className="card11-tape-number-2030">2030</h1>{" "}
+            {/*The 2030 stretches the item larger (font issue)*/}
             <img
               src="static/images/Home/aialpha-phone.png"
               alt="AI Alpha"
@@ -73,7 +72,6 @@ const Card11 = () => {
               </p>
             </div>
           </div>
-          {/* 2023: Expansion */}
           <div className="card11-item">
             <h1 className="card11-tape-number">2035</h1>
             <img
