@@ -144,7 +144,7 @@ Our Guiding Principles"
         <div className="team-row">
           <div className="team-member-big">
             <div className="team-photo">
-              <img src="static/images/Home/noprofile.jpg" alt="Aman Anand" />
+              <img src="static/images/Home/aman.svg" alt="Aman Anand" />
             </div>
             <h3 className="team-member-name-big">Aman Anand</h3>
             <p className="team-member-role-big">CEO</p>
@@ -206,10 +206,7 @@ Our Guiding Principles"
           </div>
           <div className="team-member">
             <div className="team-photo">
-              <img
-                src="static/images/Home/noprofile.jpg"
-                alt="David Rodriguez"
-              />
+              <img src="static/images/Home/david.svg" alt="David Rodriguez" />
             </div>
             <h3 className="team-member-name">
               David
@@ -242,7 +239,7 @@ Our Guiding Principles"
           <div className="team-member">
             <div className="team-photo">
               <img
-                src="static/images/Home/noprofile.jpg"
+                src="static/images/Home/francisca.svg"
                 alt="Francisca Cagnoni"
               />
             </div>
@@ -261,7 +258,7 @@ Our Guiding Principles"
           <div className="team-member">
             <div className="team-photo">
               <img
-                src="static/images/Home/noprofile.jpg"
+                src="static/images/Home/georgina.svg"
                 alt="Georgina Kontopyrgou"
               />
             </div>

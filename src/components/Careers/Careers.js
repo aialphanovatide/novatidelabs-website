@@ -261,7 +261,14 @@ Being dependable and following through on commitments helps build trust within t
                 <li>Ability to work independently and collaboratively.</li>
                 <li>Proficiency in English.</li>
               </ul>
-              <button className="apply-button">Apply</button>
+              <a
+                href="https://forms.gle/jAkZXEmeQCmeNvE59"
+                className="apply-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply
+              </a>
             </div>
           </div>
 
@@ -328,7 +335,14 @@ Being dependable and following through on commitments helps build trust within t
                   video work.
                 </li>
               </ul>
-              <button className="apply-button">Apply</button>
+              <a
+                href="https://forms.gle/BG1N5jLauPvQpgNA6"
+                className="apply-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply
+              </a>
             </div>
           </div>
 
@@ -399,7 +413,14 @@ Being dependable and following through on commitments helps build trust within t
                   time management.
                 </li>
               </ul>
-              <button className="apply-button">Apply</button>
+              <a
+                href="https://forms.gle/7DJN8q6Yuj4fkTuMA"
+                className="apply-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply
+              </a>
             </div>
           </div>
 
@@ -457,7 +478,14 @@ Being dependable and following through on commitments helps build trust within t
                   fields is beneficial but not required.
                 </li>
               </ul>
-              <button className="apply-button">Apply</button>
+              <a
+                href="https://novatidelabs.com"
+                className="apply-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply
+              </a>
             </div>
           </div>
 
@@ -512,7 +540,14 @@ Being dependable and following through on commitments helps build trust within t
                   is beneficial but not required.
                 </li>
               </ul>
-              <button className="apply-button">Apply</button>
+              <a
+                href="https://forms.gle/b9ZTUTrfzzVQrWrR8"
+                className="apply-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply
+              </a>
             </div>
           </div>
         </div>
