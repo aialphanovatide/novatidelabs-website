@@ -338,11 +338,12 @@ h3.careers-big-subtitle{
   background-color: #F59E0B;
   color: #fff;
   margin-top: 20px;
+  margin-bottom: 20px;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-size: 16px;
   font-weight: 600;
-  border-radius: 5px;
+  border-radius: 1px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;
@@ -356,7 +357,7 @@ h3.careers-big-subtitle{
 .job-details-list {
   list-style-type: disc;
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 
 }
 
@@ -494,6 +495,10 @@ h3.careers-big-subtitle{
     color: white;
     margin-top: 0px;
     padding-right: 20px;
+  }
+  .job-content-expanded {
+    max-height: 1500px;
+    padding-bottom: 40px;
   }
 
 

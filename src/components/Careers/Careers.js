@@ -550,6 +550,100 @@ Being dependable and following through on commitments helps build trust within t
               </a>
             </div>
           </div>
+          <div className="job-opening" onClick={() => toggleJob(6)}>
+            <div className="job-header">
+              <img
+                src="static/images/Careers/icon10.svg"
+                alt="Designer Internship"
+              />
+              <span className="careers-job-title">Commmunity Management</span>
+              <span className="careers-plus-icon">
+                {openJob === 6 ? "-" : "+"}
+              </span>
+            </div>
+            <div
+              className={`job-content ${
+                openJob === 6 ? "job-content-expanded" : ""
+              }`}
+            >
+              <p>
+                We are looking for a passionate Community Manager to join our
+                specialised team, focused on empowering individuals through
+                digital finance education. You will engage with the community,
+                manage social media content, and help grow a network of curious,
+                motivated individuals. Your role is vital in creating an
+                ecosystem where transparency, collaboration, and learning
+                thrive, supporting the values of our AI-driven platform.
+              </p>
+              <h3>Key Responsibilities:</h3>
+
+              <ul className="job-details-list">
+                <li>
+                  Build, engage, and manage our crypto and Web3 community across
+                  platforms like X, TikTok, YouTube, and Discord.
+                </li>
+                <li>
+                  Create and optimise strategic social media content that drives
+                  engagement and reflects our values of clarity and unbiased
+                  information.
+                </li>
+                <li>
+                  Host events, facilitate discussions, and provide ongoing
+                  support to community members.
+                </li>
+                <li>
+                  Collect and analyse community feedback to refine messaging and
+                  enhance the overall experience.
+                </li>
+                <li>
+                  Collaborate with the marketing team to align growth strategies
+                  with brand values.
+                </li>
+              </ul>
+              <h3>Required Skills:</h3>
+              <ul className="job-details-list">
+                <li>
+                  Proven experience managing online communities, particularly in
+                  crypto, trading, or Web3 spaces.
+                </li>
+                <li>
+                  Proficiency in using social media platforms and tools like AI
+                  for content creation and community management.
+                </li>
+                <li>
+                  Excellent copywriting skills for creating impactful and
+                  value-driven content.
+                </li>
+                <li>
+                  Strong problem-solving skills and ability to work effectively
+                  in a startup environment.
+                </li>
+              </ul>
+              <h3>Preferred Qualifications</h3>
+              <ul className="job-details-list">
+                <li>
+                  Hands-on experience in growing and managing communities in a
+                  startup setting.
+                </li>
+                <li>
+                  Familiarity with AI tools to streamline content creation and
+                  management processes.
+                </li>
+                <li>
+                  Passion for digital finance, trading, and emerging Web3
+                  technologies.
+                </li>
+              </ul>
+              <a
+                href="https://forms.gle/b9ZTUTrfzzVQrWrR8"
+                className="apply-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
