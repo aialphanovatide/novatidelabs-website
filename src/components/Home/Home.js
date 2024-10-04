@@ -157,19 +157,6 @@ Our Guiding Principles"
           </div>
           <div className="team-member-big">
             <div className="team-photo">
-              <img src="static/images/Home/noprofile.jpg" alt="Rajan Anand" />
-            </div>
-            <h3 className="team-member-name-big">Rajan Anand</h3>
-            <p className="team-member-role-big">COO</p>
-            <a
-              href="https://linkedin.com/in/rajan-anand"
-              className="linkedin-link"
-            >
-              in
-            </a>
-          </div>
-          <div className="team-member-big">
-            <div className="team-photo">
               <img
                 src="static/images/Home/macarena.svg"
                 alt="Macarena Olivera"
