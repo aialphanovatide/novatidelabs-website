@@ -479,7 +479,7 @@ Being dependable and following through on commitments helps build trust within t
                 </li>
               </ul>
               <a
-                href="https://novatidelabs.com"
+                href="https://forms.gle/P4eFHVzTSfEN14Gq6"
                 className="apply-button"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -541,7 +541,7 @@ Being dependable and following through on commitments helps build trust within t
                 </li>
               </ul>
               <a
-                href="https://forms.gle/b9ZTUTrfzzVQrWrR8"
+                href="https://forms.gle/GbuaLtENxxyW9E7Q8"
                 className="apply-button"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -556,7 +556,7 @@ Being dependable and following through on commitments helps build trust within t
                 src="static/images/Careers/icon10.svg"
                 alt="Designer Internship"
               />
-              <span className="careers-job-title">Commmunity Management</span>
+              <span className="careers-job-title">Commmunity Manager</span>
               <span className="careers-plus-icon">
                 {openJob === 6 ? "-" : "+"}
               </span>
