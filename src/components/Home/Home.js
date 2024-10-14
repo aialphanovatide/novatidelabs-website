@@ -149,7 +149,8 @@ Our Guiding Principles"
             <h3 className="team-member-name-big">Aman Anand</h3>
             <p className="team-member-role-big">CEO</p>
             <a
-              href="https://linkedin.com/in/aman-anand"
+              target="_blank"
+              href="https://www.linkedin.com/in/aman-anand-9b4043322/"
               className="linkedin-link"
             >
               in
@@ -165,7 +166,8 @@ Our Guiding Principles"
             <h3 className="team-member-name-big">Macarena Olivera</h3>
             <p className="team-member-role-big">Head of Management</p>
             <a
-              href="https://linkedin.com/in/macarena-olivera"
+              target="_blank"
+              href="https://www.linkedin.com/in/macarenaolivera/"
               className="linkedin-link"
             >
               in
@@ -185,7 +187,8 @@ Our Guiding Principles"
             </h3>
             <p className="team-member-role">Marketing</p>
             <a
-              href="https://linkedin.com/in/angela-eguren"
+              target="_blank"
+              href="https://www.linkedin.com/in/angelaegurenrevilla"
               className="linkedin-link"
             >
               in
@@ -201,7 +204,8 @@ Our Guiding Principles"
             </h3>
             <p className="team-member-role">Development</p>
             <a
-              href="https://linkedin.com/in/david-rodriguez"
+              target="_blank"
+              href="https://www.linkedin.com/in/arnold-david-rodriguez-c-0129109b/"
               className="linkedin-link"
             >
               in
@@ -217,7 +221,8 @@ Our Guiding Principles"
             </h3>
             <p className="team-member-role">Trading</p>
             <a
-              href="https://linkedin.com/in/fatima-aguirre"
+              target="_blank"
+              href="https://linkedin.com/"
               className="linkedin-link"
             >
               in
@@ -236,7 +241,8 @@ Our Guiding Principles"
             </h3>
             <p className="team-member-role">Human Resources</p>
             <a
-              href="https://linkedin.com/in/francisca-cagnoni"
+              target="_blank"
+              href="https://www.linkedin.com/in/maria-francisca-cagnoni-8a603622b/ "
               className="linkedin-link"
             >
               in
@@ -255,7 +261,8 @@ Our Guiding Principles"
             </h3>
             <p className="team-member-role">Administrative Leader</p>
             <a
-              href="https://linkedin.com/in/georgina-kontopyrgou"
+              target="_blank"
+              href="https://www.linkedin.com/in/georgina-kontopyrgou-176019329"
               className="linkedin-link"
             >
               in
@@ -271,7 +278,8 @@ Our Guiding Principles"
             </h3>
             <p className="team-member-role">Design</p>
             <a
-              href="https://linkedin.com/in/tamar-voscoboinik"
+              target="_blank"
+              href="https://www.linkedin.com/in/tamar-voscoboinik-75570a216"
               className="linkedin-link"
             >
               in
