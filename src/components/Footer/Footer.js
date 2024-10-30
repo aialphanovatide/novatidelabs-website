@@ -51,7 +51,7 @@ const Footer = () => {
               <br />
               WC2H 9JQ, United Kingdom.
             </p>
-            <p>a.anand@novatidelabs.com</p>
+            <p>enquiries@novatidelabs.com</p>
           </div>
           <div className="linkedin-container">
             {/*<a

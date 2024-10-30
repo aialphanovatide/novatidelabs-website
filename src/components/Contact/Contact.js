@@ -185,7 +185,7 @@ const Contact = () => {
           </div>
           <div className="contactDetail">
             <img src="static/images/Contact/emailIcon.svg" alt="Email Icon" />
-            <p>a.anand@novatidelabs.com</p>
+            <p>enquiries@novatidelabs.com</p>
           </div>
         </div>
         <div className="map">
