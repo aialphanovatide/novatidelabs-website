@@ -238,7 +238,8 @@
       }
     
       .illustration-ai-mobile img {
-        width: 90%; /* Adjust image width for mobile */
+        width: 75%; /* Adjust image width for mobile */
+        margin-left: 8%;
         height: auto;
         margin-bottom: 10px;
         padding-left: 20px;
