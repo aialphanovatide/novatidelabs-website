@@ -188,6 +188,7 @@ const Footer = () => {
             </NavLink>
           </nav>
           <nav className="footer-navigation-2">
+            {/*
             <NavLink
               exact
               to="/aboutus"
@@ -214,7 +215,7 @@ const Footer = () => {
               Join Our Team
             </NavLink>
             <br />
-            <br />
+            <br />*/}
           </nav>
           <div className="contact-info">
             <p>

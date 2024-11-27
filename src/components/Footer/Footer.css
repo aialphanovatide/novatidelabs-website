@@ -165,12 +165,12 @@ p.enquiries-email {
 
   .contact-info {
     flex: 1; /* Second column */
-    margin-left: 0;
+    margin-left: -10px;
     margin-right: 0;
     font-family: "Plus Jakarta Sans", sans-serif;
   }
   .contact-info p {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .linkedin-container {

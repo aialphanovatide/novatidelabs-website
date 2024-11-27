@@ -10,7 +10,7 @@ html, body {
     display: flex;
     flex-direction: column; /* Arrange in a single column */
     align-items: center; /* Center content horizontally */
-    height: 305vh;
+    height: 325vh;
     background-color: white;
     padding: 20px;
   }

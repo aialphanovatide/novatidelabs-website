@@ -129,20 +129,24 @@ const Navbar = () => {
           <div className="linkedin-container"></div>
         </a>
       </ul>
-      <div className="left-arrow arrow">
-        <img
-          src="static/images/arrow-left.png"
-          style={{ opacity: activeDot === "/" ? 0.1 : 1 }}
-          alt="Previous"
-        />
-      </div>
-      <div className="right-arrow arrow">
-        <img
-          src="static/images/arrow-right.png"
-          style={{ opacity: activeDot === "/contactus" ? 0.1 : 1 }}
-          alt="Next"
-        />
-      </div>
+      {!isOpen && (
+        <>
+          <div className="left-arrow arrow">
+            <img
+              src="static/images/arrow-left.png"
+              style={{ opacity: activeDot === "/" ? 0.1 : 1 }}
+              alt="Previous"
+            />
+          </div>
+          <div className="right-arrow arrow">
+            <img
+              src="static/images/arrow-right.png"
+              style={{ opacity: activeDot === "/contactus" ? 0.1 : 1 }}
+              alt="Next"
+            />
+          </div>
+        </>
+      )}
       {/* Dot Container */}
       <div className={`dot-container ${isAboveFooter ? "stuck" : ""}`}>
         <div
