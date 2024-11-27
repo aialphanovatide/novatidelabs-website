@@ -234,7 +234,7 @@
         align-items: left;
         text-align: left;
         gap: 20px;
-        margin-top: -50px;
+        margin-top: -20px;
       }
     
       .illustration-ai-mobile img {
@@ -268,7 +268,7 @@
       }
     
       div.scroll-down-section-ai {
-        margin-top: 40px;
+        margin-top: 10px;
         width: 280px;
         margin-bottom: 100px;
       }

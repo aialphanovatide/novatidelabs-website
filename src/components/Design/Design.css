@@ -361,7 +361,7 @@ html, body {
       align-items: left;
       text-align: left;
       gap: 20px;
-      margin-top: -40px;
+      margin-top: -10px;
     }
   
     .illustration-design-mobile img {
@@ -390,7 +390,7 @@ html, body {
     }
   
     div.scroll-down-section {
-      margin-top: 40px;
+      margin-top: 10px;
       width: 280px;
     }
   
