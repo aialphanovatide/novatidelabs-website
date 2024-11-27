@@ -1,4 +1,4 @@
-/* Home.css */
+/* General Styles */
 html, body {
   height: 100%;
   margin: 0;
@@ -18,351 +18,105 @@ html, body {
 img, 
 video,
 iframe {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-.mainContent {
+.mainContent-home {
   width: 100%;
   max-width: 1200px;
 }
 
-.logoRow {
-  display: flex;
-  justify-content: left;
-  margin-bottom: 40px;
-  margin-left: 100px;
-  margin-top: 100px;
+.logo-home {
+  margin-bottom: 10px; /* Add spacing between logo and text */
+  width: 350px; /* Adjust logo size for mobile */
+  height: auto;
+  margin-bottom: 20px;
 }
 
-.logo {
-  height: 70px;
-}
-
-.contentRow {
-  margin-top: -100px;
+.contentRow-home {
   display: flex;
   justify-content: space-between; /* Align text and illustration side by side */
   align-items: center;
-  height: 80vh;
+  height: 75vh;
 }
 
-.textContent {
+.textContent-home {
   flex: 1; /* Takes up available space */
-  font-size: 39px;
-  line-height: 1.2;
+  font-size: 25px;
+  line-height: 1.5;
   width: 60%;
   color: black;
   font-family: "Plus Jakarta Sans", sans-serif;
   margin-left: 100px;
 }
 
-.textContent span {
+.textContent-home span {
   color: #fcd34d; /* Highlight color */
+  font-size: 80px;
 }
 
-.text-with-shadow {
+.text-with-shadow-home {
   text-shadow: none;
 }
 
-.illustration {
-  width: 40%;
+.illustration-home {
+  width: 33%;
   display: flex;
   justify-content: center; /* Center illustration */
   align-items: center;
-  margin-top: -90px;
+  margin-top: 100px;
 }
 
-.illustration img {
+.illustration-home img {
   height: 85vh;
 }
 
-.home-container2{
-  width: 100vw;
-  min-height: 4100px;
-  background-color: #FBBF24;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  padding-top: 900px;
-  border-radius: 0 0 50px 50px;
-  margin-top: -105px;
-}
-
-
-
-
-
-  .home-right{
-    width: 90%;
-    border-radius: 50px;
-    margin-top: -3500px;
-  
-  }
-  
-  
-  .home-stacking-slide {
-    height: 450px;
-    width: 100%;
-    position: sticky;
-    top: 0;
-  
-  
-     &:nth-last-child(1) {
-        height: 100vh;
-     }
-  }
-
-  .home-final-title{
-    z-index: 4;
-    background-color: transparent;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    color: #FCD34D;
-    font-size: 50px;
-    font-weight: 500;
-    margin-top: -800px;
-  }
-  
-
-
-
-  .teammembers-container {
-    background-color: #fbbf24;
-    padding: 50px 0 50px 0;
-    text-align: center;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    width: 100vw;
-    padding-top: 400px;
-  }
-  
-  .team-title {
-    font-size: 36px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 40px;
-  }
-  
-  .team-row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-bottom: 100px;
-  }
-  
-  .team-member {
-    width: 150px;
-    text-align: center;
-    color: #333;
-  }
-    
-  .team-member-big {
-    width: 195px;
-    text-align: center;
-    color: #333;
-  }
-
-  .team-photo img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    background-color: #e0e0e0; /* Placeholder for the image */
-  }
-  
-  .team-member-name {
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 10px;
-  }
-  
-  .team-member-role {
-    font-size: 14px;
-    color: #666;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .team-member-name-big {
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 10px;
-  }
-  
-  .team-member-role-big {
-    font-size: 16px;
-    color: #666;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .linkedin-link {
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    color: #000;
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Mobile-Specific Styles */
 @media (max-width: 768px) {
-  .home {
-    overflow-x: hidden;
+  .contentRow-home {
+    display: grid; /* Use grid for 2 columns */
+    grid-template-columns: 1fr 1fr; /* Two equal columns for text and image */
+    gap: 1px; /* Add some space between columns */
+    align-items: center; /* Align content vertically */
+    margin-top: 20px;
   }
 
-  .home-stacking-slide {
-    height: 600px;
-  }
-
-  .home-right{
-    margin-top: -3150px;
-    width: 95%;
-  }
-  .mainContent {
+  .textContent-home {
     display: flex;
-    flex-direction: column;
-    padding: 0 10px;
-    max-width: 100%;
-    padding-top: 100px;
-  }
-
-  .logoRow {
-    margin-left: 0;
-  }
-
-  .textContent {
-    flex: 0;
-    width: 'auto';
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    text-wrap: nowrap;
-    text-align: left;
-  }
-
-  .mt-4 {
-    margin: 0;
-    margin-top: 36px;
-  }
-
-  .mt-2 {
-    margin: 0;
-    margin-top: 18px;
-  }
-
-  .illustration img {
-    height: 55vh;
-  }
-
-  .illustration {
-    flex: 0;
-    width: 25vw;
-    padding-left: 50px;
-  }
-
-  .mobile-grid {
-    display: grid;
-    flex-direction: row;
-  }
-
-  .mobile-row {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .column {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .logo-mobile {
-    width: 30vw;
-  }
-
-  .justify-end {
-    justify-content: flex-end;
-  }
-
-  .highlighted-text {
-    padding: 0;
-    margin: 0;
-    font-size: 48px;
-    color: #fcd34d;
-  }
-
-  h2.home-final-title{
-    font-size: 44px;
-    font-weight: 500;
-    margin-top: -315px;
+    flex-direction: column; /* Stack logo and text */
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    line-height: 0.9;
-  }
-  .teammembers-container {
-    padding-top: 200px;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 17px; /* Adjust text size for mobile */
+    margin: 0;
+    line-height: 1.4;
   }
 
+  .logo-home {
+    margin-bottom: 10px; /* Add spacing between logo and text */
+    width: 150px; /* Adjust logo size for mobile */
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .textContent-home span {
+    font-size: 54px; /* Adjust text size for mobile */
+  }
+
+  .illustration-home {
+    display: flex;
+    justify-content: center; /* Center image in the column */
+    align-items: center;
+    margin: 0;
+    margin-top: -270px;
+    margin-left: -60px;
+    width: 210%;
+    height: auto;
+  }
+
+  .illustration-home img {
+    height: 52vh; /* Adjust image size for mobile */
+    width: 170px;
+  }
 }

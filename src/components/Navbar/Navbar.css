@@ -6,7 +6,9 @@
   background-color: white;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-
+.linkedin-mobile-link {
+  display: none;
+}
 .navbar-logo img {
   height: 50px;
 }
@@ -30,12 +32,103 @@
 }
 
 .navbar-links a.active {
-  color: orange;
+  color: #FBBF24;
 }
 
 .navbar-links a:hover {
   color: orange;
 }
+
+
+/* Dot Container Styles */
+.dot-container {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 160px;
+  background-color: rgba(163, 163, 163, 0.5);
+  padding: 10px 10px 10px 10px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.dot-container.stuck {
+  position: fixed;
+  bottom: 60px; /* Adjust based on footer height */
+}
+
+
+.inactive-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%; /* Ensure the dot is perfectly round */
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s, width 0.3s, height 0.3s;
+}
+
+.inactive-dot:hover {
+  background-color: #a0a0a0;
+}
+
+/* Active dot */
+.active-dot {
+  width: 15px; /* Slightly bigger size for active dot */
+  height: 15px;
+  border-radius: 15px;
+  background-color: #ffffff; /* White color for active dot */
+}
+
+
+  /*Arrows*/
+
+  .arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .left-arrow {
+    left: 10px;
+    animation: bounceArrowLeft 2s infinite;
+  }
+  
+  .right-arrow {
+    right: 10px;
+    animation: bounceArrowRight 2s infinite;
+  }
+  
+    .arrow img {
+      width: 15px; /* Adjust size as needed */
+      height: auto;
+
+    }
+
+      /* Animation for scroll down icon */
+  @keyframes bounceArrowLeft {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+  }
+  @keyframes bounceArrowRight {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+  }
+
 
 /* Mobile version styles */
 
@@ -62,6 +155,34 @@
     transition: transform 0.3s ease;
     transition: all 0.3s ease;
   }
+  .dot-container {
+    position: fixed;
+    bottom: 20px; /* Stay at the bottom for mobile */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    width: 110px; /* Adjust width for smaller screens */
+    height: 3px;
+  }
+
+.inactive-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%; /* Ensure the dot is perfectly round */
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s, width 0.3s, height 0.3s;
+}
+
+
+.active-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+
+
+
 
   .navbar-links {
     position: fixed;
@@ -69,30 +190,33 @@
     top: 0;
     height: 100vh;
     width: 100%;
-    padding-top: 25%;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: left;
     transition: right 0.3s ease;
     z-index: 800;
     animation: slideOut 0.3s forwards;
-    padding-top: 190px;
+    padding-top: 120px;
   }
 
   .navbar-links.open {
     animation: slideIn 0.3s forwards;
+    gap: 30px;
   }
 
   .navbar-links li {
     color: #000;
-    padding-top: 20px;
+    padding-left: 30px;
   }
 
   .navbar-links a {
-    font-size: 28px;
-    font-weight: 400;
+    font-size: 48px;
+  }
+
+  .navbar-links a.active {
+    font-weight: 600;
   }
 
   .hamburger {
@@ -118,6 +242,27 @@
     transform: rotate(-45deg) translate(7.5px, -5px);
     z-index: 1001;
   }
+
+  .linkedin-mobile-link {
+    display: none; /* Default to hidden on desktop */
+    margin-top: 20px; /* Add spacing above the LinkedIn link */
+    align-self: flex-start; /* Align to the start of the menu */
+    padding-left: 30px;
+  }
+  
+  .linkedin-mobile-link .linkedin-container {
+    width: 50px;
+    height: 50px;
+    background-image: url("../../../public/static/images/linkedinLogo-yellow.png");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Show the LinkedIn link only when the menu is open on mobile */
+  .navbar-links.open .linkedin-mobile-link {
+    display: block; /* Show only in open mobile hamburger menu */
+  }
+  
 
   /* Animations */
 
