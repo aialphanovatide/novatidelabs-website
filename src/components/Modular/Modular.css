@@ -275,7 +275,7 @@
   /* Mobile-specific styles */
 @media (max-width: 768px) {
     .modular {
-      height: 310vh;
+      height: 305vh;
     }
     .contentRow-modular-mobile {
         display: flex;
@@ -283,7 +283,7 @@
         align-items: left;
         text-align: left;
         gap: 20px;
-        margin-top: -40px;
+        margin-top: -70px;
       }
     
       .illustration-modular-mobile img {
