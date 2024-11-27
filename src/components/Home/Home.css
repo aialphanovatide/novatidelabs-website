@@ -109,9 +109,9 @@ iframe {
     justify-content: center; /* Center image in the column */
     align-items: center;
     margin: 0;
-    margin-top: -270px;
+    margin-top: -250px;
     margin-left: -60px;
-    width: 210%;
+    width: 100px;
     height: auto;
   }
 

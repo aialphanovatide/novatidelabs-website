@@ -277,6 +277,10 @@ ul.ReactFlagsSelect-module_selectOptions__3LNBJ.ReactFlagsSelect-module_selectOp
 
 @media (max-width: 768px) {
 
+  .contactus {
+    height: 280vh;
+  }
+
   .illustration-contactus-mobile img {
     width: 90%; /* Adjust image width for mobile */
     height: auto;
@@ -359,6 +363,7 @@ ul.ReactFlagsSelect-module_selectOptions__3LNBJ.ReactFlagsSelect-module_selectOp
   section.contactFormSection {
     min-width: 330px;
     max-width: 340px;
+    max-height: 600px;
   }
 
   div.formGroup.fullWidth{
