@@ -10,7 +10,7 @@ html, body {
     display: flex;
     flex-direction: column; /* Arrange in a single column */
     align-items: center; /* Center content horizontally */
-    height: 225vh;
+    height: 275vh;
     background-color: white;
     padding: 20px 0;
   }
@@ -350,7 +350,7 @@ html, body {
 
   @media (max-width: 768px) {
     .design{
-      height: 325vh;
+      height: 345vh;
       padding: 20px;
 
     }
