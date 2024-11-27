@@ -112,7 +112,7 @@ const Contactus = () => {
           </div>
           <div className="textContent-contactus-mobile">
             <h1>
-              <div className="text-yellow-contactus">Get</div>
+              <div className="text-yellow-contactus">Get in</div>
               <div className="text-yellow-contactus">Touch</div>
             </h1>
             <div className="scroll-down-section-contactus">
