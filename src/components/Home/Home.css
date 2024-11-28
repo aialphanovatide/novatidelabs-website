@@ -90,6 +90,7 @@ iframe {
     text-align: left;
     font-size: 17px; /* Adjust text size for mobile */
     margin: 0;
+    margin-top: 20px;
     line-height: 1.4;
   }
 
@@ -116,7 +117,7 @@ iframe {
   }
 
   .illustration-home img {
-    height: 54vh; /* Adjust image size for mobile */
+    height: 59vh; /* Adjust image size for mobile */
     width: 170px;
   }
 }
