@@ -29,13 +29,14 @@ const Philosophy = () => {
             <h1>
               <div className="text-yellow-methodology">Our</div>
               <div className="text-yellow-methodology">Philosophy</div>
-              <div className="text-normal-methodology">
+              <div className="text-normal-philosophy">
                 At Novatide Labs, we believe that software should serve as a
-                tool for growth, not a limitation. Our approach is rooted in
-                understanding your industry’s demands, identifying obstacles,
-                and delivering solutions that empower your team. We pride
-                ourselves on the impact of our work and our dedication to
-                building products that are as functional as they are intuitive.
+                <b> tool for growth</b>, not a limitation. Our approach is
+                rooted in understanding your industry’s demands, identifying
+                obstacles, and delivering solutions that empower your team. We
+                pride ourselves on the impact of our work and our dedication to
+                building products that are as{" "}
+                <b>functional as they are intuitive.</b>
               </div>
             </h1>
           </div>
@@ -46,7 +47,7 @@ const Philosophy = () => {
             <h1>
               <div className="text-yellow-methodology">Our</div>
               <div className="text-yellow-methodology">Philosophy</div>
-              <div className="text-normal-methodology">
+              <div className="text-normal-philosophy">
                 At Novatide Labs, we believe that software should serve as a
                 <b> tool for growth</b>, not a limitation. Our approach is
                 rooted in understanding your industry’s demands, identifying

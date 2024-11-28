@@ -45,11 +45,11 @@
   }
   
   .illustration-methodology {
-    width: 30%;
+    width: 27%;
     display: flex;
     justify-content: center; /* Center illustration */
     align-items: center;
-    margin-top: 10px;
+    margin-top: -100px;
   }
   
   .illustration-methodology img {
@@ -206,15 +206,15 @@
   }
 
   div.methodology-step-mobile div.methodology-right-column img.methodology-image {
-    margin-left: 80px;
+    margin-left: 60px;
     margin-bottom: 30px;
   }
 
   div.methodology-step-mobile div.methodology-right-column img.methodology-image-different {
-    margin-left: 0px;
+    margin-left: -30px;
     margin-bottom: 30px;
     margin-bottom: 30px;
-    min-width: 240px;
+    min-width: 230px;
   }
   
   .methodology-right-column h3 {
