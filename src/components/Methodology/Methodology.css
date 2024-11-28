@@ -261,6 +261,7 @@
       .text-yellow-methodology {
         font-size: 35px; /* Adjust size for mobile */
         font-weight: 600;
+        line-height: 1;
       }
     
       .text-normal-methodology {
@@ -278,7 +279,7 @@
       }
     
       .illustration-methodology img {
-        min-width: 300px; /* Adjust image size for smaller screens */
+        min-width: 220px; /* Adjust image size for smaller screens */
         height: auto;
         margin-top: -100px;
       }
