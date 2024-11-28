@@ -96,17 +96,17 @@
   }
   
   .left-arrow {
-    left: 10px;
+    left: 40px;
     animation: bounceArrowLeft 2s infinite;
   }
   
   .right-arrow {
-    right: 10px;
+    right: 40px;
     animation: bounceArrowRight 2s infinite;
   }
   
     .arrow img {
-      width: 15px; /* Adjust size as needed */
+      width: 25px; /* Adjust size as needed */
       height: auto;
 
     }
@@ -261,6 +261,31 @@
   /* Show the LinkedIn link only when the menu is open on mobile */
   .navbar-links.open .linkedin-mobile-link {
     display: block; /* Show only in open mobile hamburger menu */
+  }
+
+  .arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .left-arrow {
+    left: 10px;
+    animation: bounceArrowLeft 2s infinite;
+  }
+  
+  .right-arrow {
+    right: 10px;
+    animation: bounceArrowRight 2s infinite;
+  }
+
+  .arrow img {
+    width: 15px; /* Adjust size as needed */
+    height: auto;
+
   }
   
 
