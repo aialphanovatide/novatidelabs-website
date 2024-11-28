@@ -1,0 +1,288 @@
+.methodology {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  
+
+  .contentRow-methodology {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between; /* Align text and illustration side by side */
+    align-items: center;
+    height: 75vh;
+  }
+  div.textContent-methodology {
+    flex: 1; /* Takes up available space */
+    font-size: 25px;
+    line-height: 1.1;
+    width: 15%;
+    color: black;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-left: 110px;
+    margin-top: 120px;
+  }
+  
+  div.textContent-methodology h1{
+    width: 680px;
+  }
+  
+  
+  .text-normal-methodology  {
+    color: #000000; /* Highlight color */
+    font-size: 23px;
+    font-weight: 300;
+    max-width: 700px;
+    margin-top: 40px;
+  }
+  
+  .text-yellow-methodology  {
+    font-size: 105px;
+  }
+  
+  .illustration-methodology {
+    width: 30%;
+    display: flex;
+    justify-content: center; /* Center illustration */
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .illustration-methodology img {
+    height: auto;
+  }
+
+
+
+  /* Desktop Layout */
+  .methodology-step-desktop {
+    display: grid;
+    grid-template-columns: 0.2fr 0.5fr 0.3fr; /* 1st column for number, 2nd for content, 3rd for image */
+    align-items: center;
+    justify-items: start;
+    background-color: #fbbf24;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1100px;
+    margin-bottom: 20px;
+  }
+
+  .methodology-step-desktop-different {
+    display: grid;
+    grid-template-columns: 0.2fr 0.5fr 0.3fr; /* 1st column for number, 2nd for content, 3rd for image */
+    align-items: center;
+    justify-items: start;
+    background-color: #fbbf24;
+    border-radius: 10px;
+    padding: 20px 130px 20px 60px;
+    gap: 20px;
+    max-width: 1100px;
+    margin-bottom: 20px;
+  }
+  
+  .methodology-number img {
+    width: 80px; /* Size for number images */
+    height: auto;
+    margin-left: 50px;
+  }
+
+  div.methodology-number-different img {
+    width: 30px; /* Size for number images */
+    height: auto;
+    margin-left: 50px;
+  }
+
+  div.methodology-number-different2 img {
+    width: 50px; /* Size for number images */
+    height: auto;
+    margin-left: 10px;
+  }
+  
+  .methodology-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .methodology-content h3 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .methodology-content p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .methodology-image img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  div.methodology-image-different img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    padding-left: 70px;
+  }
+
+  div.methodology-image-different2 img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    padding-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Mobile Layout */
+  .methodology-step-mobile {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr; /* Two columns: number and right column */
+    align-items: start;
+    background-color: #fbbf24;
+    border-radius: 10px;
+    padding: 50px 20px 50px 20px;
+    gap: 20px;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+
+  div.methodology-step-mobile div.methodology-number img{
+    margin-top: 120px;
+    margin-left: 30px;
+}
+
+  div.methodology-step-mobile div.methodology-number-different img{
+    width: 30px;
+    margin-top: 120px;
+    margin-left: 30px;
+  }
+  
+  .methodology-right-column img {
+    width: 100%;
+    max-width: 140px;
+    margin-top: -40px;
+    margin-right: -40px;
+  }
+
+  div.methodology-step-mobile div.methodology-right-column img.methodology-image {
+    margin-left: 80px;
+    margin-bottom: 30px;
+  }
+
+  div.methodology-step-mobile div.methodology-right-column img.methodology-image-different {
+    margin-left: 0px;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    min-width: 240px;
+  }
+  
+  .methodology-right-column h3 {
+    font-size: 20px;
+  }
+  
+  .methodology-right-column p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .methodology-number img {
+    width: 50px; /* Adjust number size for mobile */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+
+
+
+  @media (max-width: 768px) {
+
+    .contentRow-methodology-mobile {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements horizontally */
+        margin-top: 220px;
+        margin-bottom: 160px;
+        padding: 0 20px;
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+    
+      .textContent-methodology-mobile {
+        text-align: left; /* Center text for mobile */
+        margin-top: 20px;
+      }
+    
+      .textContent-methodology-mobile h1 {
+        font-size: 20px;
+        line-height: 1.4;
+        color: #000000;
+      }
+    
+      .text-yellow-methodology {
+        font-size: 35px; /* Adjust size for mobile */
+        font-weight: 600;
+      }
+    
+      .text-normal-methodology {
+        text-align: left;
+        font-size: 16px;
+        color: #000000;
+        line-height: 1.5;
+        margin-top: 20px;
+        font-weight: 400;
+      }
+    
+      .illustration-methodology {
+        margin-bottom: 20px; /* Add spacing below the image */
+        margin-top: -100px;
+      }
+    
+      .illustration-methodology img {
+        min-width: 300px; /* Adjust image size for smaller screens */
+        height: auto;
+        margin-top: -100px;
+      }
+    
+
+
+  }

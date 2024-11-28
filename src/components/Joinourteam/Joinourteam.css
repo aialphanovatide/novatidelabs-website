@@ -566,6 +566,7 @@ h2.careers-final-heading {
     margin-top: 220px;
     margin-bottom: 160px;
     padding: 0 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
   }
 
   .textContent-joinourteam-mobile {
@@ -596,6 +597,7 @@ h2.careers-final-heading {
 
   .illustration-joinourteam {
     margin-bottom: 20px; /* Add spacing below the image */
+    margin-top: -100px;
   }
 
   .illustration-joinourteam img {

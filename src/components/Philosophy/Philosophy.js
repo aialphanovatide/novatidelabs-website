@@ -1,37 +1,67 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Philosophy.css";
-import Footer from "../Footer/Footer.js";
+import Footer from "../Footer/Footer";
 
 const Philosophy = () => {
-  return (
-    <div className="Philosophy">
-      <main
-        className={`mainContent ${
-          window.screen.width < 768 ? "mobile-grid" : ""
-        }`}
-      >
-        {window.screen.width < 768 ? (
-          <>
-            <div class="mobile-row">
-              <div className="textContent">
-                <h1 className="mt-2">Global Finance</h1>
-                <h1 className="highlighted-text mt-2">Forward</h1>
-              </div>
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="contentRow">
-              <div className="textContent">
-                <h1>
-                  Solving Tomorrow's <br />
-                </h1>
-              </div>
-            </div>
-          </>
-        )}
-      </main>
+  const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return (
+    <div className="philosophy">
+      {isMobile ? (
+        <div className="contentRow-methodology-mobile">
+          <div className="illustration-methodology">
+            <img src="static/images/Philosophy/hands.png" alt="Illustration" />
+          </div>
+          <div className="textContent-methodology-mobile">
+            <h1>
+              <div className="text-yellow-methodology">Our</div>
+              <div className="text-yellow-methodology">Philosophy</div>
+              <div className="text-normal-methodology">
+                At Novatide Labs, we believe that software should serve as a
+                tool for growth, not a limitation. Our approach is rooted in
+                understanding your industry’s demands, identifying obstacles,
+                and delivering solutions that empower your team. We pride
+                ourselves on the impact of our work and our dedication to
+                building products that are as functional as they are intuitive.
+              </div>
+            </h1>
+          </div>
+        </div>
+      ) : (
+        <div className="contentRow-methodology">
+          <div className="textContent-methodology">
+            <h1>
+              <div className="text-yellow-methodology">Our</div>
+              <div className="text-yellow-methodology">Philosophy</div>
+              <div className="text-normal-methodology">
+                At Novatide Labs, we believe that software should serve as a
+                <b> tool for growth</b>, not a limitation. Our approach is
+                rooted in understanding your industry’s demands, identifying
+                obstacles, and delivering solutions that empower your team. We
+                pride ourselves on the impact of our work and our dedication to
+                building products that are as
+                <b> functional as they are intuitive.</b>
+              </div>
+            </h1>
+          </div>
+          <div className="illustration-philosophy">
+            <img src="static/images/Philosophy/hands.png" alt="Illustration" />
+          </div>
+        </div>
+      )}
       <Footer />
     </div>
   );
