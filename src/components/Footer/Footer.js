@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+
 import "./Footer.css";
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const navigate = useNavigate();
+
+  const handleNavigation = (path) => {
+    navigate(path);
+    window.location.reload(); // Force reload after navigating
+  };
 
   useEffect(() => {
     const checkMobile = () => {
@@ -84,7 +91,7 @@ const Footer = () => {
                   alt="line"
                   className="footer-mobile-line"
                 />{" "}
-                {/*<NavLink
+                <NavLink
                   exact
                   to="/aboutus"
                   className={({ isActive }) => (isActive ? "active" : "")}
@@ -108,7 +115,7 @@ const Footer = () => {
                   className={({ isActive }) => (isActive ? "active" : "")}
                 >
                   Join Our Team
-                </NavLink>*/}
+                </NavLink>
               </nav>
             </div>
 
@@ -188,7 +195,6 @@ const Footer = () => {
             </NavLink>
           </nav>
           <nav className="footer-navigation-2">
-            {/*
             <NavLink
               exact
               to="/aboutus"
@@ -215,7 +221,7 @@ const Footer = () => {
               Join Our Team
             </NavLink>
             <br />
-            <br />*/}
+            <br />
           </nav>
           <div className="contact-info">
             <p>

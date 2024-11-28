@@ -1,286 +1,711 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./Joinourteam.css";
-import Footer from "../Footer/Footer.js";
+import Card from "../Careers/Cards/Card";
+import Card2 from "../Careers/Cards/Card2";
+import Card3 from "../Careers/Cards/Card3";
+import Card4 from "../Careers/Cards/Card4";
+import Card5 from "../Careers/Cards/Card5";
+import Card6 from "../Careers/Cards/Card6";
+import Card7 from "../Careers/Cards/Card7";
+
 import VisibilitySensor from "react-visibility-sensor";
-import Card from "../Careers/Cards/Card.js";
-import Card2 from "../Careers/Cards/Card2.js";
-import Card3 from "../Careers/Cards/Card3.js";
-import Card4 from "../Careers/Cards/Card4.js";
-import Card5 from "../Careers/Cards/Card5.js";
-import Card6 from "../Careers/Cards/Card6.js";
-import Card7 from "../Careers/Cards/Card7.js";
-import Card8 from "../Careers/Cards/Card8.js";
-import Card9 from "../Careers/Cards/Card9.js";
-import Card10 from "../Careers/Cards/Card10.js";
-import Card11 from "../Careers/Cards/Card11.js";
-import Yellowcard from "../Careers/Cards/Yellowcard.js";
+
+import Footer from "../Footer/Footer";
 
 const Joinourteam = () => {
+  const [slide, setSlide] = useState("left");
+  const [text, setText] = useState("");
+  const [fix, setFix] = useState(0);
+  const [openJob, setOpenJob] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  const toggleJob = (jobId) => {
+    setOpenJob(openJob === jobId ? null : jobId);
+  };
+
+  //know when our component comes into view so we can scroll down.
+  function onChange5(isVisible) {
+    console.log("Element is now %s", isVisible ? "visible" : "hidden");
+    if (isVisible) {
+      setSlide("left2");
+      setFix(fix + 1);
+    }
+    if (fix > 1) {
+      setSlide("left");
+      setFix(0);
+    }
+  }
+
+  // Check screen size
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className="home">
-      <main
-        className={`mainContent ${
-          window.screen.width < 768 ? "mobile-grid" : ""
-        }`}
-      >
-        {window.screen.width < 768 ? (
-          <>
-            <div className="mobile-row">
-              <div class="column justify-end">
-                <img
-                  src="static/images/baseLogoWithText.png"
-                  alt="Novatide Labs Logo"
-                  className="logo-mobile"
-                />
-                <div className="textContent">
-                  <h1 className="mt-4">Moving</h1>
-                </div>
+    <div className="careers-main-container">
+      {isMobile ? (
+        <div className="contentRow-joinourteam-mobile">
+          <div className="illustration-joinourteam">
+            <img
+              src="static/images/Joinourteam/computer-call.png"
+              alt="Illustration"
+            />
+          </div>
+          <div className="textContent-joinourteam-mobile">
+            <h1>
+              <div className="text-yellow-joinourteam">Join Our Team</div>
+              <div className="text-normal-joinourteam">
+                At Novatide Labs, we’re building the future of global finance.
+                Our diverse, talented team plays a key role in driving this
+                vision forward, and we are always on the lookout for passionate
+                individuals who want to make an impact.
               </div>
-              <div class="column">
-                <div className="illustration">
-                  <img
-                    src="static/images/Home/content-one.png"
-                    alt="Illustration"
-                  />
-                </div>
+            </h1>
+          </div>
+        </div>
+      ) : (
+        <div className="contentRow-joinourteam">
+          <div className="textContent-joinourteam">
+            <h1>
+              <div className="text-yellow-joinourteam">Join</div>
+              <div className="text-yellow-joinourteam">Our Team</div>
+              <div className="text-normal-joinourteam">
+                At Novatide Labs, we’re building the future of global finance.
+                Our diverse, talented team plays a key role in driving this
+                vision forward, and we are always on the lookout for passionate
+                individuals who want to make an impact.
               </div>
-            </div>
-            <div class="mobile-row">
-              <div className="textContent">
-                <h1 className="mt-2">Global Finance</h1>
-                <h1 className="highlighted-text mt-2">Forward</h1>
-              </div>
-            </div>
-          </>
-        ) : (
-          <>
-            {/* First row: Logo */}
-            <div className="logoRow">
-              <img
-                src="static/images/baseLogoWithText.png"
-                alt="Novatide Labs Logo"
-                className="logo"
-              />
-            </div>
-            {/* Second row: Text and Illustration */}
-            <div className="contentRow">
-              <div className="textContent">
-                <h1>
-                  Moving <br />
-                  <div className="text-with-shadow">Global Finance </div>
-                  <span>Forward</span>
-                </h1>
-              </div>
-              <div className="illustration">
-                <img
-                  src="static/images/Home/content-one.png"
-                  alt="Illustration"
-                />
-              </div>
-            </div>
-          </>
-        )}
-      </main>
-      <div className="home-container2">
-        <div className="home-right">
-          <section className="home-stacking-slide">
+            </h1>
+          </div>
+          <div className="illustration-joinourteam">
+            <img
+              src="static/images/Joinourteam/computer-call.png"
+              alt="Illustration"
+            />
+          </div>
+        </div>
+      )}
+      <div className="careers-container">
+        <div className="right">
+          <section class="stacking-slide">
             <h2 style={{ marginLeft: "40px" }}></h2>
             <VisibilitySensor>
               <div>
-                <Card8
-                  title="Values & Ethics:
-Our Guiding Principles"
-                  image="static/images/Home/icon1.svg"
+                <Card
+                  title="Company Culture"
                   color="#171717"
                   textColor="white"
+                  longText="Our culture is centred around collaboration, curiosity, and proactive communication. We believe that innovation thrives in an environment where respect, continuous learning, and initiative are valued. The following principles guide how we work together."
                 />
               </div>
             </VisibilitySensor>
           </section>
-          <section className="home-stacking-slide">
+          <section class="stacking-slide">
             <VisibilitySensor>
               <div>
-                <Card9
+                <Card2
+                  title="Communication & Respect"
+                  image="static/images/Careers/card2.svg"
+                  color="#F5F5F5"
+                  longText="At Novatide Labs, we believe that effective communication is crucial to our success. Clear, timely, and respectful exchanges help us avoid bottlenecks and keep operations running smoothly. Respect is central to our culture, and we value professionalism in all communications, while recognizing the importance of our team’s diversity. We encourage open, respectful dialogue to promote mutual understanding and collaboration across different countries and cultures."
+                />
+              </div>
+            </VisibilitySensor>
+          </section>
+          <section class="stacking-slide">
+            <VisibilitySensor>
+              <div>
+                <Card3
+                  title="Continuous Learning"
+                  image="static/images/Careers/card3.svg"
+                  color="#171717"
+                  longText="Curiosity and continuous improvement are key at Novatide Labs. We encourage everyone to actively seek feedback and learn from their experiences. Whether it’s through formal reviews or casual advice, we value team members who are committed to their personal and professional growth, contributing to the long-term success of the company."
+                />
+              </div>
+            </VisibilitySensor>
+          </section>
+          <section class="stacking-slide">
+            <VisibilitySensor>
+              <div>
+                <Card4
+                  title="Initiative"
+                  secondTitle="There are no silly questions"
+                  image="static/images/Careers/card4.svg"
+                  secondImage="static/images/Careers/card4b.svg"
+                  longText="We appreciate individuals who take initiative. Sharing ideas or identifying areas for improvement is always encouraged, as proactive contributions help drive the company forward. A culture of continuous improvement depends on everyone’s efforts to recognize opportunities and take action"
+                  secondLongText="At Novatide Labs, curiosity is always welcomed. Exploring how things work and considering ways to improve them can enhance your understanding of the company and your role. Curiosity helps drive innovation, and we appreciate team members who are eager to push boundaries"
+                />
+              </div>
+            </VisibilitySensor>
+          </section>
+          <section class="stacking-slide">
+            <VisibilitySensor>
+              <div>
+                <Card5
                   title="Kindness"
-                  secondTitle="Innovation and Transparency"
-                  image="static/images/Home/icon2.svg"
-                  secondImage="static/images/Home/icon3.svg"
-                  color="#F5F5F5"
-                  longText="At  Novatide Labs, we believe that strong values and ethics are the  foundation of everything we do. Our core principles focus on building a  team with both high Emotional Intelligence (EQ) and Intellectual  Intelligence (IQ). For us, kindness is a prerequisite, along with a deep  intellectual curiosity. Every team member must have the ability to  think laterally while still working effectively within structured  processes.  "
-                  secondLongText="We ensure that our operations and product development are driven by  these values. Innovation and transparency are critical to our  decision-making process, and we foster an environment where hierarchy  does not determine the value of an idea. Everyone has the opportunity to  contribute and be heard. By promoting collaboration and open  communication, we ensure each voice is valued so the best ideas  can thrive—whether they come from a new hire or a senior leader."
+                  image="static/images/Careers/card5.svg"
+                  longText="This  is one of our core values. We believe that empathy and consideration help cultivate a supportive and positive work environment.
+ Being kind means understanding and respecting the perspectives of our colleagues, offering support when needed, and addressing conflicts with compassion. Our aim is to foster a workplace where everyone feels valued, which ultimately contributes to our shared success and well-being
+"
                 />
               </div>
             </VisibilitySensor>
           </section>
-          <section className="home-stacking-slide">
+          <section class="stacking-slide">
             <VisibilitySensor>
               <div>
-                <Card10
-                  title="Creativity"
-                  image="static/images/Home/icon4.svg"
-                  secondImage="static/images/Home/icon5.svg"
-                  color="#F5F5F5"
-                  longText="At Novatide Labs, our goal is to empower our team to think creatively  and push the boundaries of what is possible, all while remaining  committed to the security and trustworthiness our users expect from us."
+                <Card6
+                  title="Responsibility"
+                  image="static/images/Careers/card6.svg"
+                  longText="We encourage team members to take ownership of their tasks, meet deadlines, and contribute to the company's success. This includes being accountable for your work, addressing challenges with initiative, and delivering quality results.
+Being dependable and following through on commitments helps build trust within the team and supports our shared goals."
                 />
               </div>
             </VisibilitySensor>
           </section>
-          <section className="home-stacking-slide">
+          <section class="stacking-slide">
             <VisibilitySensor>
               <div>
-                <Yellowcard />
+                <Card7
+                  title="Resilience"
+                  image="static/images/Careers/card7.svg"
+                  longText="At Novatide Labs, we are dedicated to supporting personal growth. We see constructive criticism as an opportunity to improve, rather than a setback. Feedback—whether from colleagues, supervisors, or self-reflection—is an important part of professional development and helps us enhance our skills. By staying open to feedback and willing to adapt, we create a culture that promotes continuous personal and team growth.
+"
+                />
+              </div>
+            </VisibilitySensor>
+          </section>
+          {/*This is to make a clean space at the bottom of the section*/}
+          <section
+            style={{ height: 250, width: "100%", backgroundColor: "white" }}
+          >
+            <VisibilitySensor>
+              <div>
+                <div
+                  style={{
+                    height: 150,
+                    width: "100%",
+                    backgroundColor: "white",
+                  }}
+                ></div>
               </div>
             </VisibilitySensor>
           </section>
         </div>
       </div>
-      <div className="teammembers-container">
-        <h2 className="team-title">Our Team</h2>
-        <div className="team-row">
-          <div className="team-member-big">
-            <div className="team-photo">
-              <img src="static/images/Home/aman.svg" alt="Aman Anand" />
-            </div>
-            <h3 className="team-member-name-big">Aman Anand</h3>
-            <p className="team-member-role-big">CEO</p>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/aman-anand-9b4043322/"
-              className="linkedin-link"
-            >
-              in
-            </a>
+      <div className="careers-container2">
+        <h2>Application Process</h2>
+        <div className="application-process">
+          <div className="process-left">
+            <h3>
+              Ready to make an impact at Novatide Labs?
+              <br />
+              Here's how to apply:
+            </h3>
+            <p></p>
           </div>
-          <div className="team-member-big">
-            <div className="team-photo">
-              <img
-                src="static/images/Home/macarena.svg"
-                alt="Macarena Olivera"
-              />
+          <div className="process-right">
+            <div className="process-step">
+              <h3>1</h3>
+              <div>
+                <h4>Explore Opportunities</h4>
+                <p>
+                  Click on the position that interests you to access the
+                  application form.
+                </p>
+              </div>
             </div>
-            <h3 className="team-member-name-big">Macarena Olivera</h3>
-            <p className="team-member-role-big">Head of Management</p>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/macarenaolivera/"
-              className="linkedin-link"
-            >
-              in
-            </a>
+            <div className="process-step">
+              <h3>2</h3>
+              <div>
+                <h4>Submit Your Application</h4>
+                <p>Complete the form and submit it to us.</p>
+              </div>
+            </div>
+            <div className="process-step">
+              <h3>3</h3>
+              <div>
+                <h4>Interview Rounds</h4>
+                <p>
+                  If selected, you will be invited to an initial interview. This
+                  will be followed by additional rounds with our HR team and
+                  CEO.
+                </p>
+              </div>
+            </div>
+            <div className="process-step">
+              <h3>4</h3>
+              <div>
+                <h4>
+                  Join <br /> Our Team
+                </h4>
+                <p>
+                  Successful candidates will receive an offer and can look
+                  forward to starting their journey with us!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+      <div className="job-openings-section-container">
+        {" "}
+        <div className="job-openings-section">
+          <h2>Current Job Openings</h2>
+          <p className="section-description">
+            Explore the opportunities to be part of a cutting-edge fintech
+            company. You can also stay updated by visiting our LinkedIn page for
+            more listings and company updates.
+          </p>
 
-        <h2 className="team-title">Team Leaders</h2>
-        <div className="team-row">
-          <div className="team-member">
-            <div className="team-photo">
-              <img src="static/images/Home/angela.svg" alt="Ángela Eguren" />
+          <div className="job-opening" onClick={() => toggleJob(1)}>
+            <div className="job-header">
+              <img src="static/images/Careers/icon5.svg" alt="MBA Graduate" />
+              <span className="careers-job-title"> MBA Graduate</span>
+              <span className="careers-plus-icon">
+                {openJob === 1 ? "-" : "+"}
+              </span>
             </div>
-            <h3 className="team-member-name">
-              Ángela
-              <br /> Eguren
-            </h3>
-            <p className="team-member-role">Marketing</p>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/angelaegurenrevilla"
-              className="linkedin-link"
+
+            <div
+              className={`job-content ${
+                openJob === 1 ? "job-content-expanded" : ""
+              }`}
             >
-              in
-            </a>
-          </div>
-          <div className="team-member">
-            <div className="team-photo">
-              <img src="static/images/Home/david.svg" alt="David Rodriguez" />
+              <p>
+                We are looking for a strategic MBA Graduate to join our team. In
+                this role, you will engage in various projects across different
+                business areas, contributing to strategic initiatives, market
+                analysis, business development, and operational improvements.
+              </p>
+              <h3>Responsibilities:</h3>
+
+              <ul className="job-details-list">
+                <li>Create business plans.</li>
+                <li>Conduct research to optimise business models.</li>
+                <li>
+                  Coordinate with external teams and manage multiple projects.
+                </li>
+                <li>
+                  Apply agile and strategic thinking to enhance business
+                  processes.
+                </li>
+                <li>
+                  Present findings and recommendations to senior management.
+                </li>
+              </ul>
+              <h3>Requirements:</h3>
+              <ul className="job-details-list">
+                <li>MBA degree.</li>
+                <li>Strategic, results-driven mindset.</li>
+                <li>Strong analytical and communication skills.</li>
+                <li>Ability to work independently and collaboratively.</li>
+                <li>Proficiency in English.</li>
+              </ul>
+              <a
+                href="https://forms.gle/jAkZXEmeQCmeNvE59"
+                className="apply-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply
+              </a>
             </div>
-            <h3 className="team-member-name">
-              David
-              <br /> Rodriguez
-            </h3>
-            <p className="team-member-role">Development</p>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/arnold-david-rodriguez-c-0129109b/"
-              className="linkedin-link"
-            >
-              in
-            </a>
           </div>
-          <div className="team-member">
-            <div className="team-photo">
-              <img src="static/images/Home/fatima.svg" alt="Fátima Aguirre" />
+
+          <div className="job-opening-yellow" onClick={() => toggleJob(2)}>
+            <div className="job-header-different">
+              <img src="static/images/Careers/icon6.svg" alt="Video Editor" />
+              <span className="careers-job-title"> Video Editor</span>
+              <span className="careers-plus-icon">
+                {openJob === 2 ? "-" : "+"}
+              </span>
             </div>
-            <h3 className="team-member-name">
-              Fátima
-              <br /> Aguerre
-            </h3>
-            <p className="team-member-role">Trading</p>
-            <a
-              target="_blank"
-              href="https://linkedin.com/"
-              className="linkedin-link"
+            <div
+              className={`job-content ${
+                openJob === 2 ? "job-content-expanded" : ""
+              }`}
             >
-              in
-            </a>
+              <p>
+                We are hiring a skilled Content Creator for our marketing team.
+                The role focuses on creating engaging short videos for social
+                media using fast editing techniques and AI tools, while ensuring
+                content aligns with our brand.
+              </p>
+              <h3>Responsibilities:</h3>
+
+              <ul className="job-details-list">
+                <li>
+                  Use AI tools and fast video editing to turn text into
+                  compelling video content.
+                </li>
+                <li>Develop creative concepts with the marketing team.</li>
+                <li>
+                  Produce short videos for platforms like TikTok, Instagram, and
+                  LinkedIn.
+                </li>
+                <li>
+                  Ensure videos reflect the Novatide Labs brand and enhance
+                  visual storytelling.
+                </li>
+                <li>
+                  Stay updated on video content trends and best practices.
+                </li>
+                <li>
+                  Manage multiple projects, meeting deadlines and quality
+                  standards.
+                </li>
+              </ul>
+              <h3>Requirements:</h3>
+              <ul className="job-details-list">
+                <li>
+                  Experience in content creation, preferably in tech or
+                  innovation.
+                </li>
+                <li>
+                  Proficiency in video editing software (e.g., Adobe Premiere
+                  Pro, Final Cut Pro).
+                </li>
+                <li>
+                  Knowledge of AI video creation tools and social media video
+                  specs.
+                </li>
+                <li>Excellent communication and collaboration skills.</li>
+                <li>
+                  Fluent in English, with a portfolio of relevant social media
+                  video work.
+                </li>
+              </ul>
+              <a
+                href="https://forms.gle/BG1N5jLauPvQpgNA6"
+                className="apply-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply
+              </a>
+            </div>
           </div>
-          <div className="team-member">
-            <div className="team-photo">
+
+          <div className="job-opening" onClick={() => toggleJob(3)}>
+            <div className="job-header">
               <img
-                src="static/images/Home/francisca.svg"
-                alt="Francisca Cagnoni"
+                src="static/images/Careers/icon7.svg"
+                alt="Quality Assurance Engineer"
               />
+              <span className="careers-job-title">
+                {" "}
+                Quality Assurance Engineer
+              </span>
+              <span className="careers-plus-icon">
+                {openJob === 3 ? "-" : "+"}
+              </span>
             </div>
-            <h3 className="team-member-name">
-              Francisca
-              <br /> Cagnoni
-            </h3>
-            <p className="team-member-role">Human Resources</p>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/maria-francisca-cagnoni-8a603622b/ "
-              className="linkedin-link"
+            <div
+              className={`job-content ${
+                openJob === 3 ? "job-content-expanded" : ""
+              }`}
             >
-              in
-            </a>
+              <p>
+                We are looking for a skilled QA Engineer to join our team and
+                ensure the quality of our diverse software products, including
+                Python backend services, React Native mobile apps, static
+                websites, React web apps, and dashboards.
+              </p>
+              <h3>Responsibilities:</h3>
+
+              <ul className="job-details-list">
+                <li>
+                  Backend Testing: Design and execute test cases for Python
+                  server endpoints, perform API testing, and conduct unit and
+                  integration tests.
+                </li>
+                <li>
+                  Mobile Application Testing: Test React Native apps on iOS and
+                  Android, perform functional and performance tests, and use
+                  mobile testing frameworks.
+                </li>
+                <li>
+                  Web Application Testing: Test static websites and React-based
+                  web applications for functionality, responsiveness, and
+                  cross-browser compatibility.
+                </li>
+                <li>
+                  General QA Tasks: Create and maintain test plans, execute
+                  manual and automated tests, report and track bugs, collaborate
+                  with developers, and improve testing processes.
+                </li>
+              </ul>
+              <h3>Required Skills:</h3>
+              <ul className="job-details-list">
+                <li>
+                  Technical Skills: Proficiency in Python, testing frameworks
+                  (e.g., pytest), API testing tools, and experience with web
+                  technologies (HTML, CSS, JavaScript).
+                </li>
+                <li>
+                  Testing Skills: Strong understanding of QA methodologies,
+                  experience with both manual and automated testing, test
+                  management tools, and performance testing concepts.
+                </li>
+                <li>
+                  Soft Skills: Excellent analytical and problem-solving
+                  abilities, attention to detail, effective communication, and
+                  time management.
+                </li>
+              </ul>
+              <a
+                href="https://forms.gle/7DJN8q6Yuj4fkTuMA"
+                className="apply-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply
+              </a>
+            </div>
           </div>
-          <div className="team-member">
-            <div className="team-photo">
+
+          <div className="job-opening-yellow" onClick={() => toggleJob(4)}>
+            <div className="job-header">
               <img
-                src="static/images/Home/georgina.svg"
-                alt="Georgina Kontopyrgou"
+                src="static/images/Careers/icon8.svg"
+                alt="Developer Internship"
               />
+              <span className="careers-job-title"> Developer Internship</span>
+              <span className="careers-plus-icon">
+                {openJob === 4 ? "-" : "+"}
+              </span>
             </div>
-            <h3 className="team-member-name">
-              Georgina
-              <br /> Kontopyrgou
-            </h3>
-            <p className="team-member-role">Administrative Leader</p>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/georgina-kontopyrgou-176019329"
-              className="linkedin-link"
+            <div
+              className={`job-content ${
+                openJob === 4 ? "job-content-expanded" : ""
+              }`}
             >
-              in
-            </a>
+              <p>
+                We are  hiring a Software Development Intern to join their
+                innovative development team. This role offers hands-on
+                experience with real-world software projects, focusing on
+                process automation, feature development, and website creation.
+              </p>
+              <h3>Key Responsibilities:</h3>
+
+              <ul className="job-details-list">
+                <li>
+                  Assist in automating processes, building new software
+                  features, and creating websites.
+                </li>
+                <li>
+                  Collaborate with the Project Manager, Team Leader, and
+                  Developers via Slack and Monday.com.
+                </li>
+                <li>
+                  Develop skills in tools like Git and GitHub, and enhance
+                  problem-solving abilities.
+                </li>
+                <li>
+                  Take ownership of tasks, contribute innovative ideas, and
+                  support team efforts.
+                </li>
+              </ul>
+              <h3>Required Skills:</h3>
+              <ul className="job-details-list">
+                <li>Proficiency in JavaScript and Python.</li>
+                <li>
+                  Familiarity with HTML, CSS, Node.js, Flask, PostgreSQL, Redis,
+                  Git, GitHub, and preferred development IDEs.
+                </li>
+                <li>
+                  A background in Computer Science, Machine Learning, or related
+                  fields is beneficial but not required.
+                </li>
+              </ul>
+              <a
+                href="https://forms.gle/P4eFHVzTSfEN14Gq6"
+                className="apply-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply
+              </a>
+            </div>
           </div>
-          <div className="team-member">
-            <div className="team-photo">
-              <img src="static/images/Home/tamar.svg" alt="Tamar Voscoboinik" />
+
+          <div className="job-opening" onClick={() => toggleJob(5)}>
+            <div className="job-header">
+              <img
+                src="static/images/Careers/icon9.svg"
+                alt="Designer Internship"
+              />
+              <span className="careers-job-title"> Designer Internship</span>
+              <span className="careers-plus-icon">
+                {openJob === 5 ? "-" : "+"}
+              </span>
             </div>
-            <h3 className="team-member-name">
-              Tamar
-              <br /> Voscoboinik
-            </h3>
-            <p className="team-member-role">Design</p>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/tamar-voscoboinik-75570a216"
-              className="linkedin-link"
+            <div
+              className={`job-content ${
+                openJob === 5 ? "job-content-expanded" : ""
+              }`}
             >
-              in
-            </a>
+              <p>
+                We are seeking a motivated Designer Intern to join our team.
+                This role offers hands-on experience with real-world design
+                projects, focusing on identity and web page design while
+                developing skills in various design processes.
+              </p>
+              <h3>Key Responsibilities:</h3>
+
+              <ul className="job-details-list">
+                <li>
+                  Work on identity and simple web page design projects,
+                  incorporating information design.
+                </li>
+                <li>
+                  Collaborate closely with the Design Team, including the Head
+                  of Design and Junior Designer, using Slack and Monday.com.
+                </li>
+                <li>
+                  Develop skills in design tools and techniques, enhance
+                  creativity, and learn to work effectively in a team.
+                </li>
+                <li>
+                  Take ownership of tasks, contribute innovative ideas, and
+                  support team project completion.
+                </li>
+              </ul>
+              <h3>Required Skills:</h3>
+              <ul className="job-details-list">
+                <li>Proficiency in Adobe Illustrator and Photoshop.</li>
+                <li>Basic knowledge of Figma.</li>
+                <li>
+                  Background in graphic design, visual arts, or related fields
+                  is beneficial but not required.
+                </li>
+              </ul>
+              <a
+                href="https://forms.gle/GbuaLtENxxyW9E7Q8"
+                className="apply-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply
+              </a>
+            </div>
+          </div>
+          <div className="job-opening" onClick={() => toggleJob(6)}>
+            <div className="job-header">
+              <img
+                src="static/images/Careers/icon10.svg"
+                alt="Designer Internship"
+              />
+              <span className="careers-job-title">Commmunity Manager</span>
+              <span className="careers-plus-icon">
+                {openJob === 6 ? "-" : "+"}
+              </span>
+            </div>
+            <div
+              className={`job-content ${
+                openJob === 6 ? "job-content-expanded" : ""
+              }`}
+            >
+              <p>
+                We are looking for a passionate Community Manager to join our
+                specialised team, focused on empowering individuals through
+                digital finance education. You will engage with the community,
+                manage social media content, and help grow a network of curious,
+                motivated individuals. Your role is vital in creating an
+                ecosystem where transparency, collaboration, and learning
+                thrive, supporting the values of our AI-driven platform.
+              </p>
+              <h3>Key Responsibilities:</h3>
+
+              <ul className="job-details-list">
+                <li>
+                  Build, engage, and manage our crypto and Web3 community across
+                  platforms like X, TikTok, YouTube, and Discord.
+                </li>
+                <li>
+                  Create and optimise strategic social media content that drives
+                  engagement and reflects our values of clarity and unbiased
+                  information.
+                </li>
+                <li>
+                  Host events, facilitate discussions, and provide ongoing
+                  support to community members.
+                </li>
+                <li>
+                  Collect and analyse community feedback to refine messaging and
+                  enhance the overall experience.
+                </li>
+                <li>
+                  Collaborate with the marketing team to align growth strategies
+                  with brand values.
+                </li>
+              </ul>
+              <h3>Required Skills:</h3>
+              <ul className="job-details-list">
+                <li>
+                  Proven experience managing online communities, particularly in
+                  crypto, trading, or Web3 spaces.
+                </li>
+                <li>
+                  Proficiency in using social media platforms and tools like AI
+                  for content creation and community management.
+                </li>
+                <li>
+                  Excellent copywriting skills for creating impactful and
+                  value-driven content.
+                </li>
+                <li>
+                  Strong problem-solving skills and ability to work effectively
+                  in a startup environment.
+                </li>
+              </ul>
+              <h3>Preferred Qualifications</h3>
+              <ul className="job-details-list">
+                <li>
+                  Hands-on experience in growing and managing communities in a
+                  startup setting.
+                </li>
+                <li>
+                  Familiarity with AI tools to streamline content creation and
+                  management processes.
+                </li>
+                <li>
+                  Passion for digital finance, trading, and emerging Web3
+                  technologies.
+                </li>
+              </ul>
+              <a
+                href="https://forms.gle/b9ZTUTrfzzVQrWrR8"
+                className="apply-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply
+              </a>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div className="careers-final-section">
+        <h2 className="careers-final-heading">
+          We can’t wait to hear from you!
+        </h2>
+        <img
+          className="careers-final-image"
+          src="static/images/Careers/icon4.svg"
+          alt="Skateboarder with laptop"
+        />
       </div>
       <Footer />
     </div>

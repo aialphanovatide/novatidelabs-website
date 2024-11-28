@@ -9,8 +9,8 @@ const Contactus = () => {
   const navigate = useNavigate();
   const formspreeURL = "https://formspree.io/f/xqazovol";
   const [selected, setSelected] = useState("GB");
-  const [customLabels, setCustomLabels] = useState({});
   const [dialCode, setDialCode] = useState("");
+  const [customLabels, setCustomLabels] = useState({});
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -31,13 +31,6 @@ const Contactus = () => {
     setCustomLabels(labels);
   }, []);
 
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.id]: e.target.value,
-    });
-  };
-
   useEffect(() => {
     // Buscar el objeto que tenga el code "DZ"
     const country = countriesData.find((country) => country.code === selected);
@@ -50,48 +43,43 @@ const Contactus = () => {
     }
   }, [selected]);
 
-  // Manejar el envío del formulario
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value,
+    });
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setFormStatus({ submitting: true, success: false, error: false });
 
     try {
-      const response = await fetch(formspreeURL, {
+      const response = await fetch("https://formspree.io/f/xqazovol", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          fullName: formData.fullName,
-          email: formData.email,
-          phone: dialCode + formData.phone,
-          message: formData.message,
-        }),
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
         setFormStatus({ submitting: false, success: true, error: false });
-        setFormData({
-          fullName: "",
-          email: "",
-          phone: "",
-          message: "",
-        });
+        setFormData({ fullName: "", email: "", phone: "", message: "" });
       } else {
-        throw new Error("Error en el envío");
+        throw new Error("Error submitting the form");
       }
-    } catch (error) {
+    } catch {
       setFormStatus({ submitting: false, success: false, error: true });
     }
   };
 
-  // Check screen size
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    handleResize(); // Initial check
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -103,25 +91,24 @@ const Contactus = () => {
     // Mobile layout
     return (
       <div className="contactus">
-        <div className="contentRow-contactus-mobile">
-          <div className="illustration-contactus-mobile">
+        <div className="contentRow-contactus">
+          <div className="illustration-contactus">
             <img
               src="static/images/Contactus/handpencil.png"
               alt="Illustration"
             />
           </div>
-          <div className="textContent-contactus-mobile">
+          <div className="textContent-contactus">
             <h1>
-              <div className="text-yellow-contactus">Get in</div>
-              <div className="text-yellow-contactus">Touch</div>
+              <div className="text-yellow-contactus">Get In Touch</div>
             </h1>
-            <div className="scroll-down-section-contactus">
-              <img
-                src="static/images/Contactus/scrolldown.png"
-                alt="Scroll Down"
-                className="scroll-icon-contactus"
-              />
-            </div>
+          </div>
+          <div className="scroll-down-section">
+            <img
+              src="static/images/Contactus/scrolldown.png"
+              alt="Scroll Down"
+              className="scroll-icon"
+            />
           </div>
         </div>
         <section className="contactFormSection">
@@ -177,7 +164,6 @@ const Contactus = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   placeholder="Your message here..."
-                  className="inputStyleMessage"
                   required
                 ></textarea>
               </div>
@@ -189,8 +175,6 @@ const Contactus = () => {
                 {formStatus.submitting ? "Sending..." : "Submit"}
               </button>
             </form>
-
-            {/* Mensajes de éxito o error */}
             {formStatus.success && (
               <p className="successMessage">Message sent successfully!</p>
             )}
@@ -201,25 +185,23 @@ const Contactus = () => {
             )}
           </div>
         </section>
-
-        {/* Second Section: Contact Information */}
         <section className="contactInfoSection">
           <div className="contactDetails">
             <div className="contactDetail">
               <img
                 src="static/images/Contactus/locationIcon.svg"
-                alt="Location Icon"
+                alt="Location"
               />
               <div>
-                <h3>71–75 Shelton Street, Covent Garden</h3>
-                <p>London, United Kingdom, WC2H 9JQ, United Kingdom.</p>
+                <h3>
+                  71–75 Shelton Street,
+                  <br /> Covent Garden
+                </h3>
+                <p>London, WC2H 9JQ, United Kingdom</p>
               </div>
             </div>
             <div className="contactDetail">
-              <img
-                src="static/images/Contactus/emailIcon.svg"
-                alt="Email Icon"
-              />
+              <img src="static/images/Contactus/emailIcon.svg" alt="Email" />
               <p>enquiries@novatidelabs.com</p>
             </div>
           </div>
@@ -232,6 +214,7 @@ const Contactus = () => {
   }
 
   return (
+    // Desktop layout
     <div className="contactus">
       <div className="contentRow-contactus">
         <div className="textContent-contactus">
@@ -307,7 +290,6 @@ const Contactus = () => {
                 value={formData.message}
                 onChange={handleInputChange}
                 placeholder="Your message here..."
-                className="inputStyleMessage"
                 required
               ></textarea>
             </div>
@@ -319,8 +301,6 @@ const Contactus = () => {
               {formStatus.submitting ? "Sending..." : "Submit"}
             </button>
           </form>
-
-          {/* Mensajes de éxito o error */}
           {formStatus.success && (
             <p className="successMessage">Message sent successfully!</p>
           )}
@@ -331,22 +311,23 @@ const Contactus = () => {
           )}
         </div>
       </section>
-
-      {/* Second Section: Contact Information */}
       <section className="contactInfoSection">
         <div className="contactDetails">
           <div className="contactDetail">
             <img
               src="static/images/Contactus/locationIcon.svg"
-              alt="Location Icon"
+              alt="Location"
             />
             <div>
-              <h3>71–75 Shelton Street, Covent Garden</h3>
-              <p>London, United Kingdom, WC2H 9JQ, United Kingdom.</p>
+              <h3>
+                71–75 Shelton Street,
+                <br /> Covent Garden
+              </h3>
+              <p>London, WC2H 9JQ, United Kingdom</p>
             </div>
           </div>
           <div className="contactDetail">
-            <img src="static/images/Contactus/emailIcon.svg" alt="Email Icon" />
+            <img src="static/images/Contactus/emailIcon.svg" alt="Email" />
             <p>enquiries@novatidelabs.com</p>
           </div>
         </div>

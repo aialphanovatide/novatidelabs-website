@@ -134,19 +134,38 @@ const Navbar = () => {
           <div className="left-arrow arrow">
             <img
               src="static/images/arrow-left.png"
-              style={{ opacity: activeDot === "/" ? 0.1 : 1 }}
+              style={{
+                opacity:
+                  activeDot === "/" ||
+                  activeDot === "/aboutus" ||
+                  activeDot === "/philosophy" ||
+                  activeDot === "/methodology" ||
+                  activeDot === "/joinourteam"
+                    ? 0
+                    : 1,
+              }}
               alt="Previous"
             />
           </div>
           <div className="right-arrow arrow">
             <img
               src="static/images/arrow-right.png"
-              style={{ opacity: activeDot === "/contactus" ? 0.1 : 1 }}
+              style={{
+                opacity:
+                  activeDot === "/contactus" ||
+                  activeDot === "/aboutus" ||
+                  activeDot === "/philosophy" ||
+                  activeDot === "/methodology" ||
+                  activeDot === "/joinourteam"
+                    ? 0
+                    : 1,
+              }}
               alt="Next"
             />
           </div>
         </>
       )}
+
       {/* Dot Container */}
       <div className={`dot-container ${isAboveFooter ? "stuck" : ""}`}>
         <div
