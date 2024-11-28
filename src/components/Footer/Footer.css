@@ -16,10 +16,10 @@
 }
 
 .logo-section {
-  width: 40%;
-  margin-left: 5vw;
+  width: 30%;
+  margin-left: -1vw;
   margin-right: 1vw;
-  margin-top: -40px;
+  margin-top: 0px;
 }
 
 .logo-section img {
@@ -189,5 +189,10 @@ p.enquiries-email {
   .footer-mobile-line{
     height: 1px;
     width: 35px;
+  }
+
+  .logo-section{
+    margin-left: 20px;
+  
   }
 }

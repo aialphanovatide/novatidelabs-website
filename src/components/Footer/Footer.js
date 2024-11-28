@@ -34,7 +34,7 @@ const Footer = () => {
       <footer className="footer">
         <div className="footer-content-mobile">
           {/* First row: Logo */}
-          <div className="logo-row">
+          <div className="logo-section">
             <img
               src="static/images/baseLogoWithText.png"
               alt="Novatide Labs Logo"

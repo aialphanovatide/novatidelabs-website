@@ -109,14 +109,14 @@ iframe {
     justify-content: center; /* Center image in the column */
     align-items: center;
     margin: 0;
-    margin-top: -230px;
+    margin-top: -290px;
     margin-left: -60px;
     width: 100px;
     height: auto;
   }
 
   .illustration-home img {
-    height: 52vh; /* Adjust image size for mobile */
+    height: 54vh; /* Adjust image size for mobile */
     width: 170px;
   }
 }
