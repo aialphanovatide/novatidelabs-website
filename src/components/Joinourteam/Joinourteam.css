@@ -36,11 +36,11 @@ div.textContent-joinourteam h1{
 }
 
 .illustration-joinourteam {
-  width: 40%;
+  width: 37%;
   display: flex;
   justify-content: center; /* Center illustration */
   align-items: center;
-  margin-top: -150px;
+  margin-top: 10px;
 }
 
 .illustration-joinourteam img {

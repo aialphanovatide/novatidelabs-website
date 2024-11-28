@@ -95,7 +95,7 @@ iframe {
     text-align: left;
     font-size: 17px; /* Adjust text size for mobile */
     margin: 0;
-    margin-top: 20px;
+    margin-top: 30px;
     line-height: 1.4;
   }
 
@@ -115,7 +115,7 @@ iframe {
     justify-content: center; /* Center image in the column */
     align-items: center;
     margin: 0;
-    margin-top: -260px;
+    margin-top: -220px;
     margin-left: -60px;
     width: 100px;
     height: auto;

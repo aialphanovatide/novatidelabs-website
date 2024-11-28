@@ -600,7 +600,7 @@ Being dependable and following through on commitments helps build trust within t
               </a>
             </div>
           </div>
-          <div className="job-opening" onClick={() => toggleJob(6)}>
+          <div className="job-opening-yellow" onClick={() => toggleJob(6)}>
             <div className="job-header">
               <img
                 src="static/images/Careers/icon10.svg"
