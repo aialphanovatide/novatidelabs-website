@@ -1,0 +1,795 @@
+
+.contentRow-joinourteam {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between; /* Align text and illustration side by side */
+    align-items: center;
+    height: 75vh;
+  }
+  
+  div.textContent-joinourteam {
+    flex: 1; /* Takes up available space */
+    font-size: 25px;
+    line-height: 1.1;
+    width: 15%;
+    color: black;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-left: 110px;
+    margin-top: 120px;
+  }
+  
+  div.textContent-joinourteam h1{
+    width: 680px;
+  }
+  
+  
+  .text-normal-joinourteam  {
+    color: #000000; /* Highlight color */
+    font-size: 23px;
+    font-weight: 300;
+    max-width: 700px;
+    margin-top: 40px;
+  }
+  
+  .text-yellow-joinourteam  {
+    font-size: 125px;
+  }
+  
+  .illustration-joinourteam {
+    width: 37%;
+    display: flex;
+    justify-content: center; /* Center illustration */
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .illustration-joinourteam img {
+    height: auto;
+  }
+  
+  
+  .careers-container-aboutus{
+    background-color: #FBBF24;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .careers-main-container h2 {
+      font-size: 35px;
+      margin-bottom: 0;
+      font-weight: 500;
+      font-family: "Plus Jakarta Sans", sans-serif;
+  
+    }
+    .careers-main-container h3 {
+      font-size: 1.1em;
+      margin-top: 10px;
+      width: 375px;
+      font-weight: 400;
+      font-family: "Plus Jakarta Sans", sans-serif;
+  
+  }
+  
+   h2.careers-big-title{
+    font-size: 3.5em;
+    margin-bottom: 0;
+    font-weight: 600;
+    width: 375px;
+    margin-top: 100px;
+    padding: 0 10% 0 8%;
+  }
+  
+  h3.careers-big-subtitle{
+    font-size: 1.1em;
+    margin-top: 10px;
+    width: 675px;
+    font-weight: 400;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding: 0 10% 0 8%;
+  
+  }
+    .right{
+      width: 90%;
+      border-radius: 50px;
+    }
+    
+    
+    .stacking-slide {
+      height: 450px;
+      width: 100%;
+      position: sticky;
+      top: 0;
+    
+    
+       &:nth-last-child(1) {
+          height: 100vh;
+       }
+    }
+    
+    .bottom{
+      background-color: rgb(101, 101, 110);
+      height: 200px;
+      text-align: center;
+    }
+    .bottom h1{
+      font-size: 32;
+      font-weight: 700;
+      color: white;
+      margin-top: 10px;
+    }
+    
+    .top{
+      background-color: blue;
+      
+    }
+    .careers-container2-aboutus {
+      background-color: #FBBF24;
+      position: relative;
+      z-index: 2;
+      margin-top: -100px;
+      box-shadow: 0;
+      border-radius: 0;
+      padding: 40px 20px;
+      overflow: hidden;
+      font-family: "Plus Jakarta Sans", sans-serif;
+    }
+    
+    .careers-container2-aboutus h2 {
+      font-size: 45px;
+      margin-left: 10%;
+      font-weight: 700;
+      width: 100px;
+    }
+    
+    .application-process {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    
+    .process-left {
+      width: 30%;
+      margin-left: 10%;
+    }
+    
+    .process-right {
+      width: 55%;
+      margin-right: 5%;
+      margin-top: -125px;
+    }
+    
+    .process-step {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+    
+    .process-step h3 {
+      font-size: 90px;
+      margin-right: 20px;
+      color: white;
+      line-height: 1;
+      font-weight: 600;
+    }
+    
+    .process-step-content {
+      flex: 1;
+    }
+    
+    .process-step h4 {
+      font-size: 30px;
+      margin-bottom: 5px;
+      margin-top: 15px;
+      text-align: left;
+      width: 180px;
+    }
+    
+    .process-step p {
+      font-size: 16px;
+      margin: 0;
+      line-height: 1.4;
+      text-align: left;
+    }
+    
+    /* Additional Styles for Proper Alignment */
+    
+    .process-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 10%;
+    }
+    
+    .process-step h3 {
+      flex-shrink: 0;
+      text-align: center;
+      margin-right: 30px;
+      width: 70px;
+    }
+    
+    .process-step div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    
+  
+  
+  /* Job Openings Section */
+  
+  .job-openings-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .job-openings-section {
+    padding: 40px 60px;
+    max-width: 1100px;
+    width: 90%;
+    background-color: #fff;
+  }
+  
+  .job-openings-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  
+  .section-description {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #000000;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    max-width: 650px;
+    width: 90%;
+  }
+  
+  .job-opening {
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 15px;
+    text-align: left;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  
+  .job-opening-yellow {
+    background-color: #FCD34D;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 15px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  
+  
+  .job-opening:hover {
+    background-color: #e5e7eb;
+    transition: background-color 0.3s ease;
+  }
+  
+  .job-opening-yellow:hover {
+    background-color: #fbbf24;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  
+  .job-header-highlighted {
+    background-color: #fbbf24;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  
+  
+  
+  
+  .job-content {
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+    padding: 0px 60px;
+    font-weight: 500;
+    overflow: hidden; /* Ensure hidden content stays hidden */
+    max-height: 0; /* Start collapsed */
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out; /* Smooth transition for height and padding */
+  }
+  
+  .job-content-expanded {
+    max-height: 1000px; /* Arbitrary large value to allow expansion */
+    padding: 10px 60px; /* Restore padding */
+  }
+  
+  .job-content h3{
+    color: black;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  .job-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    text-align: left;
+  }
+  .job-header-different {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    text-align: left;
+  }
+  
+  .job-title-wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+  }
+  
+  .job-header img {
+    width: 80px;
+    height: 80px;
+    margin-right: 50px;
+  }
+  .job-header-different img {
+    width: 80px;
+    height: 80px;
+    margin-right: 40px;
+    margin-left: 10px;
+  }
+  
+  .job-title {
+    white-space: nowrap;
+  }
+  
+  .careers-plus-icon {
+    font-size: 54px;
+    font-weight: 200;
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+    color: white;
+    margin-top: -10px;
+  }
+  
+  .careers-job-title {
+    font-size: 27px;
+    font-weight: 700;
+    display: inline-block;
+    width: 400px;
+    text-align: left;
+    margin-right: 41%;
+    padding-top: 10px;
+  }
+  
+  .apply-button {
+    background-color: #F59E0B;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .apply-button:hover {
+    background-color: #aa7314;
+  }
+  
+  
+  .job-details-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 50px;
+  
+  }
+  
+  .job-details-list li {
+    margin-bottom: 10px;
+  }
+  
+    /* Contact Section Styling */
+  .careers-final-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff; /* Set background to white for contrast */
+  }
+  
+  h2.careers-final-heading {
+    font-size: 48px;
+    font-weight: 500;
+    color: #fbbf24; /* Use the same yellow color from your previous section */
+    font-family: "Plus Jakarta Sans", sans-serif; /* Use consistent font */
+  }
+  
+  .careers-final-image {
+    max-width: 300px; /* Adjust size based on preference */
+    width: 100%;
+    height: auto;
+    margin: 100px auto 150px auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .teammembers-container {
+    background-color: #fbbf24;
+    padding: 50px 0 50px 0;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    width: 100vw;
+    padding-top: 100px;
+    display: flex; /* Use flex to center the content */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+}
+  
+  .team-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    align-self: center;
+    text-align: center;
+  }
+
+  h2.team-title {
+    font-size: 36px;
+    font-weight: 600;
+    width: 300px;
+    color: #fff;
+    margin: 0 auto 100px auto;
+    align-self: center;
+    text-align: center;
+  }
+
+  .team-title-big {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    align-self: center;
+    text-align: center;
+  }
+
+  h2.team-title-big {
+    font-size: 36px;
+    font-weight: 600;
+    width: 300px;
+    color: #fff;
+    margin: 0 auto 100px auto;
+    align-self: center;
+    text-align: center;
+  }
+  
+  .team-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+  
+  .team-member {
+    width: 150px;
+    text-align: center;
+    color: #333;
+  }
+    
+  .team-member-big {
+    width: 30%;
+    text-align: center;
+    color: #333;
+  }
+
+  .team-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background-color: #e0e0e0; /* Placeholder for the image */
+  }
+  
+  h3.team-member-name {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  
+  .team-member-role {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  h3.team-member-name-big {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  
+  .team-member-role-big {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  a.linkedin-link-big {
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+  }
+  a.linkedin-link {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media (max-width: 768px) {
+    .careers-container-aboutus{
+      margin-top: 60px;
+      margin-bottom: 0;
+
+    }
+  
+    .stacking-slide {
+      height: 650px;
+    }
+  
+    .application-process {
+      flex-direction: column; /* Stacks .process-left above .process-right */
+      align-items: center; /* Aligns both sections to the center */
+      gap: 20px; /* Adds some spacing between the sections */
+    }
+  
+    .careers-container2-aboutus {
+      border-radius: 0;
+      margin-top: 0px;
+      margin-bottom: 50px;
+
+    }
+  
+    .careers-container2-aboutus h2 {
+      margin-left: -0px; /* Adjusts padding for smaller screens */
+      font-size: 2em; /* Adjusts font size for smaller screens */
+    }
+  
+    .process-left, .process-right {
+      width: 100%; /* Makes both sections take full width on mobile */
+      margin: 0; /* Reset margins for mobile */
+    }
+  
+    .process-right {
+      margin-top: 20px; /* Adds space between the two sections */
+    }
+  
+    .process-left h3 {
+      font-size: 1em; /* Adjusts font size for smaller screens */
+    }
+  
+    h2.careers-big-title{
+      font-size: 39px;
+      margin-bottom: 0;
+      font-weight: 700;
+      width: 400px;
+      margin-top: 20px;
+      font-family: "Plus Jakarta Sans", sans-serif;
+    }
+    
+    h3.careers-big-subtitle{
+      font-size: 17px;
+      margin-top: 10px;
+      width: 80%;
+      font-weight: 400;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      padding: 0 10% 0 10%;
+    }
+  
+    .job-content{
+      padding: 0px 10px;
+    }
+  
+    .job-header {
+      display: flex;
+      align-items: center; /* Ensures both image and text are vertically aligned */
+      justify-content: space-between; /* Ensures proper space between title and + icon */
+      padding: 10px; /* Adds some padding to ensure it doesn't look squeezed */
+      width: 100%;
+    }
+  
+    .job-header-different {
+      display: flex;
+      align-items: center; /* Ensures both image and text are vertically aligned */
+      justify-content: space-between; /* Ensures proper space between title and + icon */
+      padding: 10px; /* Adds some padding to ensure it doesn't look squeezed */
+      width: 100%;
+    }
+  
+    .job-header img {
+      width: 40px; /* Reduces the size of the image for mobile */
+      height: 40px;
+      margin-right: 10px; /* Adds space between image and job title */
+    }
+  
+    .job-header-different img {
+      width: 40px;
+      height: 40px;
+      margin-left: 3px;
+      margin-right: 9px;
+    }
+  
+    .careers-job-title {
+      font-size: 16px; /* Ensures text is smaller for mobile */
+      font-weight: 800;
+      flex: 1;
+      text-align: left; /* Aligns the title to the left */
+      margin-left: 10px; /* Ensures some spacing between image and title */
+      margin-right: 30px;
+    }
+  
+    span.careers-job-title{
+      width: 650px;
+    }
+  
+    .careers-plus-icon {
+      font-size: 30px; /* Adjust size of the + icon */
+      font-weight: 600;
+      color: white;
+      margin-top: 0px;
+      padding-right: 20px;
+    }
+    .job-content-expanded {
+      max-height: 1500px;
+      padding-bottom: 40px;
+    }
+  
+  
+    .job-opening-yellow:hover {
+      background-color: #fbbf24; /* Keeps the hover color */
+    }
+  
+    .job-opening:hover {
+      background-color: #e5e7eb; /* Keeps the hover color */
+    }
+    .contentRow-joinourteam-mobile {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center elements horizontally */
+      margin-top: 220px;
+      margin-bottom: 160px;
+      padding: 0 20px;
+      font-family: "Plus Jakarta Sans", sans-serif;
+    }
+  
+    .textContent-joinourteam-mobile {
+      text-align: center; /* Center text for mobile */
+      margin-top: 20px;
+    }
+  
+    .textContent-joinourteam-mobile h1 {
+      font-size: 20px;
+      line-height: 1.4;
+      color: #000000;
+    }
+  
+    .text-yellow-joinourteam {
+      font-size: 35px; /* Adjust size for mobile */
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  
+    .text-normal-joinourteam {
+      text-align: left;
+      font-size: 16px;
+      color: #000000;
+      line-height: 1.5;
+      margin-top: 10px;
+      font-weight: 400;
+    }
+  
+    .illustration-joinourteam {
+      margin-bottom: 20px; /* Add spacing below the image */
+      margin-top: -100px;
+    }
+  
+    .illustration-joinourteam img {
+      min-width: 300px; /* Adjust image size for smaller screens */
+      height: auto;
+    }
+
+
+
+
+
+
+    .teammembers-container {
+        padding-top: 200px;
+        width: 100%;
+      }
+
+      .team-member-big {
+        width: 80%;
+        text-align: center;
+        color: #333;
+      }
+
+      h2.team-title,
+      h2.team-title-big{
+        margin-right: 0;
+      }
+  
+  }
