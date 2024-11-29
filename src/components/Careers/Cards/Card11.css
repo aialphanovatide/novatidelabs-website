@@ -69,8 +69,9 @@ div.card11 {
     margin-top: 110px;
     flex-direction: column; /* Stack .card11-left above .card11-right */
     height: auto; /* Allow the height to adjust based on content */
-    padding-bottom: 290px; /* Adjust padding for mobile */
+    padding-bottom: 90px; /* Adjust padding for mobile */
     background: linear-gradient(to right, #171717, #171717);
+    margin-bottom: 1500px;
   }
 
   .card11-left,
