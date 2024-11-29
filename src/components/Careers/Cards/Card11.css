@@ -71,7 +71,6 @@ div.card11 {
     height: auto; /* Allow the height to adjust based on content */
     padding-bottom: 90px; /* Adjust padding for mobile */
     background: linear-gradient(to right, #171717, #171717);
-    margin-bottom: 1500px;
   }
 
   .card11-left,
