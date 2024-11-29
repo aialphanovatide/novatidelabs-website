@@ -781,7 +781,7 @@
 
 
     .teammembers-container {
-        padding-top: 200px;
+        padding-top: 150px;
         width: 100%;
       }
 
@@ -794,6 +794,11 @@
       h2.team-title,
       h2.team-title-big{
         margin-right: 0;
+      }
+
+      footer.footer{
+        background-color: white;
+        padding-top: 50px;
       }
   
   }
