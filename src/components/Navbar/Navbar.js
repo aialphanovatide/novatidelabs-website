@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ handlePrev, handleNext }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDot, setActiveDot] = useState("/");
   const [isAboveFooter, setIsAboveFooter] = useState(false);
@@ -131,7 +131,7 @@ const Navbar = () => {
       </ul>
       {!isOpen && (
         <>
-          <div className="left-arrow arrow">
+          <div className="left-arrow arrow" onClick={handlePrev}>
             <img
               src="static/images/arrow-left.png"
               style={{
@@ -147,7 +147,7 @@ const Navbar = () => {
               alt="Previous"
             />
           </div>
-          <div className="right-arrow arrow">
+          <div className="right-arrow arrow" onClick={handleNext}>
             <img
               src="static/images/arrow-right.png"
               style={{

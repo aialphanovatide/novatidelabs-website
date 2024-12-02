@@ -262,7 +262,7 @@ const Casestudies = () => {
     );
   }
   return (
-    <div className="casestudies">
+    <div id="casestudies" className="casestudies">
       <div className="contentRow-casestudies">
         <div className="textContent-casestudies">
           <h1>

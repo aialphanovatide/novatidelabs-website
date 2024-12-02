@@ -141,7 +141,7 @@ function App() {
 
   return (
     <div ref={rootRef} className="app-content">
-      <Navbar />
+      <Navbar handlePrev={handlePrev} handleNext={handleNext} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/design" element={<Design />} />
