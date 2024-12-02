@@ -732,7 +732,7 @@
       display: flex;
       flex-direction: column; /* Stack elements vertically */
       align-items: center; /* Center elements horizontally */
-      margin-top: 160px;
+      margin-top: 130px;
       padding: 0 20px;
       padding-bottom: 160px;
       font-family: "Plus Jakarta Sans", sans-serif;
