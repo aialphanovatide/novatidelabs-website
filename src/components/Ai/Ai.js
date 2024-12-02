@@ -82,15 +82,9 @@ const Ai = () => {
           </div>
         </div>
         <div className="button-section-ai">
-          <button
-            className="cta-button-ai"
-            onClick={() => {
-              navigate("/casestudies");
-              window.location.reload(); // Force reload after navigating
-            }}
-          >
+          <a className="cta-button-ai" href="/casestudies#casestudies">
             Check our Case Studies
-          </button>
+          </a>
         </div>
       </div>
     );
