@@ -559,14 +559,10 @@ h2.careers-final-heading {
   .job-opening:hover {
     background-color: #e5e7eb; /* Keeps the hover color */
   }
-  .contentRow-joinourteam-mobile {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center elements horizontally */
-    margin-top: 180px;
-    margin-bottom: 160px;
-    padding: 0 20px;
-    font-family: "Plus Jakarta Sans", sans-serif;
+  div.contentRow-joinourteam-mobile {
+
+    margin-top: 160px;
+
   }
 
   .textContent-joinourteam-mobile {

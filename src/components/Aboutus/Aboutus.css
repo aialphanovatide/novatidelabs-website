@@ -732,7 +732,7 @@
       display: flex;
       flex-direction: column; /* Stack elements vertically */
       align-items: center; /* Center elements horizontally */
-      margin-top: 180px;
+      margin-top: 160px;
       padding: 0 20px;
       padding-bottom: 160px;
       font-family: "Plus Jakarta Sans", sans-serif;
@@ -799,6 +799,7 @@
 
       footer.footer{
         background-color: white;
+        margin-top: -60px;
         padding-top: 50px;
       }
   
