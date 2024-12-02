@@ -82,9 +82,15 @@ const Ai = () => {
           </div>
         </div>
         <div className="button-section-ai">
-          <a className="cta-button-ai" href="/casestudies#casestudies">
+          <button
+            className="cta-button-ai"
+            onClick={() => {
+              navigate("/casestudies");
+              window.location.reload(); // Force reload after navigating
+            }}
+          >
             Check our Case Studies
-          </a>
+          </button>
         </div>
       </div>
     );
@@ -155,11 +161,15 @@ const Ai = () => {
         </div>
       </div>
       <div className="button-section-ai">
-        <div className="button-section-ai">
-          <a className="cta-button-ai" href="/casestudies#casestudies">
-            Check our Case Studies
-          </a>
-        </div>
+        <button
+          className="cta-button-ai"
+          onClick={() => {
+            navigate("/casestudies");
+            window.location.reload(); // Force reload after navigating
+          }}
+        >
+          Check our Case Studies
+        </button>
       </div>
     </div>
   );

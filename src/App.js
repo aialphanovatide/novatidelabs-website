@@ -38,7 +38,7 @@ function App() {
     "/philosophy",
     "/methodology",
     "/joinourteam",
-  ]; // Routes without Footer
+  ]; // Routes without Footer and without horizontal scrolling
 
   const rootRef = useRef(null);
 
@@ -61,11 +61,13 @@ function App() {
   }, [activeItem]);
 
   const handleTouchStart = (event) => {
+    if (excludedRoutes.includes(location.pathname)) return; // Disable scrolling
     setTouchStartX(event.touches[0].clientX);
     setIsSlidingActive(true);
   };
 
   const handleTouchEnd = (event) => {
+    if (excludedRoutes.includes(location.pathname)) return; // Disable scrolling
     if (!isSlidingActive || touchStartX === null) return;
     const touchEndX = event.changedTouches[0].clientX;
     const deltaX = touchStartX - touchEndX;
@@ -104,11 +106,13 @@ function App() {
     if (!rootElement) return;
 
     const handleMouseStart = (event) => {
+      if (excludedRoutes.includes(location.pathname)) return; // Disable scrolling
       setTouchStartX(event.clientX);
       setIsSlidingActive(true);
     };
 
     const handleMouseEnd = (event) => {
+      if (excludedRoutes.includes(location.pathname)) return; // Disable scrolling
       if (!isSlidingActive || touchStartX === null) return;
       const mouseEndX = event.clientX;
       const deltaX = touchStartX - mouseEndX;
@@ -137,7 +141,7 @@ function App() {
       rootElement.removeEventListener("mousedown", handleMouseStart);
       rootElement.removeEventListener("mouseup", handleMouseEnd);
     };
-  }, [touchStartX, activeItem]);
+  }, [touchStartX, activeItem, location.pathname]); // Add location.pathname to dependencies
 
   return (
     <div ref={rootRef} className="app-content">

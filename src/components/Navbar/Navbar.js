@@ -136,11 +136,12 @@ const Navbar = ({ handlePrev, handleNext }) => {
               src="static/images/arrow-left.png"
               style={{
                 opacity:
-                  activeDot === "/" ||
-                  activeDot === "/aboutus" ||
-                  activeDot === "/philosophy" ||
-                  activeDot === "/methodology" ||
-                  activeDot === "/joinourteam"
+                  activeDot === "/"
+                    ? 0.5
+                    : activeDot === "/aboutus" ||
+                      activeDot === "/philosophy" ||
+                      activeDot === "/methodology" ||
+                      activeDot === "/joinourteam"
                     ? 0
                     : 1,
               }}
@@ -152,11 +153,12 @@ const Navbar = ({ handlePrev, handleNext }) => {
               src="static/images/arrow-right.png"
               style={{
                 opacity:
-                  activeDot === "/contactus" ||
-                  activeDot === "/aboutus" ||
-                  activeDot === "/philosophy" ||
-                  activeDot === "/methodology" ||
-                  activeDot === "/joinourteam"
+                  activeDot === "/contactus"
+                    ? 0.5
+                    : activeDot === "/aboutus" ||
+                      activeDot === "/philosophy" ||
+                      activeDot === "/methodology" ||
+                      activeDot === "/joinourteam"
                     ? 0
                     : 1,
               }}
@@ -167,42 +169,48 @@ const Navbar = ({ handlePrev, handleNext }) => {
       )}
 
       {/* Dot Container */}
-      <div className={`dot-container ${isAboveFooter ? "stuck" : ""}`}>
-        <div
-          className={`dot ${activeDot === "/" ? "active-dot" : "inactive-dot"}`}
-          onClick={() => handleDotClick("/")}
-        ></div>
-        <div
-          className={`dot ${
-            activeDot === "/design" ? "active-dot" : "inactive-dot"
-          }`}
-          onClick={() => handleDotClick("/design")}
-        ></div>
-        <div
-          className={`dot ${
-            activeDot === "/modular" ? "active-dot" : "inactive-dot"
-          }`}
-          onClick={() => handleDotClick("/modular")}
-        ></div>
-        <div
-          className={`dot ${
-            activeDot === "/ai" ? "active-dot" : "inactive-dot"
-          }`}
-          onClick={() => handleDotClick("/ai")}
-        ></div>
-        <div
-          className={`dot ${
-            activeDot === "/casestudies" ? "active-dot" : "inactive-dot"
-          }`}
-          onClick={() => handleDotClick("/casestudies")}
-        ></div>
-        <div
-          className={`dot ${
-            activeDot === "/contactus" ? "active-dot" : "inactive-dot"
-          }`}
-          onClick={() => handleDotClick("/contactus")}
-        ></div>
-      </div>
+      {!["/aboutus", "/philosophy", "/methodology", "/joinourteam"].includes(
+        activeDot
+      ) && (
+        <div className={`dot-container ${isAboveFooter ? "stuck" : ""}`}>
+          <div
+            className={`dot ${
+              activeDot === "/" ? "active-dot" : "inactive-dot"
+            }`}
+            onClick={() => handleDotClick("/")}
+          ></div>
+          <div
+            className={`dot ${
+              activeDot === "/design" ? "active-dot" : "inactive-dot"
+            }`}
+            onClick={() => handleDotClick("/design")}
+          ></div>
+          <div
+            className={`dot ${
+              activeDot === "/modular" ? "active-dot" : "inactive-dot"
+            }`}
+            onClick={() => handleDotClick("/modular")}
+          ></div>
+          <div
+            className={`dot ${
+              activeDot === "/ai" ? "active-dot" : "inactive-dot"
+            }`}
+            onClick={() => handleDotClick("/ai")}
+          ></div>
+          <div
+            className={`dot ${
+              activeDot === "/casestudies" ? "active-dot" : "inactive-dot"
+            }`}
+            onClick={() => handleDotClick("/casestudies")}
+          ></div>
+          <div
+            className={`dot ${
+              activeDot === "/contactus" ? "active-dot" : "inactive-dot"
+            }`}
+            onClick={() => handleDotClick("/contactus")}
+          ></div>
+        </div>
+      )}
     </nav>
   );
 };

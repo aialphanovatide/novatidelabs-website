@@ -241,7 +241,7 @@
         display: flex;
         flex-direction: column; /* Stack elements vertically */
         align-items: center; /* Center elements horizontally */
-        margin-top: 220px;
+        margin-top: 190px;
         margin-bottom: 160px;
         padding: 0 20px;
         font-family: "Plus Jakarta Sans", sans-serif;
@@ -249,7 +249,7 @@
     
       .textContent-methodology-mobile {
         text-align: left; /* Center text for mobile */
-        margin-top: 20px;
+        margin-top: 0px;
       }
     
       .textContent-methodology-mobile h1 {
@@ -269,7 +269,7 @@
         font-size: 16px;
         color: #000000;
         line-height: 1.5;
-        margin-top: 20px;
+        margin-top: 10px;
         font-weight: 400;
       }
     
