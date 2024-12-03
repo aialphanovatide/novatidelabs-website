@@ -307,6 +307,14 @@ div.feature-row1-card1-modular.animate,
     .modular {
       height: 305vh;
     }
+
+    div.feature-row1-card1-modular,
+    div.feature-row1-card2-modular,
+    div.feature-row2-card3-modular,
+    div.feature-row2-card4-modular {
+      opacity: 1;
+      transform: translateX(0px); /* Default for mobile animations */
+    }
     .contentRow-modular-mobile {
         display: flex;
         flex-direction: column; /* Stack items vertically */

@@ -389,6 +389,17 @@ div.feature-row3-card6-design.animate {
 
     }
 
+    div.feature-row1-card1-design,
+    div.feature-row1-card2-design,
+    div.feature-row2-card3-design,
+    div.feature-row2-card4-design,
+    div.feature-row3-card5-design,
+    div.feature-row3-card6-design {
+      opacity: 1;
+      transform: translateX(0px); /* Default for mobile animations */
+    }
+    .c
+
     .contentRow-design-mobile {
       display: flex;
       flex-direction: column; /* Stack items vertically */
