@@ -20,6 +20,43 @@ const Modular = () => {
     };
   }, []);
 
+  useEffect(() => {
+    console.log("Initializing IntersectionObserver in MODULAR...");
+
+    // Scroll animation handler
+    const handleScrollAnimation = (entries, observer) => {
+      entries.forEach((entry) => {
+        console.log(
+          `Observed: ${entry.target.className}, IsIntersecting: ${entry.isIntersecting}`
+        );
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+        }
+      });
+    };
+
+    // Create observer
+    const observer = new IntersectionObserver(handleScrollAnimation, {
+      root: null, // Use the viewport
+      threshold: 0.1, // Trigger when 10% of the element is visible
+      rootMargin: "0px 0px -20% 0px", // Trigger slightly earlier
+    });
+
+    // Select all cards
+    const cards = document.querySelectorAll(
+      ".feature-row1-card1-modular, .feature-row1-card2-modular, .feature-row2-card3-modular, .feature-row2-card4-modular"
+    );
+
+    if (cards.length === 0) {
+      console.error("No cards found for observer");
+    } else {
+      cards.forEach((card) => observer.observe(card));
+    }
+
+    // Cleanup observer on component unmount
+    return () => observer.disconnect();
+  }, []); // Empty dependency array ensures observer is set up once
+
   if (isMobile) {
     // Mobile layout
     return (

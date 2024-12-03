@@ -87,11 +87,11 @@
   .feature-row1-card1-modular {
     background-color: #F5F5F5;
     border-radius: 0px 10px 0px 0px;
-    padding: 30px 60px;
+    padding: 30px 60px 30px 100px;
     text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: "Plus Jakarta Sans", sans-serif;
-    width: 610px;
+    width: 660px;
     height: 270px;
     margin-left: 0px;
   }
@@ -156,7 +156,7 @@
   .feature-row2-card3-modular {
     background-color: #171717;
     border-radius: 10px;
-    padding: 20px 60px 20px 50px;
+    padding: 20px 60px 20px 90px;
     text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -193,7 +193,7 @@
     background-color: #FBBF24;
     color: #000000;
     border-radius: 10px 0px 0px 0px;
-    padding: 30px 80px 30px 55px;
+    padding: 30px 120px 30px 110px;
     text-align: right;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 0px;
@@ -260,6 +260,36 @@
     animation: bounce 2s infinite;
     width: 400px;
   }
+  
+
+
+    /* Initial hidden state */
+div.feature-row1-card1-modular,
+.feature-row1-card2-modular {
+  opacity: 0;
+  transform: translateX(-100px); /* Default transform */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.feature-row2-card3-modular,
+.feature-row2-card4-modular {
+  opacity: 0;
+  transform: translateX(100px); /* Default transform */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Slide from left */
+div.feature-row1-card1-modular.animate,
+.feature-row1-card2-modular.animate {
+  opacity: 1;
+  transform: translateX(0px); /* Slide to the right */
+}
+
+/* Slide from right */
+.feature-row2-card3-modular.animate,
+.feature-row2-card4-modular.animate {
+  opacity: 1;
+  transform: translateX(0px); /* Slide to the left */
+}
   
   /* Animation for scroll down icon */
   @keyframes bounce {

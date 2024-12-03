@@ -76,7 +76,7 @@
     background-color: #E5E5E5;
     color: #000000;
     border-radius: 0px 10px 0px 0px;
-    padding: 30px 50px;
+    padding: 30px 50px 30px 90px;
     text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -87,7 +87,7 @@
     background-color: #171717;
     color: white;
     border-radius: 30px 0px 0px 0px;
-    padding: 40px 50px;
+    padding: 40px 90px 40px 90px;
     text-align: right;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -98,13 +98,13 @@
     background-color: #FBBF24;
     color: #000000;
     border-radius: 30px;
-    padding: 50px 40px;
+    padding: 50px 60px 50px 60px;
     text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: "Plus Jakarta Sans", sans-serif;
-    width: 580px;
+    width: 600px;
     height: 240px;
-    margin-left: 50px;
+    margin-left: 30px;
   }
   .feature-card4-ai {
     background-color: #F5F5F5;
@@ -221,12 +221,50 @@
       transform: translateY(10px);
     }
   }
+
+
+
+  /* Initial hidden state */
+.feature-card1-ai,
+.feature-card3-ai {
+  opacity: 0;
+  transform: translateX(-100px); /* Default transform */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.feature-card2-ai,
+.feature-card4-ai {
+  opacity: 0;
+  transform: translateX(100px); /* Default transform */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Slide from left */
+.feature-card1-ai.animate,
+.feature-card3-ai.animate {
+  opacity: 1;
+  transform: translateX(0px); /* Slide to the right */
+}
+
+/* Slide from right */
+.feature-card2-ai.animate,
+.feature-card4-ai.animate {
+  opacity: 1;
+  transform: translateX(0px); /* Slide to the left */
+}
   
 
     /* Mobile-specific styles */
 @media (max-width: 768px) {
     .ai{
         height: 310vh;
+    }
+
+    div.feature-card1-ai,
+    div.feature-card2-ai,
+    div.feature-card3-ai,
+    div.feature-card4-ai {
+      opacity: 1;
+      transform: translateX(0px); /* Default for mobile animations */
     }
 
     .contentRow-ai-mobile {
@@ -359,5 +397,7 @@
       font-size: 20px; /* Adjust button size */
       padding: 15px 30px;
     }
+
+
   }
   

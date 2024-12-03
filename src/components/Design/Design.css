@@ -251,10 +251,11 @@ html, body {
   
   
   .feature-row3-card5-design h2 {
-    margin: 35px 0;
-    font-size: 25px;
+    margin: 15px 0;
+    font-size: 35px;
     color: white;
     font-weight: 500;
+    
   }
   
   
@@ -337,6 +338,39 @@ html, body {
     animation: bounce 2s infinite;
     width: 400px;
   }
+
+      /* Initial hidden state */
+div.feature-row1-card1-design,
+div.feature-row1-card2-design,
+div.feature-row3-card5-design,
+div.feature-row3-card6-design {
+  opacity: 0;
+  transform: translateX(-100px); /* Default transform */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.feature-row2-card3-design,
+.feature-row2-card4-design {
+  opacity: 0;
+  transform: translateX(100px); /* Default transform */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Slide from left */
+div.feature-row1-card1-design.animate,
+div.feature-row1-card2-design.animate,
+div.feature-row3-card5-design.animate,
+div.feature-row3-card6-design.animate {
+  opacity: 1;
+  transform: translateX(0px); /* Slide to the right */
+}
+
+/* Slide from right */
+.feature-row2-card3-design.animate,
+.feature-row2-card4-design.animate {
+  opacity: 1;
+  transform: translateX(0px); /* Slide to the left */
+}
+  
   
   /* Animation for scroll down icon */
   @keyframes bounce {
