@@ -398,14 +398,8 @@ Being dependable and following through on commitments helps build trust within t
 
           <div className="job-opening" onClick={() => toggleJob(3)}>
             <div className="job-header">
-              <img
-                src="static/images/Careers/icon7.svg"
-                alt="Quality Assurance Engineer"
-              />
-              <span className="careers-job-title">
-                {" "}
-                Quality Assurance Engineer
-              </span>
+              <img src="static/images/Careers/icon7.svg" alt="Bookkeeper" />
+              <span className="careers-job-title"> Bookkeeper</span>
               <span className="careers-plus-icon">
                 {openJob === 3 ? "-" : "+"}
               </span>
@@ -416,51 +410,89 @@ Being dependable and following through on commitments helps build trust within t
               }`}
             >
               <p>
-                We are looking for a skilled QA Engineer to join our team and
-                ensure the quality of our diverse software products, including
-                Python backend services, React Native mobile apps, static
-                websites, React web apps, and dashboards.
+                Our company is seeking a detail-oriented and proactive
+                Bookkeeper to support the financial administration processes.
+                This role is ideal for someone who can manage traditional
+                financial tasks and ensure that the company’s financial
+                operations run smoothly and accurately.
               </p>
               <h3>Responsibilities:</h3>
 
               <ul className="job-details-list">
                 <li>
-                  Backend Testing: Design and execute test cases for Python
-                  server endpoints, perform API testing, and conduct unit and
-                  integration tests.
+                  Maintain accurate and up-to-date financial records, including
+                  tracking income, expenses, and budgets.
                 </li>
                 <li>
-                  Mobile Application Testing: Test React Native apps on iOS and
-                  Android, perform functional and performance tests, and use
-                  mobile testing frameworks.
+                  Oversee accounts payable and accounts receivable, ensuring
+                  timely and accurate processing of invoices and payments, as
+                  well as effective management of incoming funds and outstanding
+                  balance
                 </li>
                 <li>
-                  Web Application Testing: Test static websites and React-based
-                  web applications for functionality, responsiveness, and
-                  cross-browser compatibility.
+                  Reconcile accounts, prepare financial statements, and assist
+                  in financial audits to ensure accuracy and compliance.
                 </li>
                 <li>
-                  General QA Tasks: Create and maintain test plans, execute
-                  manual and automated tests, report and track bugs, collaborate
-                  with developers, and improve testing processes.
+                  Coordinate closely with the Management Stakeholder to ensure
+                  all financial policies are followed.
+                </li>
+                <li>
+                  Prepare monthly, quarterly, and annual financial reports,
+                  providing insights to management when necessary.
+                </li>
+                <li>
+                  Monitor and maintain budgetary controls, flagging any
+                  discrepancies or issues as they arise.
+                </li>
+                <li>
+                  Contribute to continuous improvement of financial processes,
+                  suggesting enhancements to streamline workflows.
                 </li>
               </ul>
               <h3>Required Skills:</h3>
               <ul className="job-details-list">
                 <li>
-                  Technical Skills: Proficiency in Python, testing frameworks
-                  (e.g., pytest), API testing tools, and experience with web
-                  technologies (HTML, CSS, JavaScript).
+                  Proven experience in bookkeeping, accounting, or financial
+                  administration.
                 </li>
                 <li>
-                  Testing Skills: Strong understanding of QA methodologies,
-                  experience with both manual and automated testing, test
-                  management tools, and performance testing concepts.
+                  Excellent organizational skills and keen attention to detail,
+                  with the ability to effectively track budgets and
+                  transactions.
                 </li>
                 <li>
-                  Soft Skills: Excellent analytical and problem-solving
-                  abilities, attention to detail, effective communication, and
-                  time management.
+                  Capacity to work independently, handling tasks with minimal
+                  supervision while meeting deadlines.
+                </li>
+                <li>
+                  Proficiency with accounting tools and software (e.g.,
+                  QuickBooks, Excel, or other financial management software).
+                </li>
+                <li>
+                  Basic knowledge of financial compliance standards and
+                  practices.
+                </li>
+              </ul>
+              <h3>Preferred Qualifications</h3>
+              <ul className="job-details-list">
+                <li>
+                  Associate degree or higher in Accounting, Finance, or a
+                  related field.
+                </li>
+                <li>
+                  Experience working in a small to medium-sized business
+                  environment.
+                </li>
+                <li>
+                  Strong communication skills, with the ability to relay
+                  financial information clearly to non-financial stakeholders.
+                </li>
+              </ul>
+              <h3>Position Type</h3>
+              <ul className="job-details-list">
+                <li>
+                  This is a part-time or freelance position with flexible hours.
                 </li>
               </ul>
               <a
@@ -603,10 +635,10 @@ Being dependable and following through on commitments helps build trust within t
           <div className="job-opening-yellow" onClick={() => toggleJob(6)}>
             <div className="job-header">
               <img
-                src="static/images/Careers/icon10.svg"
-                alt="Designer Internship"
+                src="static/images/Careers/icon8.svg"
+                alt="Developer Cryptographer"
               />
-              <span className="careers-job-title">Commmunity Manager</span>
+              <span className="careers-job-title">Developer Cryptographer</span>
               <span className="careers-plus-icon">
                 {openJob === 6 ? "-" : "+"}
               </span>
@@ -617,72 +649,91 @@ Being dependable and following through on commitments helps build trust within t
               }`}
             >
               <p>
-                We are looking for a passionate Community Manager to join our
-                specialised team, focused on empowering individuals through
-                digital finance education. You will engage with the community,
-                manage social media content, and help grow a network of curious,
-                motivated individuals. Your role is vital in creating an
-                ecosystem where transparency, collaboration, and learning
-                thrive, supporting the values of our AI-driven platform.
+                We are seeking a highly skilled Developer Cryptographer to join
+                our team and contribute to the development of secure,
+                decentralised wallets. The ideal candidate will have strong
+                expertise in cryptography, decentralised finance (DeFi), and
+                blockchain technologies, with experience in building
+                decentralised wallets such as MetaMask, Rabi, or similar.
               </p>
               <h3>Key Responsibilities:</h3>
 
               <ul className="job-details-list">
                 <li>
-                  Build, engage, and manage our crypto and Web3 community across
-                  platforms like X, TikTok, YouTube, and Discord.
+                  Design, implement, and maintain cryptographic protocols for
+                  secure decentralized wallet systems.
                 </li>
                 <li>
-                  Create and optimise strategic social media content that drives
-                  engagement and reflects our values of clarity and unbiased
-                  information.
+                  Collaborate with blockchain developers to integrate
+                  cryptographic features into the wallet infrastructure.
                 </li>
                 <li>
-                  Host events, facilitate discussions, and provide ongoing
-                  support to community members.
+                  Ensure the security and scalability of decentralized wallet
+                  solutions.
                 </li>
                 <li>
-                  Collect and analyse community feedback to refine messaging and
-                  enhance the overall experience.
+                  Conduct audits of cryptographic code and architecture to
+                  identify vulnerabilities and ensure secure practices.
                 </li>
                 <li>
-                  Collaborate with the marketing team to align growth strategies
-                  with brand values.
+                  Work with multi-signature wallets, encryption schemes, and
+                  other security-focused technologies.
+                </li>
+                <li>
+                  Stay updated on the latest trends and developments in
+                  cryptography, blockchain, and decentralised finance.
                 </li>
               </ul>
               <h3>Required Skills:</h3>
               <ul className="job-details-list">
                 <li>
-                  Proven experience managing online communities, particularly in
-                  crypto, trading, or Web3 spaces.
+                  Strong understanding of cryptographic principles, including
+                  encryption, digital signatures, and hashing algorithms.
                 </li>
                 <li>
-                  Proficiency in using social media platforms and tools like AI
-                  for content creation and community management.
+                  Experience with blockchain development, particularly Ethereum
+                  and Layer 2 scaling solutions.
                 </li>
                 <li>
-                  Excellent copywriting skills for creating impactful and
-                  value-driven content.
+                  Proficiency in programming languages such as Solidity, Rust,
+                  or Go.
                 </li>
                 <li>
-                  Strong problem-solving skills and ability to work effectively
-                  in a startup environment.
+                  Familiarity with smart contract security and best practices in
+                  wallet development.
+                </li>
+                <li>
+                  Knowledge of DeFi protocols and decentralised application
+                  (dApp) ecosystems.
                 </li>
               </ul>
               <h3>Preferred Qualifications</h3>
               <ul className="job-details-list">
                 <li>
-                  Hands-on experience in growing and managing communities in a
-                  startup setting.
+                  Experience working in a decentralized finance (DeFi) or Web3
+                  environment.
                 </li>
                 <li>
-                  Familiarity with AI tools to streamline content creation and
-                  management processes.
+                  Familiarity with Layer 2 solutions, rollups, and
+                  zero-knowledge proofs.
                 </li>
                 <li>
-                  Passion for digital finance, trading, and emerging Web3
-                  technologies.
+                  Previous contributions to open-source blockchain projects or
+                  protocols.
                 </li>
+                <li>Strong analytical and problem-solving skills.</li>
+                <li>
+                  Excellent communication skills and ability to work in a
+                  collaborative environment.
+                </li>
+                <li>
+                  Proven experience in developing and deploying decentralized
+                  wallets (e.g., MetaMask, Rabi, or similar).
+                </li>
+              </ul>
+              <h3>Position Type</h3>
+              <ul className="job-details-list">
+                <li>This is a full-time remote position.</li>
               </ul>
               <a
                 href="https://forms.gle/b9ZTUTrfzzVQrWrR8"
