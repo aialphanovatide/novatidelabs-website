@@ -496,7 +496,7 @@ Being dependable and following through on commitments helps build trust within t
                 </li>
               </ul>
               <a
-                href="https://forms.gle/7DJN8q6Yuj4fkTuMA"
+                href="https://forms.gle/QaW5Z2GcirSjpHbX8"
                 className="apply-button"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -736,7 +736,126 @@ Being dependable and following through on commitments helps build trust within t
                 <li>This is a full-time remote position.</li>
               </ul>
               <a
-                href="https://forms.gle/b9ZTUTrfzzVQrWrR8"
+                href="https://forms.gle/Jevw8h9MWMJrF78L7"
+                className="apply-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply
+              </a>
+            </div>
+          </div>
+          <div className="job-opening" onClick={() => toggleJob(7)}>
+            <div className="job-header">
+              <img src="static/images/Careers/icon7.svg" alt="Bookkeeper" />
+              <span className="careers-job-title">
+                PR & Communications Specialist - Crypto Sector
+              </span>
+              <span className="careers-plus-icon">
+                {openJob === 7 ? "-" : "+"}
+              </span>
+            </div>
+            <div
+              className={`job-content ${
+                openJob === 7 ? "job-content-expanded" : ""
+              }`}
+            >
+              <p>
+                We are looking for a PR & Communications Specialist with a deep
+                understanding of the cryptocurrency and blockchain industry.
+                This role is critical in shaping and amplifying our brand
+                narrative, driving media engagement, and building strong
+                relationships within the crypto ecosystem. The ideal candidate
+                will combine strategic thinking with hands-on expertise in
+                crafting compelling stories, managing communications across
+                various channels, and positioning our organisation as a leader
+                in the crypto space. This is a unique opportunity for a
+                communications professional who lives and breathes crypto,
+                thrives in fast-paced environments, and is passionate about
+                revolutionising the future of finance and technology.
+              </p>
+              <h3>Key Responsibilities:</h3>
+
+              <ul className="job-details-list">
+                <li>
+                  Strategic Communications: Develop and execute a comprehensive
+                  PR and communications strategy tailored to the crypto sector,
+                  aligning with company goals.
+                </li>
+                <li>
+                  Media Relations: Build and maintain strong relationships with
+                  crypto-focused journalists, influencers, and media outlets to
+                  secure consistent coverage.
+                </li>
+                <li>
+                  Content Creation: Craft compelling press releases, thought
+                  leadership articles, blog posts, and other communications
+                  materials with a focus on blockchain and cryptocurrency
+                  trends.
+                </li>
+                <li>
+                  Crisis Management: Respond proactively to industry
+                  developments, managing communications during periods of high
+                  attention or market sensitivity.
+                </li>
+                <li>
+                  Social Engagement: Collaborate with social media teams to
+                  amplify messages across platforms, ensuring consistency with
+                  crypto-specific terminology and trends.
+                </li>
+                <li>
+                  Event Coordination: Represent the company at crypto
+                  conferences, webinars, and industry events, ensuring clear and
+                  impactful messaging.
+                </li>
+                <li>
+                  Analytical Insights: Monitor and report on the effectiveness
+                  of communication strategies, leveraging insights to refine
+                  future campaigns.
+                </li>
+              </ul>
+              <h3>Industry Expertise:</h3>
+              <ul className="job-details-list">
+                <li>
+                  Deep understanding of crypto-specific narratives, key players,
+                  and industry jargon.
+                </li>
+              </ul>
+              <h3>Skillset:</h3>
+              <ul className="job-details-list">
+                <li>
+                  Proven ability to craft narratives that resonate with the
+                  crypto community and industry stakeholders.
+                </li>
+                <li>
+                  Strong network within crypto media, influencers, and thought
+                  leaders.
+                </li>
+                <li>
+                  Exceptional writing and editing skills with attention to
+                  detail.
+                </li>
+              </ul>
+              <h3>Preferred Qualifications:</h3>
+              <ul className="job-details-list">
+                <li>
+                  Bachelor's degree in Communications, Marketing, Journalism, or
+                  a related field.
+                </li>
+                <li>
+                  Certifications or training in blockchain/crypto are a plus.
+                </li>
+              </ul>
+              <h3>Personal Attributes:</h3>
+              <ul className="job-details-list">
+                <li>Passion for blockchain technology and the crypto space.</li>
+                <li>
+                  Ability to thrive in a fast-paced, high-growth environment.
+                </li>
+                <li>Proactive, adaptable, and strategic mindset.</li>
+              </ul>
+              <a
+                href="https://forms.gle/bqVZeUMwyoAZiS849"
                 className="apply-button"
                 target="_blank"
                 rel="noopener noreferrer"

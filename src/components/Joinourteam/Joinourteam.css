@@ -309,7 +309,7 @@ h3.careers-big-subtitle{
 }
 
 .job-content-expanded {
-  max-height: 1000px; /* Arbitrary large value to allow expansion */
+  max-height: 1300px; /* Arbitrary large value to allow expansion */
   padding: 10px 60px; /* Restore padding */
 }
 
