@@ -3,7 +3,6 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import "./carousel.css";
 import Home from "../Home";
-import Footer from "../Footer";
 import Design from "../Design/Design";
 import Modular from "../Modular/Modular";
 import Ai from "../Ai/Ai";

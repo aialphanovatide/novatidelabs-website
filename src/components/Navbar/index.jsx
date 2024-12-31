@@ -1,5 +1,5 @@
 import React, { use } from "react";
-import "./navbar.css";
+import "./Navbar.css";
 import { useEffect, useRef } from "react";
 import logo from "../../img/logo.svg";
 import MenuIcon from "@mui/icons-material/Menu";
