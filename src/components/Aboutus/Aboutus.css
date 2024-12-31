@@ -5,6 +5,7 @@
     justify-content: space-between; /* Align text and illustration side by side */
     align-items: center;
     height: 75vh;
+    
   }
   
   div.textContent-joinourteam {
@@ -14,8 +15,8 @@
     width: 15%;
     color: black;
     font-family: "Plus Jakarta Sans", sans-serif;
-    margin-left: 110px;
-    margin-top: 120px;
+    margin-left: 0px;
+    margin-top: 0px;
   }
   
   div.textContent-joinourteam h1{
@@ -62,6 +63,10 @@
     margin-bottom: 10px;
   }
   
+  .careers-main-container {
+    margin-bottom: 50px;
+    width: 100%;
+  }
   .careers-main-container h2 {
       font-size: 35px;
       margin-bottom: 0;
@@ -608,6 +613,7 @@
     }
     .careers-main-container {
         background-color: #FBBF24;
+        margin-bottom: 0px;
     }
   
     .stacking-slide {
@@ -732,8 +738,8 @@
       display: flex;
       flex-direction: column; /* Stack elements vertically */
       align-items: center; /* Center elements horizontally */
-      margin-top: 130px;
-      padding: 0 20px;
+      padding-top: 130px;
+      margin-top: 0px;
       padding-bottom: 160px;
       font-family: "Plus Jakarta Sans", sans-serif;
       background-color: white;

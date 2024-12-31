@@ -10,9 +10,7 @@ import Card7 from "../Careers/Cards/Card7";
 
 import VisibilitySensor from "react-visibility-sensor";
 
-import Footer from "../Footer/Footer";
-
-const Joinourteam = () => {
+const Joinourteam = ({setSlideIndex}) => {
   const [slide, setSlide] = useState("left");
   const [text, setText] = useState("");
   const [fix, setFix] = useState(0);
@@ -22,7 +20,7 @@ const Joinourteam = () => {
   const toggleJob = (jobId) => {
     setOpenJob(openJob === jobId ? null : jobId);
   };
-
+  setSlideIndex(null);
   //know when our component comes into view so we can scroll down.
   function onChange5(isVisible) {
     console.log("Element is now %s", isVisible ? "visible" : "hidden");
@@ -877,7 +875,6 @@ Being dependable and following through on commitments helps build trust within t
           alt="Skateboarder with laptop"
         />
       </div>
-      <Footer />
     </div>
   );
 };

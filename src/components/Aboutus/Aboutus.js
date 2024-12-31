@@ -1,28 +1,22 @@
 import React, { useRef, useState, useEffect } from "react";
 import "./Aboutus.css";
-import Card from "../Careers/Cards/Card";
-import Card2 from "../Careers/Cards/Card2";
+
 import Card3 from "../Careers/Cards/Card3";
 import Card4 from "../Careers/Cards/Card4";
-import Card5 from "../Careers/Cards/Card5";
-import Card6 from "../Careers/Cards/Card6";
-import Card7 from "../Careers/Cards/Card7";
 import Card11 from "../Careers/Cards/Card11";
 
 import VisibilitySensor from "react-visibility-sensor";
 
-import Footer from "../Footer/Footer";
-
-const Aboutus = () => {
+const Aboutus = ({ setSlideIndex }) => {
   const [slide, setSlide] = useState("left");
   const [text, setText] = useState("");
   const [fix, setFix] = useState(0);
   const [openJob, setOpenJob] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
-
   const toggleJob = (jobId) => {
     setOpenJob(openJob === jobId ? null : jobId);
   };
+  setSlideIndex(null);
 
   //know when our component comes into view so we can scroll down.
   function onChange5(isVisible) {
@@ -159,7 +153,7 @@ const Aboutus = () => {
           <div className="team-row">
             <div className="team-member-big">
               <div className="team-photo">
-                <img src="static/images/Home/aman.svg" alt="Aman Anand" />
+                <img src="static/images/Home/aman.jpg" alt="Aman Anand" />
               </div>
               <h3 className="team-member-name-big">Aman Anand</h3>
               <p className="team-member-role-big">CEO</p>
@@ -174,7 +168,7 @@ const Aboutus = () => {
             <div className="team-member-big">
               <div className="team-photo">
                 <img
-                  src="static/images/Home/macarena.svg"
+                  src="static/images/Home/macarena.jpg"
                   alt="Macarena Olivera"
                 />
               </div>
@@ -194,7 +188,7 @@ const Aboutus = () => {
           <div className="team-row">
             <div className="team-member">
               <div className="team-photo">
-                <img src="static/images/Home/angela.svg" alt="Ángela Eguren" />
+                <img src="static/images/Home/angela.jpg" alt="Ángela Eguren" />
               </div>
               <h3 className="team-member-name">
                 Ángela
@@ -211,7 +205,7 @@ const Aboutus = () => {
             </div>
             <div className="team-member">
               <div className="team-photo">
-                <img src="static/images/Home/david.svg" alt="David Rodriguez" />
+                <img src="static/images/Home/david.jpg" alt="David Rodriguez" />
               </div>
               <h3 className="team-member-name">
                 David
@@ -228,7 +222,7 @@ const Aboutus = () => {
             </div>
             <div className="team-member">
               <div className="team-photo">
-                <img src="static/images/Home/fatima.svg" alt="Fátima Aguirre" />
+                <img src="static/images/Home/fatima.jpg" alt="Fátima Aguirre" />
               </div>
               <h3 className="team-member-name">
                 Fátima
@@ -246,7 +240,7 @@ const Aboutus = () => {
             <div className="team-member">
               <div className="team-photo">
                 <img
-                  src="static/images/Home/francisca.svg"
+                  src="static/images/Home/francisca.jpg"
                   alt="Francisca Cagnoni"
                 />
               </div>
@@ -266,7 +260,7 @@ const Aboutus = () => {
             <div className="team-member">
               <div className="team-photo">
                 <img
-                  src="static/images/Home/georgina.svg"
+                  src="static/images/Home/georgina.jpg"
                   alt="Georgina Kontopyrgou"
                 />
               </div>
@@ -286,7 +280,7 @@ const Aboutus = () => {
             <div className="team-member">
               <div className="team-photo">
                 <img
-                  src="static/images/Home/tamar.svg"
+                  src="static/images/Home/tamar.jpg"
                   alt="Tamar Voscoboinik"
                 />
               </div>
@@ -307,7 +301,6 @@ const Aboutus = () => {
         </div>
       </div>
 
-      <Footer />
     </div>
   );
 };

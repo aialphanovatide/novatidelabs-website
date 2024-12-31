@@ -5,6 +5,7 @@
   justify-content: space-between; /* Align text and illustration side by side */
   align-items: center;
   height: 75vh;
+  overflow: hidden;
 }
 
 div.textContent-joinourteam {
@@ -558,11 +559,6 @@ h2.careers-final-heading {
 
   .job-opening:hover {
     background-color: #e5e7eb; /* Keeps the hover color */
-  }
-  div.contentRow-joinourteam-mobile {
-
-    margin-top: 130px;
-
   }
 
   .textContent-joinourteam-mobile {

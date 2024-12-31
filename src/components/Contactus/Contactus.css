@@ -14,7 +14,6 @@
   margin-top: 100px;
 }
 
-
 .contentRow-contactus {
   margin-top: 50px;
   display: flex;
@@ -37,7 +36,7 @@ div.textContent-contactus {
   max-width: 500px;
 }
 
-.text-normal-contactus  {
+.text-normal-contactus {
   color: #000000; /* Highlight color */
   font-size: 23px;
   font-weight: 300;
@@ -45,13 +44,13 @@ div.textContent-contactus {
   margin-top: 40px;
 }
 
-.text-yellow-contactus  {
+.text-yellow-contactus {
   font-size: 125px;
   max-width: 500px;
 }
 
 .illustration-contactus {
-  width: 45%;
+  width: 35%;
   display: flex;
   justify-content: center; /* Center illustration */
   align-items: center;
@@ -69,9 +68,6 @@ div.textContent-contactus {
   width: 100%;
   max-width: 1300px;
 }
-
-
-
 
 .formGrid {
   display: grid;
@@ -91,14 +87,14 @@ div.textContent-contactus {
   height: auto;
 }
 
-.contactDetail h3{
-  color: #FBBF24;
+.contactDetail h3 {
+  color: #fbbf24;
   font-weight: 500;
   font-size: 30px;
   margin: 0 30px 10px 30px;
 }
 
-.contactDetail p{
+.contactDetail p {
   font-weight: 500;
   color: #000000;
   margin: 0px 30px 10px 30px;
@@ -122,7 +118,6 @@ div.textContent-contactus {
   background-color: #fff; /* Keep the white background */
 }
 
-
 .contactForm {
   flex: 2;
   max-width: 900px; /* Limit width for larger screens */
@@ -135,7 +130,6 @@ div.textContent-contactus {
   color: #fbbf24; /* Yellow color for headings */
   font-weight: bold;
 }
-
 
 .formGroup {
   display: flex;
@@ -197,9 +191,6 @@ div.textContent-contactus {
   margin-top: 10px;
 }
 
-
-
-
 .formGroup > input,
 .phoneInputData {
   padding-top: 10px;
@@ -229,7 +220,6 @@ div.textContent-contactus {
   height: 20px;
 }
 
-
 .flagSelect > button {
   border: none;
 }
@@ -244,22 +234,19 @@ div.textContent-contactus {
   padding-left: 5px !important;
 }
 
-ul.ReactFlagsSelect-module_selectOptions__3LNBJ.ReactFlagsSelect-module_selectOptionsWithSearch__1W03.ReactFlagsSelect-module_fullWidthOptions__1XR6{
+ul.ReactFlagsSelect-module_selectOptions__3LNBJ.ReactFlagsSelect-module_selectOptionsWithSearch__1W03.ReactFlagsSelect-module_fullWidthOptions__1XR6 {
   padding: 10px 30px;
 }
 
-.ReactFlagsSelect-module_fullWidthOptions__1XeR6{
+.ReactFlagsSelect-module_fullWidthOptions__1XeR6 {
   width: 90px;
 }
-
 
 @media (max-width: 768px) {
   .contactus {
     padding: 10px;
     margin-bottom: 200px;
   }
-
-
 
   .contentRow-contactus {
     margin-top: 20px;
@@ -300,14 +287,10 @@ ul.ReactFlagsSelect-module_selectOptions__3LNBJ.ReactFlagsSelect-module_selectOp
     align-self: flex-start; /* Aligns the item to the start of the cross-axis in a flex container */
     text-align: left; /* Aligns text or inline content to the left */
   }
-  
-
 
   .formGroup > input {
     width: 95%;
-
   }
-
 
   .formGrid {
     grid-template-columns: 1fr;
@@ -316,8 +299,6 @@ ul.ReactFlagsSelect-module_selectOptions__3LNBJ.ReactFlagsSelect-module_selectOp
   .map img {
     max-width: 100%;
   }
-
-
 
   .contactFormSection {
     flex-direction: column; /* Stack content vertically */
@@ -342,12 +323,12 @@ ul.ReactFlagsSelect-module_selectOptions__3LNBJ.ReactFlagsSelect-module_selectOp
     width: 100%; /* Make the button take full width */
   }
 
-  .ReactFlagsSelect-module_selectValue__152eS svg{
+  .ReactFlagsSelect-module_selectValue__152eS svg {
     width: 45px;
     height: 25px;
     margin-left: -20px;
   }
-  .contactDetails{
+  .contactDetails {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -372,7 +353,7 @@ ul.ReactFlagsSelect-module_selectOptions__3LNBJ.ReactFlagsSelect-module_selectOp
   }
 
   .contactDetail h3 {
-    color: #FBBF24;
+    color: #fbbf24;
     font-weight: 500;
     font-size: 20px;
     margin: 10px 0 5px 0;

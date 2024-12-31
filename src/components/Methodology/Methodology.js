@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Methodology.css";
-import Footer from "../Footer/Footer";
 
-const Methodology = () => {
+const Methodology = ({setSlideIndex}) => {
   const [isMobile, setIsMobile] = useState(false);
-
+  setSlideIndex(null);
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -177,7 +176,6 @@ const Methodology = () => {
           </div>
         </>
       )}
-      <Footer />
     </div>
   );
 };

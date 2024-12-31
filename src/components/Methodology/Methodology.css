@@ -6,6 +6,8 @@
     justify-content: center;
     align-items: center;
     font-family: "Plus Jakarta Sans", sans-serif;
+    width: 88%;
+    overflow: hidden;
   }
   
 
@@ -15,6 +17,7 @@
     justify-content: space-between; /* Align text and illustration side by side */
     align-items: center;
     height: 75vh;
+    width: 100%;
   }
   div.textContent-methodology {
     flex: 1; /* Takes up available space */
@@ -28,7 +31,7 @@
   }
   
   div.textContent-methodology h1{
-    width: 680px;
+    width: 635px;
   }
   
   

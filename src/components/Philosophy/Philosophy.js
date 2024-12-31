@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Philosophy.css";
-import Footer from "../Footer/Footer";
 
-const Philosophy = () => {
+const Philosophy = ( { setSlideIndex}) => {
   const [isMobile, setIsMobile] = useState(false);
-
+  setSlideIndex(null);
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -63,7 +62,6 @@ const Philosophy = () => {
           </div>
         </div>
       )}
-      <Footer />
     </div>
   );
 };

@@ -1,330 +1,130 @@
 .navbar {
+  height: 100px;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+
+.navbar,
+.navbar * {
+  box-sizing: border-box;
+}
+
+.navbar_container {
+  /* max-width: 1440px; */
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  z-index: 4;
   justify-content: space-between;
-  padding: 10px 2vw;
-  background-color: white;
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
-.linkedin-mobile-link {
-  display: none;
-}
-.navbar-logo img {
-  height: 50px;
-}
-
-.navbar-links {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-links li {
-  display: inline;
-}
-
-.navbar-links a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-}
-
-.navbar-links a.active {
-  color: #FBBF24;
-}
-
-.navbar-links a:hover {
-  color: orange;
-}
-
-
-/* Dot Container Styles */
-.dot-container {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 160px;
-  background-color: rgba(163, 163, 163, 0.5);
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
-  transition: all 0.3s ease;
+  color: white;
+  height: 70px;
 }
 
-.dot-container.stuck {
-  position: fixed;
-  bottom: 60px; /* Adjust based on footer height */
-}
-
-
-.inactive-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%; /* Ensure the dot is perfectly round */
-  background-color: #ffffff;
+.nav_logo {
+  margin: 25px;
+  width: 15%;
+  max-width: 50px;
+  height: auto;
   cursor: pointer;
-  transition: background-color 0.3s, width 0.3s, height 0.3s;
+  padding-top: 10px;
 }
 
-.inactive-dot:hover {
-  background-color: #a0a0a0;
+.nav_items {
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  width: 77vw;
+  max-width: 600px;
+  gap: 1px;
+  min-width: 500px;
+  padding-right: 19px;
+  text-wrap: nowrap;
 }
-
-/* Active dot */
-.active-dot {
-  width: 15px; /* Slightly bigger size for active dot */
-  height: 15px;
-  border-radius: 15px;
-  background-color: #ffffff; /* White color for active dot */
-}
-
-
-  /*Arrows*/
-
-  .arrow {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1000;
-    cursor: pointer;
-    display: block;
-  }
-  
-  .left-arrow {
-    left: 40px;
-    animation: bounceArrowLeft 2s infinite;
-  }
-  
-  .right-arrow {
-    right: 40px;
-    animation: bounceArrowRight 2s infinite;
-  }
-  
-    .arrow img {
-      width: 25px; /* Adjust size as needed */
-      height: auto;
-
-    }
-
-      /* Animation for scroll down icon */
-  @keyframes bounceArrowLeft {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(5px);
-    }
-  }
-  @keyframes bounceArrowRight {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(-5px);
-    }
-  }
-
-
-/* Mobile version styles */
-
-@media (max-width: 768px) {
-
-  .navbar {
-    width: 80%;
-    padding: 4vh 10vw;
-  }
-
-  .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-  }
-
-  .hamburger span {
-    width: 30px;
-    height: 3px;
-    cursor: pointer;
-    background-color: #a3a3a3;
-    border-radius: 2px;
-    transition: transform 0.3s ease;
-    transition: all 0.3s ease;
-  }
-  .dot-container {
-    position: fixed;
-    bottom: 20px; /* Stay at the bottom for mobile */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%);
-    width: 110px; /* Adjust width for smaller screens */
-    height: 3px;
-  }
-
-.inactive-dot {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%; /* Ensure the dot is perfectly round */
-  background-color: #ffffff;
+.nav_item {
   cursor: pointer;
-  transition: background-color 0.3s, width 0.3s, height 0.3s;
+  color: black;
+  transition: 0.3s ease;
+}
+.nav_item:hover {
+  transition: 0.3s ease;
+  color: #fbbf24;
+  font-weight: 600;
 }
 
-
-.active-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
+.nav_toggle {
+  background: none;
+  border: 0;
+  z-index: 3;
 }
 
+.nav_item_active {
+  color: #fbbf24;
+  cursor: pointer;
+}
 
+.linkedin-mobile-link .linkedin-container {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../img/linkedin.svg");
+  background-size: cover;
+  background-position: center;
+}
 
-
-
-  .navbar-links {
+@media (max-width: 880px) {
+  .nav_items {
     position: fixed;
-    right: -100%;
     top: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: white;
-    display: flex;
+    left: 105vw;
+    padding-top: 110px;
+    padding-right: 0px;
+    font-size: 18px;
+    z-index: 2;
+    height: 100%;
+    min-width: 300px;
+    max-width: none;
+    width: 105vw;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: left;
-    transition: right 0.3s ease;
-    z-index: 800;
-    animation: slideOut 0.3s forwards;
-    padding-top: 80px;
-  }
-
-  .navbar-links.open {
-    animation: slideIn 0.3s forwards;
-    gap: 20px;
-  }
-
-  .navbar-links li {
-    color: #000;
+    align-items: start;
     padding-left: 30px;
+    background-color: rgb(252, 252, 252);
+    justify-content: start;
+    gap: 30px;
+    background-size: cover;
+    transition: 0.3s;
+    transform: translateX(-101%);
   }
 
-  .navbar-links a {
+  .nav_item {
+    font-size: 48px;
+    text-align: left;
+  }
+
+  .nav_item_active {
     font-size: 48px;
   }
 
-  .navbar-links a.active {
-    font-weight: 600;
+  .nav_toggle {
+    display: inline-block;
+    margin-right: 30px;
   }
 
-  .hamburger {
-    display: flex;
-    z-index: 1001;
-    animation: inverseSpin 0.5s forwards;
+  .responsive_nav {
+    transform: none;
   }
 
-  .hamburger.open {
-    animation: spin 0.5s forwards;
-  }
-
-  .hamburger.open span:nth-child(1) {
-    transform: rotate(45deg) translate(5.5px, 4.5px);
-    z-index: 1001;
-  }
-
-  .hamburger.open span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(7.5px, -5px);
-    z-index: 1001;
-  }
-
-  .linkedin-mobile-link {
-    display: none; /* Default to hidden on desktop */
-    margin-top: 20px; /* Add spacing above the LinkedIn link */
-    align-self: flex-start; /* Align to the start of the menu */
-    padding-left: 30px;
-  }
-  
-  .linkedin-mobile-link .linkedin-container {
-    width: 50px;
-    height: 50px;
-    background-image: url("../../../public/static/images/linkedinLogo-yellow.png");
-    background-size: cover;
-    background-position: center;
-  }
-  
-  /* Show the LinkedIn link only when the menu is open on mobile */
-  .navbar-links.open .linkedin-mobile-link {
-    display: block; /* Show only in open mobile hamburger menu */
-  }
-
-  .arrow {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1000;
-    cursor: pointer;
-    display: block;
-  }
-  
-  .left-arrow {
-    left: 10px;
-    animation: bounceArrowLeft 2s infinite;
-  }
-  
-  .right-arrow {
-    right: 10px;
-    animation: bounceArrowRight 2s infinite;
-  }
-
-  .arrow img {
-    width: 15px; /* Adjust size as needed */
+  .nav_logo {
+    margin: 15px;
+    width: 10%;
+    min-width: 70px;
     height: auto;
-
   }
-  
-
-  /* Animations */
-
-  @keyframes slideIn {
-    from {
-      right: -100%;
-    }
-    to {
-      right: 0;
-    }
+  .linkedin-container {
+    margin-left: -50px;
   }
-
-  @keyframes slideOut {
-    from {
-      right: 0;
-    }
-    to {
-      right: -100%;
-    }
-  }
-
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  @keyframes inverseSpin {
-    from {
-      transform: rotate(360deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
-
 }
