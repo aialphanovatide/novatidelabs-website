@@ -3,7 +3,7 @@ import HomePage from "./components/homePage";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import React, { useEffect } from "react";
 import Navbar from "./components/navbar/index";
-import Footer from "./components/footer";
+import Footer from "./components/footer/index";
 import Aboutus from "./components/Aboutus/Aboutus";
 import Philosophy from "./components/Philosophy/Philosophy";
 import Methodology from "./components/Methodology/Methodology";
