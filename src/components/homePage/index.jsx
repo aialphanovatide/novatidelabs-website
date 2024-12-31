@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Footer from "../Footer";
-import Navbar from "../Navbar";
 import "./homePage.css";
 import { useLocation } from "react-router-dom";
 import Carousel from "../carousel";
