@@ -1,5 +1,6 @@
 /* General Styles */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -15,7 +16,7 @@ html, body {
   overflow: hidden;
 }
 
-img, 
+img,
 video,
 iframe {
   max-width: 100%;
@@ -51,7 +52,7 @@ iframe {
   margin-left: 100px;
 }
 
-.textContent-home img{
+.textContent-home img {
   width: 230px;
   height: auto;
 }
@@ -115,9 +116,9 @@ iframe {
     justify-content: center; /* Center image in the column */
     align-items: center;
     margin: 0;
-    margin-top: -220px;
+    margin-top: -180px;
     margin-left: -60px;
-    width: 100px;
+    width: 70px;
     height: auto;
   }
 
