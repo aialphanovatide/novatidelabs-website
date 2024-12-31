@@ -53,7 +53,7 @@ const Ai = ({ isActive, isScrollFinished, setSlideIndex }) => {
         <div className="feature-row1-card1-ai animated">
           <div className="feature-row1-card1-content-ai">
             <img
-              src="static/images/ai/row1_1.png"
+              src="static/images/Ai/row1_1.png"
               alt="Row 1 Feature 1"
               className="grid-picture-style"
             />
@@ -70,7 +70,7 @@ const Ai = ({ isActive, isScrollFinished, setSlideIndex }) => {
         <div className="feature-row1-card2-ai animated">
           <div className="feature-row1-card2-content-ai">
             <img
-              src="static/images/ai/row1_2.png"
+              src="static/images/Ai/row1_2.png"
               alt="Row 1 Feature 2"
               className="grid-picture-style"
             />
@@ -85,7 +85,7 @@ const Ai = ({ isActive, isScrollFinished, setSlideIndex }) => {
         <div className="feature-row2-card1-ai animated">
           <div className="feature-row2-card1-content-ai">
             <img
-              src="static/images/ai/row2_1.png"
+              src="static/images/Ai/row2_1.png"
               alt="Row 2 Feature 1"
               className="grid-picture-style"
             />
@@ -101,7 +101,7 @@ const Ai = ({ isActive, isScrollFinished, setSlideIndex }) => {
         <div className="feature-row2-card2-ai animated">
           <div className="feature-row2-card2-content-ai">
             <img
-              src="static/images/ai/row2_2.png"
+              src="static/images/Ai/row2_2.png"
               alt="Row 1 Feature 2"
               className="grid-row1-2"
             />
