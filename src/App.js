@@ -1,48 +1,66 @@
-import './App.css';
-import HomePage from './components/homePage';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import React, { useEffect } from 'react';
-import Navbar from './components/navbar';
-import Footer from './components/footer';
+import "./App.css";
+import HomePage from "./components/homePage";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import React, { useEffect } from "react";
+import Navbar from "./components/navbar/index";
+import Footer from "./components/footer";
 import Aboutus from "./components/Aboutus/Aboutus";
 import Philosophy from "./components/Philosophy/Philosophy";
 import Methodology from "./components/Methodology/Methodology";
 import Joinourteam from "./components/Joinourteam/Joinourteam";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 function App() {
-
-  const [slideIndex, setSlideIndex] = React.useState(0)
+  const [slideIndex, setSlideIndex] = React.useState(0);
   const location = useLocation();
 
-
-  const sliderPaths = ['/aboutus', '/philosophy', '/methodology', '/joinourteam']
- 
-      
-
-
-
+  const sliderPaths = [
+    "/aboutus",
+    "/philosophy",
+    "/methodology",
+    "/joinourteam",
+  ];
 
   useEffect(() => {
-    if (sliderPaths.includes(location.pathname)){
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (sliderPaths.includes(location.pathname)) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
-   
   }, [location]);
 
   return (
     <div className="App">
       <Navbar slideIndex={slideIndex} setSlideIndex={setSlideIndex} />
       <Routes>
-        <Route path="*" element={<HomePage slideIndex={slideIndex} setSlideIndex={setSlideIndex}/>} />
-        <Route path="/*" element={<HomePage slideIndex={slideIndex} setSlideIndex={setSlideIndex}/>} />
-        <Route path="/aboutus" element={<Aboutus setSlideIndex={setSlideIndex}/>} />
-        <Route path="/philosophy" element={<Philosophy setSlideIndex={setSlideIndex}/>} />
-        <Route path="/methodology" element={<Methodology setSlideIndex={setSlideIndex}/>} />
-        <Route path="/joinourteam" element={<Joinourteam setSlideIndex={setSlideIndex}/>} />
+        <Route
+          path="*"
+          element={
+            <HomePage slideIndex={slideIndex} setSlideIndex={setSlideIndex} />
+          }
+        />
+        <Route
+          path="/*"
+          element={
+            <HomePage slideIndex={slideIndex} setSlideIndex={setSlideIndex} />
+          }
+        />
+        <Route
+          path="/aboutus"
+          element={<Aboutus setSlideIndex={setSlideIndex} />}
+        />
+        <Route
+          path="/philosophy"
+          element={<Philosophy setSlideIndex={setSlideIndex} />}
+        />
+        <Route
+          path="/methodology"
+          element={<Methodology setSlideIndex={setSlideIndex} />}
+        />
+        <Route
+          path="/joinourteam"
+          element={<Joinourteam setSlideIndex={setSlideIndex} />}
+        />
       </Routes>
-      <Footer slideIndex={slideIndex} setSlideIndex={setSlideIndex}/>
+      <Footer slideIndex={slideIndex} setSlideIndex={setSlideIndex} />
     </div>
-    
   );
 }
 
